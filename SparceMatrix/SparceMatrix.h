@@ -15,16 +15,16 @@ namespace SparceMatrix {
         Line* next;
     };
 
-    struct Collum {
+    struct Coll {
         int i;
         Line* nextRight;
-        Collum* nextDown;
+        Coll* nextDown;
     };
 
     struct Matrix{
         int n;
         int m;
-        Collum* begin;
+        Coll* begin;
     };
 
     template<typename T>
@@ -40,7 +40,9 @@ namespace SparceMatrix {
         return 1;
     }
 
+    Matrix* createMatrix();
 
+    Matrix* insert(Matrix* matrix, int i, int j, int data);
 }
 
 
