@@ -21,12 +21,33 @@ namespace SparceMatrix {
         return collum;
     }
 
-    Line *createLine(int &j, int &data) {
-        Line *line = nullptr;
-        line = new Line;
+    Line *createLine(int &j, int & data) {
+        Line *line = new Line;
         line->next = nullptr;
         line->j = j;
-        line->data;
+        line->data = data;
+        return line;
+    }
+
+    Line* newLine(Line* line, int& j, int& data){
+        Line* ptr = line;
+        while(ptr!=nullptr && ptr->next != nullptr){
+            if (ptr->j > j){
+                Line* newItem = ptr;
+                ptr = createLine(j, data);
+                ptr->next = newItem;
+                return line;
+            }
+            if (ptr->j < j && ptr->next->j > j){
+                Line* newLine = ptr->next;
+                ptr->next = createLine(j, data);
+                return line;
+            }
+            if (ptr->j == j){
+                ptr->data = data;
+                return line;
+            }
+        }
         return line;
     }
 
@@ -38,25 +59,24 @@ namespace SparceMatrix {
         Coll *ptr = nullptr;
         ptr = matrix->begin;
         while (ptr != nullptr && ptr->nextDown) { /// nextDown? ofcourse
-            if (ptr->i < i) { /// вставить перед элементом
-                Coll *newColl = createColl(i, data);
-                Coll *tmp = ptr;
+            if (ptr->i > i) { /// вставить перед элементом
+                Coll *newColl = ptr;
+                ptr = createColl(i, data);
                 ptr->nextDown = newColl;
                 matrix->begin = ptr;
                 return matrix;
             }
-            if (ptr->i > i && ptr->nextDown->i < i) {  /// вставить после элемента
-                Coll *newColl = ptr->nextDown;
-                newColl = createColl(i, data);
-
-
+            if (ptr->i < i && ptr->nextDown->i > i) {  /// вставить после элемента
+                Coll *tmp = ptr->nextDown;
+                ptr->nextDown = createColl(i, data);
+                ptr->nextDown->nextDown = tmp;
                 return matrix;
             }
             if (ptr->i == i) { /// вставить в существующую линию
-
-                break;
+                Line* tmpLine = ptr->nextRight;
+                ptr->nextRight = newLine(tmpLine, j, data);
+                return matrix;
             }
-
             ptr = ptr->nextDown;
         }
         return matrix;

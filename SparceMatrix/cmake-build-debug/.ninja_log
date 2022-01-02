@@ -1,13 +1,5 @@
 # ninja log v5
-0	299	1641140814887210584	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
-0	300	1641140814887534785	CMakeFiles/SparceMatrix.dir/SparceMatrix.cpp.o	6e6c9bb35950b719
-0	300	1641140814887514952	CMakeFiles/SparceMatrix.dir/Bib.cpp.o	78e649518e74cf42
-1	235	1641140915294991438	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
-1	229	1641140951435894746	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
-1	220	1641140963411927216	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
-1	243	1641140981244392303	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
-1	273	1641141023661523939	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
-1	230	1641141034880128181	CMakeFiles/SparceMatrix.dir/SparceMatrix.cpp.o	6e6c9bb35950b719
-230	261	1641141034912635818	SparceMatrix	ad748fa8e19fb1b7
-1	216	1641141072128571749	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
-216	243	1641141072156387445	SparceMatrix	ad748fa8e19fb1b7
+1	41	1641155632543910332	SparceMatrix	b8a265797b58eb8
+0	48	1641155639571664505	build.ninja	77e4553906c9a8ef
+1	229	1641155618921429681	CMakeFiles/SparceMatrix.dir/SparceMatrix.cpp.o	6e6c9bb35950b719
+1	326	1641155548857332513	CMakeFiles/SparceMatrix.dir/main.cpp.o	44f53e53d89e4cbb
