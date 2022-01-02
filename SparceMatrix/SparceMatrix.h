@@ -40,9 +40,16 @@ namespace SparceMatrix {
         return 1;
     }
 
+    void Menu();
+
     Matrix* createMatrix();
 
-    Matrix* insert(Matrix* matrix, int i, int j, int data);
+    Line *createLine(int &j, int &data);
+
+    Line *newLine(Line *line, int &j, int &data) ;
+
+    Matrix *insert(Matrix *matrix, int &i, int &j, int &data);
+
 }
 
 

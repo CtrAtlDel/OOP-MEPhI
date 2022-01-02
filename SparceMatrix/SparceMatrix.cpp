@@ -1,7 +1,9 @@
 
 #include "SparceMatrix.h"
+#include "iostream"
 
 namespace SparceMatrix {
+
     Matrix *createMatrix() {
         Matrix *matrix = new Matrix;
         matrix->begin = nullptr;
@@ -21,7 +23,7 @@ namespace SparceMatrix {
         return collum;
     }
 
-    Line *createLine(int &j, int & data) {
+    Line *createLine(int &j, int &data) {
         Line *line = new Line;
         line->next = nullptr;
         line->j = j;
@@ -29,24 +31,37 @@ namespace SparceMatrix {
         return line;
     }
 
-    Line* newLine(Line* line, int& j, int& data){
-        Line* ptr = line;
-        while(ptr!=nullptr && ptr->next != nullptr){
-            if (ptr->j > j){
-                Line* newItem = ptr;
+    Line *newLine(Line *line, int &j, int &data) {
+        Line *ptr = line;
+        while (ptr != nullptr && ptr->next != nullptr) {
+            if (ptr->j > j) {
+                Line *newItem = ptr;
                 ptr = createLine(j, data);
                 ptr->next = newItem;
                 return line;
             }
-            if (ptr->j < j && ptr->next->j > j){
-                Line* newLine = ptr->next;
+            if (ptr->j < j && ptr->next->j > j) {
+                Line *newLine = ptr->next;
                 ptr->next = createLine(j, data);
                 return line;
             }
-            if (ptr->j == j){
+            if (ptr->j == j) {
                 ptr->data = data;
                 return line;
             }
+        }
+        /// check end
+        if (ptr != nullptr) {
+            if (ptr->j == j) {
+                ptr->data = data;
+                return line;
+            }
+            if (ptr->j > j) {
+                Line *newLine = ptr;
+                ptr = createLine(j, data);
+                return line;
+            }
+            ptr->next = createLine(j, data);
         }
         return line;
     }
@@ -73,12 +88,39 @@ namespace SparceMatrix {
                 return matrix;
             }
             if (ptr->i == i) { /// вставить в существующую линию
-                Line* tmpLine = ptr->nextRight;
+                Line *tmpLine = ptr->nextRight;
                 ptr->nextRight = newLine(tmpLine, j, data);
                 return matrix;
             }
             ptr = ptr->nextDown;
         }
+        if (ptr != nullptr) {
+            if (ptr->nextRight != nullptr) {
+                Line *tmpLine = ptr->nextRight;
+                ptr->nextRight = newLine(tmpLine, j, data);
+                return matrix;
+            }
+            if (ptr->i > i) {
+                Coll *newColl = ptr;
+                ptr = createColl(i, data);
+                ptr->nextDown = newColl;
+                matrix->begin = ptr;
+                return matrix;
+            }
+            ptr->nextDown = createColl(i, data);
+        }
         return matrix;
+    }
+
+    void Menu() {
+        Matrix *matrix;
+        int n;
+        int m;
+        do {
+            std::cout << "Please, enter size of matrix (m x n): --> ";
+            if (getNum(n)) { return; };
+            if (getNum(m)) { return; };
+        } while ((m < 1) || (n < 1));
+
     }
 }
