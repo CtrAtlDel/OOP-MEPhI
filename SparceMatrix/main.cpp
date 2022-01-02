@@ -1,8 +1,8 @@
 #include <iostream>
-#include "SparceMatrix.cpp"
-using namespace SparceMatrix;
-
+#include "SparceMatrix.h"
 
 int main() {
+    SparceMatrix::Tree *tree = nullptr;
+    tree = SparceMatrix::createTree();
     return 0;
 }

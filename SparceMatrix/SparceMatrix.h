@@ -2,27 +2,29 @@
 #include<iostream>
 
 namespace SparceMatrix {
-    struct Node;
-    struct Tree;
-    struct Data;
 
     struct Data {
         int i;
         int j;
         int data;
     };
-    struct Node {
-        Node *left;
-        Node *right;
-        Node* parent;
-        Data *data;
-        Tree *subTree; // строка матрицы
 
+    struct Line{
+        int j;
+        int data;
+        Line* next;
     };
-    struct Tree {
+
+    struct Collum {
+        int i;
+        Line* nextRight;
+        Collum* nextDown;
+    };
+
+    struct Matrix{
         int n;
         int m;
-        Node *root;
+        Collum* begin;
     };
 
     template<typename T>
@@ -38,13 +40,7 @@ namespace SparceMatrix {
         return 1;
     }
 
-    Tree *createTree();
 
-    Node *createNode(int &i, int &j, int &data);
-
-    int insert(Tree *tree, int &i, int &j, int &data);
-
-    int printMatrix(Tree *tree);
 }
 
 
