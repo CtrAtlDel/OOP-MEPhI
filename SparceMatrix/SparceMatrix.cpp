@@ -3,46 +3,59 @@
 
 using namespace SparceMatrix;
 
-/// matrix size n * m
-Matrix *createMatrix(int &n, int &m) {
-    Matrix *matrix = new Matrix;
-    matrix->begin = nullptr;
-    matrix->n = n;
-    matrix->m = m;
-    return matrix;
+Tree *createTree() {
+    Tree* tree;
+    tree = new Tree;
+    tree->root = nullptr;
+    return tree;
 }
 
-/**
- *
- * @param matrix матрица
- * @param i индекс строки
- * @param j индекс столбца
- * @param data информация
- * @return
- */
-int insert(Matrix *matrix, int &i, int &j, int &data) { /// считаем что данные корректны
-    Line *item = new Line;
-    Data *info = new Data;
-    int success = 1;
-    info->i = i;
-    info->j = j;
-    info->data = data;
-    item->data = info;
-    item->nextRight = nullptr;
-    item->nextDown = nullptr;
-    if (matrix->begin == nullptr) {
-        matrix->begin = item;
-        return 1;
-    } else {
-        Line *ptr = matrix->begin;
-        while (ptr != nullptr) {
-            if (ptr->data->i == i){
-                Line* ptrLine = ptr;
-                while(){
+Node *createNode(int &i, int &j, int &data) {
+    Node *node = new Node;
+    node->data->data = data;/// init data
+    node->data->i = i;
+    node->data->j = j;
+    node->left = node->right = node->parent = nullptr;
+    node->subTree = nullptr;
+    return node;
+}
 
-                }
+int insert(Node **root, int &i, int &j, int &data) {
+    Node *new_node = nullptr;
+    Node *ptr = *root;
+    if (*root == nullptr) {
+        *root = ::createNode(i, j, data); /// если дерево пусто
+        return 1;
+    }
+    while (ptr != nullptr) {
+        if (ptr->data->i > i) {
+            if (ptr->right != nullptr) {
+                ptr = ptr->right;
+                continue;
+            } else {
+                ptr->right = ::createNode(i, j, data);
+                return 1;
             }
-            ptr = ptr->nextDown;
+        }
+        if (ptr->data->i < i) {
+            if (ptr->left != nullptr) {
+                ptr = ptr->left;
+                continue;
+            } else {
+                ptr->left = ::createNode(i, j, data);
+                return 1;
+            }
+        }
+        if (ptr->data->i == i) {
+            if (ptr->data->j == j) {
+                ptr->data->data = data;
+                return 1;
+            } else {
+                /// идем в поддерево
+            }
+
         }
     }
+    return -1;
 }
+

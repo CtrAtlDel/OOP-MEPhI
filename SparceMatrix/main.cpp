@@ -1,7 +1,8 @@
 #include <iostream>
-#include "SparceMatrix.h"
+#include "SparceMatrix.cpp"
+using namespace SparceMatrix;
+
 
 int main() {
-
     return 0;
 }

@@ -1,25 +1,28 @@
-#ifndef SPARCEMATRIX_SPARCEMATRIX_H
-#define SPARCEMATRIX_SPARCEMATRIX_H
 
 #include<iostream>
 
-/// struct of matrix
-
 namespace SparceMatrix {
+    struct Node;
+    struct Tree;
+    struct Data;
+
     struct Data {
         int i;
         int j;
         int data;
     };
-    struct Line {
+    struct Node {
+        Node *left;
+        Node *right;
+        Node* parent;
         Data *data;
-        Line *nextRight;
-        Line *nextDown;
+        Tree *subTree; // строка матрицы
+
     };
-    struct Matrix {
+    struct Tree {
         int n;
         int m;
-        Line *begin;
+        Node *root;
     };
 
     template<typename T>
@@ -35,11 +38,13 @@ namespace SparceMatrix {
         return 1;
     }
 
-    Matrix* createNewMatrix(int &n, int &m);
+    Tree *createTree();
 
-    int insert(Matrix* matrix, int& i, int& j, int& data);
+    Node *createNode(int &i, int &j, int &data);
 
-    int printMatrix(Matrix* matrix);
+    int insert(Tree *tree, int &i, int &j, int &data);
+
+    int printMatrix(Tree *tree);
 }
 
-#endif //SPARCEMATRIX_SPARCEMATRIX_H
+
