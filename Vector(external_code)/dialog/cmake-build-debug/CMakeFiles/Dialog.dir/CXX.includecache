@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ivan/CLionProjects/external_code/Get/Get.hpp
+limits
+-
+
+C:/Users/Ivan/CLionProjects/external_code/dialog/Code.cpp
+valarray
+-
+cmath
+-
+Code.h
+C:/Users/Ivan/CLionProjects/external_code/dialog/Code.h
+../Get/Get.hpp
+C:/Users/Ivan/CLionProjects/external_code/Get/Get.hpp
+
+C:/Users/Ivan/CLionProjects/external_code/dialog/Code.h
+iostream
+C:/Users/Ivan/CLionProjects/external_code/dialog/iostream
+../library/vec.hpp
+C:/Users/Ivan/CLionProjects/external_code/library/vec.hpp
+
+C:/Users/Ivan/CLionProjects/external_code/dialog/dialog.hpp
+
+C:/Users/Ivan/CLionProjects/external_code/dialog/maind.cpp
+dialog.hpp
+C:/Users/Ivan/CLionProjects/external_code/dialog/dialog.hpp
+Code.h
+C:/Users/Ivan/CLionProjects/external_code/dialog/Code.h
+../Get/Get.hpp
+C:/Users/Ivan/CLionProjects/external_code/Get/Get.hpp
+
+C:/Users/Ivan/CLionProjects/external_code/library/vec.hpp
+iostream
+C:/Users/Ivan/CLionProjects/external_code/library/iostream
+

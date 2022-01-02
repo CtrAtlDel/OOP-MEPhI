@@ -1,0 +1,3 @@
+C:/Users/Ivan/CLionProjects/external_code/dialog/cmake-build-debug/CMakeFiles/Dialog.dir
+C:/Users/Ivan/CLionProjects/external_code/dialog/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ivan/CLionProjects/external_code/dialog/cmake-build-debug/CMakeFiles/rebuild_cache.dir

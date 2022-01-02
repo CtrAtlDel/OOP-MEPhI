@@ -1,0 +1,55 @@
+\hypertarget{_senior_8h_source}{}\doxysection{Senior.\+h}
+\mbox{\hyperlink{_senior_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef CONTROLV3\_SENIOR\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define CONTROLV3\_SENIOR\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_junior_8h}{Junior.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }Console \{}
+\DoxyCodeLine{28     \textcolor{keyword}{class }\mbox{\hyperlink{class_console_1_1_senior}{Senior}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_console_1_1_junior}{Junior}} \{}
+\DoxyCodeLine{29         std::string themeUIR; }
+\DoxyCodeLine{30         std::string placeUIR; }
+\DoxyCodeLine{31         \textcolor{keywordtype}{double} numberTeacher; }
+\DoxyCodeLine{32     \textcolor{keyword}{public}:}
+\DoxyCodeLine{36         \mbox{\hyperlink{class_console_1_1_senior_af8ea8738427c24735c10c0eda22d0d01}{Senior}}() : \mbox{\hyperlink{class_console_1_1_junior}{Junior}}(), themeUIR(\textcolor{stringliteral}{"{}-\/"{}}), placeUIR(\textcolor{stringliteral}{"{}-\/"{}}), numberTeacher(0) \{ \mbox{\hyperlink{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}{category}} = \mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151a69a05094cb97d1f7285d2023ff4e0d12}{Sen}}; \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{43         \mbox{\hyperlink{class_console_1_1_senior_a70670eb4a516245bd81130576c55d801}{Senior}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}, \textcolor{keyword}{const} std::string \&initials) : \mbox{\hyperlink{class_console_1_1_junior}{Junior}}(\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}},}
+\DoxyCodeLine{44                                                                                  initials) \{}
+\DoxyCodeLine{45             this-\/>numberTeacher = 0;}
+\DoxyCodeLine{46             this-\/>\mbox{\hyperlink{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}{category}} = \mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151a69a05094cb97d1f7285d2023ff4e0d12}{Sen}};}
+\DoxyCodeLine{47         \}}
+\DoxyCodeLine{54         \mbox{\hyperlink{class_console_1_1_senior_aef428f4915bb07a52701844646ab7eef}{Senior}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}, \textcolor{keyword}{const} std::string \&initials, \textcolor{keyword}{const} \textcolor{keywordtype}{int} sum) : \mbox{\hyperlink{class_console_1_1_junior}{Junior}}(\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}},}
+\DoxyCodeLine{55                                                                                                 initials,}
+\DoxyCodeLine{56                                                                                                 sum),}
+\DoxyCodeLine{57                                                                                          themeUIR(\textcolor{stringliteral}{"{}-\/"{}}),}
+\DoxyCodeLine{58                                                                                          placeUIR(\textcolor{stringliteral}{"{}-\/"{}}),}
+\DoxyCodeLine{59                                                                                          numberTeacher(}
+\DoxyCodeLine{60                                                                                                  0) \{ this-\/>\mbox{\hyperlink{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}{category}} = \mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151a69a05094cb97d1f7285d2023ff4e0d12}{Sen}}; \}}
+\DoxyCodeLine{70         \mbox{\hyperlink{class_console_1_1_senior_af8ea8738427c24735c10c0eda22d0d01}{Senior}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}, \textcolor{keyword}{const} std::string \&initials, \textcolor{keywordtype}{int} sumOfRating,}
+\DoxyCodeLine{71                \textcolor{keyword}{const} std::string \&themeUIR,}
+\DoxyCodeLine{72                \textcolor{keyword}{const} std::string \&placeUIR,}
+\DoxyCodeLine{73                \textcolor{keywordtype}{double} numberTeacher);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{79         std::string \mbox{\hyperlink{class_console_1_1_senior_a6e60acc258478635f67e32349c672af6}{getThemeUIR}}() \textcolor{keyword}{const}; \textcolor{comment}{//получить тему УИР}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{85         std::string \mbox{\hyperlink{class_console_1_1_senior_a598fff9dfe5eea977dc461811202666b}{getPlaceUIR}}() \textcolor{keyword}{const}; \textcolor{comment}{//получить место выполнения УИР}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{91         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_console_1_1_senior_adfef9f33e36b81226c11cfdd597f4caf}{getNumber}}() \textcolor{keyword}{const}; \textcolor{comment}{//получить оценку научрука}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Setters-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{100         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_senior_a28a8f01a7dc0a18f3206ac05c6542d08}{setThemeUIR}}(\textcolor{keyword}{const} std::string \&theme);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{107         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_senior_ac25007c5c8162148706c121526e1f965}{setPlaceUIR}}(\textcolor{keyword}{const} std::string \&place);}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{114         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_senior_a5d8cb2ec9f6c265fa32b64d351579541}{setNumber}}(\textcolor{keywordtype}{double} count);}
+\DoxyCodeLine{115         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{116     \};}
+\DoxyCodeLine{117 \}}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//CONTROLV3\_SENIOR\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ivan/CLionProjects/untitled/lib/Lem.h
+stdexcept
+-
+cmath
+C:/Users/Ivan/CLionProjects/untitled/lib/cmath
+cstring
+C:/Users/Ivan/CLionProjects/untitled/lib/cstring
+cstdio
+-
+strstream
+-
+
+C:/Users/Ivan/CLionProjects/untitled/lib/func.cpp
+iostream
+-
+
+C:/Users/Ivan/CLionProjects/untitled/main.cpp
+iostream
+-
+lib/Lem.h
+C:/Users/Ivan/CLionProjects/untitled/lib/Lem.h
+lib/func.cpp
+C:/Users/Ivan/CLionProjects/untitled/lib/func.cpp
+cmath
+C:/Users/Ivan/CLionProjects/untitled/cmath
+

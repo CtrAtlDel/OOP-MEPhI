@@ -1,0 +1,13 @@
+# ninja log v5
+3	573	1640264510679956387	CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/vector.cpp.o	7628c8764fab2df
+3	315	1640254468616320088	CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Senior.cpp.o	3c2d68dd5cd42945
+1	482	1640204851333399188	CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Junior.cpp.o	275c7d46c58c3003
+4	264	1640264778818905255	CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Application.cpp.o	f0d793a6f03cdfc5
+4	283	1640264778837784326	CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Tablegroup.cpp.o	b19283e9727fb8af
+2	594	1640204851445403816	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	46083434466157df
+261	325	1640264819692719994	Test	f9ac8532d333489c
+2	261	1640264819627157738	CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/TableStudent.cpp.o	6055c20c9dfd5266
+4	627	1640264779181486885	CMakeFiles/Test.dir/test.cpp.o	c32ded7a92df65be
+2	1601	1640204852450299997	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	84b14c2cd322cc24
+1601	1682	1640204852537048000	lib/libgtestd.a	d1d9665e26afc185
+1682	1694	1640204852549522000	lib/libgtest_maind.a	3cc26a411ce194f8

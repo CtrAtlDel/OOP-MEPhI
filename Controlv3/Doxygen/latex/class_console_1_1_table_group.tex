@@ -1,0 +1,170 @@
+\hypertarget{class_console_1_1_table_group}{}\doxysection{Console\+::Table\+Group Class Reference}
+\label{class_console_1_1_table_group}\index{Console::TableGroup@{Console::TableGroup}}
+
+
+Таблица группы содержит таблицу учащихся и параметры учащихся  
+
+
+
+
+{\ttfamily \#include $<$Tablegroup.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_1_1_table_group_ae573019cd4f2266cd9d5da18e6aea697}{Table\+Group}} (char category, int index\+Group, int max\+Ratings)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_group_a57084803fd82d18488f0b490535fe66f}{$\sim$\+Table\+Group}} ()
+\item 
+int \mbox{\hyperlink{class_console_1_1_table_group_a715e9731a8cb30f42db5d2a7f826a188}{get\+Index\+Group}} () const
+\item 
+char \mbox{\hyperlink{class_console_1_1_table_group_af596ae1d39254ea4c4b37dae134e1b69}{get\+Category}} () const
+\item 
+int \mbox{\hyperlink{class_console_1_1_table_group_a683b76e6f17023c85575607f930532c1}{get\+Max\+Rating}} () const
+\item 
+int \mbox{\hyperlink{class_console_1_1_table_group_a32c2ced21fa0b25a4f8967918b58e441}{get\+Course}} () const
+\item 
+double \mbox{\hyperlink{class_console_1_1_table_group_a9529cda7aef88bf07996314cf13fa977}{get\+Mediana}} ()
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_console_1_1_table_group_a56260a415c446d45cdda4217faaa9b76}{print\+Table}} (std\+::ostream \&s) const
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_console_1_1_table_group_a1e2818f92102dae758110a8f628613f6}{print\+Student}} (std\+::ostream \&s, const std\+::string \&surname, const std\+::string \&initials)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_console_1_1_table_group_ab457175c27aa2f0891c529e5f1d70724}{get\+Max\+People}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Таблица группы содержит таблицу учащихся и параметры учащихся 
+
+\begin{DoxyAuthor}{Author}
+Ivan Kvasov 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+декабрь 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_console_1_1_table_group_ae573019cd4f2266cd9d5da18e6aea697}\label{class_console_1_1_table_group_ae573019cd4f2266cd9d5da18e6aea697}} 
+\index{Console::TableGroup@{Console::TableGroup}!TableGroup@{TableGroup}}
+\index{TableGroup@{TableGroup}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{TableGroup()}{TableGroup()}}
+{\footnotesize\ttfamily Console\+::\+Table\+Group\+::\+Table\+Group (\begin{DoxyParamCaption}\item[{char}]{category,  }\item[{int}]{index\+Group,  }\item[{int}]{max\+Ratings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Инициирующий конструктор 
+\begin{DoxyParams}{Parameters}
+{\em category} & категория студентов \\
+\hline
+{\em index\+Group} & индекс группы \\
+\hline
+{\em max\+Ratings} & максимальное количество оценок \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_console_1_1_table_group_a57084803fd82d18488f0b490535fe66f}\label{class_console_1_1_table_group_a57084803fd82d18488f0b490535fe66f}} 
+\index{Console::TableGroup@{Console::TableGroup}!````~TableGroup@{$\sim$TableGroup}}
+\index{````~TableGroup@{$\sim$TableGroup}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{$\sim$TableGroup()}{~TableGroup()}}
+{\footnotesize\ttfamily Console\+::\+Table\+Group\+::$\sim$\+Table\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Деструктор по умолчанию 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_1_1_table_group_af596ae1d39254ea4c4b37dae134e1b69}\label{class_console_1_1_table_group_af596ae1d39254ea4c4b37dae134e1b69}} 
+\index{Console::TableGroup@{Console::TableGroup}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily char Console\+::\+Table\+Group\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить категориб студентов \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_group_a32c2ced21fa0b25a4f8967918b58e441}\label{class_console_1_1_table_group_a32c2ced21fa0b25a4f8967918b58e441}} 
+\index{Console::TableGroup@{Console::TableGroup}!getCourse@{getCourse}}
+\index{getCourse@{getCourse}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{getCourse()}{getCourse()}}
+{\footnotesize\ttfamily int Console\+::\+Table\+Group\+::get\+Course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить курс студентов группы \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_group_a715e9731a8cb30f42db5d2a7f826a188}\label{class_console_1_1_table_group_a715e9731a8cb30f42db5d2a7f826a188}} 
+\index{Console::TableGroup@{Console::TableGroup}!getIndexGroup@{getIndexGroup}}
+\index{getIndexGroup@{getIndexGroup}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{getIndexGroup()}{getIndexGroup()}}
+{\footnotesize\ttfamily int Console\+::\+Table\+Group\+::get\+Index\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить номер группы \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_group_ab457175c27aa2f0891c529e5f1d70724}\label{class_console_1_1_table_group_ab457175c27aa2f0891c529e5f1d70724}} 
+\index{Console::TableGroup@{Console::TableGroup}!getMaxPeople@{getMaxPeople}}
+\index{getMaxPeople@{getMaxPeople}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{getMaxPeople()}{getMaxPeople()}}
+{\footnotesize\ttfamily static int Console\+::\+Table\+Group\+::get\+Max\+People (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Получить максимальное количество в группе \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_group_a683b76e6f17023c85575607f930532c1}\label{class_console_1_1_table_group_a683b76e6f17023c85575607f930532c1}} 
+\index{Console::TableGroup@{Console::TableGroup}!getMaxRating@{getMaxRating}}
+\index{getMaxRating@{getMaxRating}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{getMaxRating()}{getMaxRating()}}
+{\footnotesize\ttfamily int Console\+::\+Table\+Group\+::get\+Max\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить максимальное количество оценок \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_group_a9529cda7aef88bf07996314cf13fa977}\label{class_console_1_1_table_group_a9529cda7aef88bf07996314cf13fa977}} 
+\index{Console::TableGroup@{Console::TableGroup}!getMediana@{getMediana}}
+\index{getMediana@{getMediana}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{getMediana()}{getMediana()}}
+{\footnotesize\ttfamily double Console\+::\+Table\+Group\+::get\+Mediana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Медиана по группе \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_group_a1e2818f92102dae758110a8f628613f6}\label{class_console_1_1_table_group_a1e2818f92102dae758110a8f628613f6}} 
+\index{Console::TableGroup@{Console::TableGroup}!printStudent@{printStudent}}
+\index{printStudent@{printStudent}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{printStudent()}{printStudent()}}
+{\footnotesize\ttfamily std\+::ostream \& Console\+::\+Table\+Group\+::print\+Student (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{s,  }\item[{const std\+::string \&}]{surname,  }\item[{const std\+::string \&}]{initials }\end{DoxyParamCaption})}
+
+Получить информацию о конкретном студенте 
+\begin{DoxyParams}{Parameters}
+{\em s} & входной поток \\
+\hline
+{\em surname} & фамилия \\
+\hline
+{\em initials} & инициалы \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_group_a56260a415c446d45cdda4217faaa9b76}\label{class_console_1_1_table_group_a56260a415c446d45cdda4217faaa9b76}} 
+\index{Console::TableGroup@{Console::TableGroup}!printTable@{printTable}}
+\index{printTable@{printTable}!Console::TableGroup@{Console::TableGroup}}
+\doxysubsubsection{\texorpdfstring{printTable()}{printTable()}}
+{\footnotesize\ttfamily std\+::ostream \& Console\+::\+Table\+Group\+::print\+Table (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{s }\end{DoxyParamCaption}) const}
+
+Получить информацию о группе 
+\begin{DoxyParams}{Parameters}
+{\em s} & входной поток \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tablegroup_8h}{Tablegroup.\+h}}\item 
+Tablegroup.\+cpp\end{DoxyCompactItemize}

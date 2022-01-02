@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ivan/CLionProjects/DiagramStatic/Lib/src/Diagram.h
+iostream
+-
+
+C:/Users/Ivan/CLionProjects/DiagramStatic/Lib/src/func.cpp
+iostream
+-
+limits
+-
+
+C:/Users/Ivan/CLionProjects/DiagramStatic/Main/main.cpp
+iostream
+-
+../Lib/src/Diagram.h
+C:/Users/Ivan/CLionProjects/DiagramStatic/Lib/src/Diagram.h
+../Lib/src/func.cpp
+C:/Users/Ivan/CLionProjects/DiagramStatic/Lib/src/func.cpp
+

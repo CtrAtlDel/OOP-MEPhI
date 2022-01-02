@@ -1,0 +1,44 @@
+\hypertarget{_application_8h_source}{}\doxysection{Application.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CONTROLV3\_APPLICATION\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CONTROLV3\_APPLICATION\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{comment}{//todo сделать ввод студента на первый курс}}
+\DoxyCodeLine{6 \textcolor{comment}{//todo сделать vector как шаблон}}
+\DoxyCodeLine{7 \textcolor{comment}{//todo сделать переход на следующий курс(добавить в новую таблицу)}}
+\DoxyCodeLine{8 \textcolor{comment}{//todo сделать гугл тесты}}
+\DoxyCodeLine{9 \textcolor{comment}{//todo}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_tablegroup_8h}{Tablegroup.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }Console \{}
+\DoxyCodeLine{13     \textcolor{keyword}{class }\mbox{\hyperlink{class_console_1_1_application}{Application}} \{}
+\DoxyCodeLine{14         \textcolor{keyword}{private}:}
+\DoxyCodeLine{15         std::vector<TableGroup> allgroup;}
+\DoxyCodeLine{16     \textcolor{keyword}{public}:}
+\DoxyCodeLine{17         \mbox{\hyperlink{class_console_1_1_application}{Application}}();}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_console_1_1_application}{\string~Application}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{19     \textcolor{keyword}{public}:}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} newGroup(\textcolor{keywordtype}{char} category, \textcolor{keywordtype}{int} maxSize, \textcolor{keywordtype}{int} indexGroup);}
+\DoxyCodeLine{21         \textcolor{comment}{//todo обрабатывать здесь сначала считывание, затем передачу как парметр}}
+\DoxyCodeLine{22         \textcolor{comment}{//todo набора аргументов}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} newStudent();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         \textcolor{keywordtype}{void} lvlup();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} printTable();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{keywordtype}{void} printStudent();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} getMediana();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keyword}{private}:}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \};}
+\DoxyCodeLine{37 \}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//CONTROLV3\_APPLICATION\_H}}
+
+\end{DoxyCode}

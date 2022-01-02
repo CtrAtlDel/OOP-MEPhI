@@ -1,0 +1,8 @@
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/Lib/CMakeFiles/DiagramStatic.dir
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/Lib/CMakeFiles/edit_cache.dir
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/Lib/CMakeFiles/rebuild_cache.dir
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/Main/CMakeFiles/edit_cache.dir
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/Main/CMakeFiles/Main.dir
+C:/Users/Ivan/CLionProjects/DiagramStatic/cmake-build-debug/Main/CMakeFiles/rebuild_cache.dir

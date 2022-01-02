@@ -1,0 +1,300 @@
+\hypertarget{class_console_1_1_table_student}{}\doxysection{Console\+::Table\+Student Class Reference}
+\label{class_console_1_1_table_student}\index{Console::TableStudent@{Console::TableStudent}}
+
+
+Таблица учащихся содержит студентов. представленных классами \mbox{\hyperlink{class_console_1_1_junior}{Junior}} или \mbox{\hyperlink{class_console_1_1_senior}{Senior}}.  
+
+
+
+
+{\ttfamily \#include $<$Table\+Student.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student_ab50bcb805ea24420cfbcc4a072da688c}{Table\+Student}} (char \mbox{\hyperlink{class_console_1_1_table_student_a20ce5afdd237568d05fff3e7005f05d6}{category}}, int \mbox{\hyperlink{class_console_1_1_table_student_a3bd2f83995c0814fc0a89f54e52c996e}{size\+Ratings}})
+\item 
+unsigned long long \mbox{\hyperlink{class_console_1_1_table_student_a10afb27891e71d9ec011be3716a41787}{get\+Size}} () const
+\item 
+int \mbox{\hyperlink{class_console_1_1_table_student_aecf80e1621d92faa5e7bc91c033226b0}{get\+Max\+Rating}} () const
+\item 
+char \mbox{\hyperlink{class_console_1_1_table_student_a4cbee3f17c3cca472ec9b69e14c012ab}{get\+Category}} () const
+\item 
+int \mbox{\hyperlink{class_console_1_1_table_student_a8239aa613a9b15437bbf27d424680df6}{index\+Of\+Student}} (const std\+::string \&surname, const std\+::string \&initials) const
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_acdbac10c944ef86115d51b1b64dfb1f2}{set\+UIR}} (int index\+Student, const std\+::string \&new\+UIR)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_ae82d475759d780166c9a979fbd10a1e7}{set\+Place}} (int index\+Student, const std\+::string \&place)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_ae837bdf84f7572337749792b3b07bee6}{set\+Number\+Teacher}} (int index\+Student, double number)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_ad144dca5aa0ec428c1e08c56657d1eb2}{set\+New\+Student}} (\mbox{\hyperlink{class_console_1_1_student}{Student}} $\ast$student)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_a3c5355131efd05429ff862432cde7625}{set\+Rating}} (int index\+Student, double rating)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_aef3f36ee6f4e96e60df9969e37fdbc1f}{set\+Rating}} (int index\+Student, double rating, int index\+Of\+Rating)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_a6a786a6df2cf0f2ad21885d7a9554fb3}{delete\+Student}} (int index\+Student)
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student}{Table\+Student}} \& \mbox{\hyperlink{class_console_1_1_table_student_affba9cbb47e5d75e57750d8d9bad4ce0}{lvlup}} (int index\+Student)
+\item 
+double \mbox{\hyperlink{class_console_1_1_table_student_a9a55def5341769cfd13bedc2f77ff33f}{get\+Median}} (int index\+Student)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_console_1_1_table_student_a3d4de5b1fb876a32e7d6236060369534}{get\+Student}} (std\+::ostream \&s, int index\+Student) const
+\item 
+\mbox{\hyperlink{class_console_1_1_table_student_ab50f71d1677c7966f36614acfe0c04af}{$\sim$\+Table\+Student}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_console_1_1_table_student_a50aebe727b2fdd7200dc97f30bedad3a}\label{class_console_1_1_table_student_a50aebe727b2fdd7200dc97f30bedad3a}} 
+std\+::vector$<$ \mbox{\hyperlink{class_console_1_1_student}{Student}} $\ast$ $>$ {\bfseries table}
+\begin{DoxyCompactList}\small\item\em таблица студентов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_console_1_1_table_student_a20ce5afdd237568d05fff3e7005f05d6}\label{class_console_1_1_table_student_a20ce5afdd237568d05fff3e7005f05d6}} 
+char {\bfseries category}
+\begin{DoxyCompactList}\small\item\em категория студентов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_console_1_1_table_student_a3bd2f83995c0814fc0a89f54e52c996e}\label{class_console_1_1_table_student_a3bd2f83995c0814fc0a89f54e52c996e}} 
+int {\bfseries size\+Ratings}
+\begin{DoxyCompactList}\small\item\em максимальное количество оценок \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Таблица учащихся содержит студентов. представленных классами \mbox{\hyperlink{class_console_1_1_junior}{Junior}} или \mbox{\hyperlink{class_console_1_1_senior}{Senior}}. 
+
+\begin{DoxyAuthor}{Author}
+Ivan Kvasov 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+декабрь 2021
+\end{DoxyDate}
+Упорядоченная таблица студентов, определенной категории. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_console_1_1_table_student_ab50bcb805ea24420cfbcc4a072da688c}\label{class_console_1_1_table_student_ab50bcb805ea24420cfbcc4a072da688c}} 
+\index{Console::TableStudent@{Console::TableStudent}!TableStudent@{TableStudent}}
+\index{TableStudent@{TableStudent}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{TableStudent()}{TableStudent()}}
+{\footnotesize\ttfamily Console\+::\+Table\+Student\+::\+Table\+Student (\begin{DoxyParamCaption}\item[{char}]{category,  }\item[{int}]{size\+Ratings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Конструктор с категорией и максимальным количеством оценок студента 
+\begin{DoxyParams}{Parameters}
+{\em category} & категория студентов \\
+\hline
+{\em size\+Ratings} & количество оценок \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_console_1_1_table_student_ab50f71d1677c7966f36614acfe0c04af}\label{class_console_1_1_table_student_ab50f71d1677c7966f36614acfe0c04af}} 
+\index{Console::TableStudent@{Console::TableStudent}!````~TableStudent@{$\sim$TableStudent}}
+\index{````~TableStudent@{$\sim$TableStudent}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{$\sim$TableStudent()}{~TableStudent()}}
+{\footnotesize\ttfamily Console\+::\+Table\+Student\+::$\sim$\+Table\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Деструктор по умолчанию 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_1_1_table_student_a6a786a6df2cf0f2ad21885d7a9554fb3}\label{class_console_1_1_table_student_a6a786a6df2cf0f2ad21885d7a9554fb3}} 
+\index{Console::TableStudent@{Console::TableStudent}!deleteStudent@{deleteStudent}}
+\index{deleteStudent@{deleteStudent}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{deleteStudent()}{deleteStudent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::delete\+Student (\begin{DoxyParamCaption}\item[{int}]{index\+Student }\end{DoxyParamCaption})}
+
+Удолить студента из таблицы 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_a4cbee3f17c3cca472ec9b69e14c012ab}\label{class_console_1_1_table_student_a4cbee3f17c3cca472ec9b69e14c012ab}} 
+\index{Console::TableStudent@{Console::TableStudent}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily char Console\+::\+Table\+Student\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Категорию студентов в таблице \begin{DoxyReturn}{Returns}
+категорию 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_aecf80e1621d92faa5e7bc91c033226b0}\label{class_console_1_1_table_student_aecf80e1621d92faa5e7bc91c033226b0}} 
+\index{Console::TableStudent@{Console::TableStudent}!getMaxRating@{getMaxRating}}
+\index{getMaxRating@{getMaxRating}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{getMaxRating()}{getMaxRating()}}
+{\footnotesize\ttfamily int Console\+::\+Table\+Student\+::get\+Max\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить количество оценом студента (максимальное) \begin{DoxyReturn}{Returns}
+количество оценок 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_a9a55def5341769cfd13bedc2f77ff33f}\label{class_console_1_1_table_student_a9a55def5341769cfd13bedc2f77ff33f}} 
+\index{Console::TableStudent@{Console::TableStudent}!getMedian@{getMedian}}
+\index{getMedian@{getMedian}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{getMedian()}{getMedian()}}
+{\footnotesize\ttfamily double Console\+::\+Table\+Student\+::get\+Median (\begin{DoxyParamCaption}\item[{int}]{index\+Student }\end{DoxyParamCaption})}
+
+Получить средний балл студента 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_a10afb27891e71d9ec011be3716a41787}\label{class_console_1_1_table_student_a10afb27891e71d9ec011be3716a41787}} 
+\index{Console::TableStudent@{Console::TableStudent}!getSize@{getSize}}
+\index{getSize@{getSize}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily unsigned long long Console\+::\+Table\+Student\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Получить максимальное количество оценок \begin{DoxyReturn}{Returns}
+максимальное количество оценок студентов 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_a3d4de5b1fb876a32e7d6236060369534}\label{class_console_1_1_table_student_a3d4de5b1fb876a32e7d6236060369534}} 
+\index{Console::TableStudent@{Console::TableStudent}!getStudent@{getStudent}}
+\index{getStudent@{getStudent}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{getStudent()}{getStudent()}}
+{\footnotesize\ttfamily std\+::ostream \& Console\+::\+Table\+Student\+::get\+Student (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{s,  }\item[{int}]{index\+Student }\end{DoxyParamCaption}) const}
+
+Получить студента 
+\begin{DoxyParams}{Parameters}
+{\em s} & входной поток \\
+\hline
+{\em index\+Student} & номер студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+сслыка на измененный поток 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_a8239aa613a9b15437bbf27d424680df6}\label{class_console_1_1_table_student_a8239aa613a9b15437bbf27d424680df6}} 
+\index{Console::TableStudent@{Console::TableStudent}!indexOfStudent@{indexOfStudent}}
+\index{indexOfStudent@{indexOfStudent}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{indexOfStudent()}{indexOfStudent()}}
+{\footnotesize\ttfamily int Console\+::\+Table\+Student\+::index\+Of\+Student (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{surname,  }\item[{const std\+::string \&}]{initials }\end{DoxyParamCaption}) const}
+
+Номер студента в таблице 
+\begin{DoxyParams}{Parameters}
+{\em surname} & фамилия студента \\
+\hline
+{\em initials} & инициалы студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+номер студента 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_affba9cbb47e5d75e57750d8d9bad4ce0}\label{class_console_1_1_table_student_affba9cbb47e5d75e57750d8d9bad4ce0}} 
+\index{Console::TableStudent@{Console::TableStudent}!lvlup@{lvlup}}
+\index{lvlup@{lvlup}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{lvlup()}{lvlup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::lvlup (\begin{DoxyParamCaption}\item[{int}]{index\+Student }\end{DoxyParamCaption})}
+
+Перевести студента на следующий курс 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_ad144dca5aa0ec428c1e08c56657d1eb2}\label{class_console_1_1_table_student_ad144dca5aa0ec428c1e08c56657d1eb2}} 
+\index{Console::TableStudent@{Console::TableStudent}!setNewStudent@{setNewStudent}}
+\index{setNewStudent@{setNewStudent}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{setNewStudent()}{setNewStudent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::set\+New\+Student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_1_1_student}{Console\+::\+Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+Сохранить нового студента 
+\begin{DoxyParams}{Parameters}
+{\em student} & указать на класс нового студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_ae837bdf84f7572337749792b3b07bee6}\label{class_console_1_1_table_student_ae837bdf84f7572337749792b3b07bee6}} 
+\index{Console::TableStudent@{Console::TableStudent}!setNumberTeacher@{setNumberTeacher}}
+\index{setNumberTeacher@{setNumberTeacher}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{setNumberTeacher()}{setNumberTeacher()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::set\+Number\+Teacher (\begin{DoxyParamCaption}\item[{int}]{index\+Student,  }\item[{double}]{number }\end{DoxyParamCaption})}
+
+Сохранить оценку научрука 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+{\em number} & оценка научрука \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_ae82d475759d780166c9a979fbd10a1e7}\label{class_console_1_1_table_student_ae82d475759d780166c9a979fbd10a1e7}} 
+\index{Console::TableStudent@{Console::TableStudent}!setPlace@{setPlace}}
+\index{setPlace@{setPlace}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{setPlace()}{setPlace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::set\+Place (\begin{DoxyParamCaption}\item[{int}]{index\+Student,  }\item[{const std\+::string \&}]{place }\end{DoxyParamCaption})}
+
+Сохранить новое место УИР 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+{\em place} & новое место УИР \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_a3c5355131efd05429ff862432cde7625}\label{class_console_1_1_table_student_a3c5355131efd05429ff862432cde7625}} 
+\index{Console::TableStudent@{Console::TableStudent}!setRating@{setRating}}
+\index{setRating@{setRating}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{setRating()}{setRating()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::set\+Rating (\begin{DoxyParamCaption}\item[{int}]{index\+Student,  }\item[{double}]{rating }\end{DoxyParamCaption})}
+
+Сохранить оценку 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+{\em rating} & оценка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_aef3f36ee6f4e96e60df9969e37fdbc1f}\label{class_console_1_1_table_student_aef3f36ee6f4e96e60df9969e37fdbc1f}} 
+\index{Console::TableStudent@{Console::TableStudent}!setRating@{setRating}}
+\index{setRating@{setRating}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{setRating()}{setRating()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::set\+Rating (\begin{DoxyParamCaption}\item[{int}]{index\+Student,  }\item[{double}]{rating,  }\item[{int}]{index\+Of\+Rating }\end{DoxyParamCaption})}
+
+Слхранить оценку 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+{\em rating} & оценка \\
+\hline
+{\em index\+Of\+Rating} & номер оценки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_console_1_1_table_student_acdbac10c944ef86115d51b1b64dfb1f2}\label{class_console_1_1_table_student_acdbac10c944ef86115d51b1b64dfb1f2}} 
+\index{Console::TableStudent@{Console::TableStudent}!setUIR@{setUIR}}
+\index{setUIR@{setUIR}!Console::TableStudent@{Console::TableStudent}}
+\doxysubsubsection{\texorpdfstring{setUIR()}{setUIR()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_table_student}{Console\+::\+Table\+Student}} \& Console\+::\+Table\+Student\+::set\+UIR (\begin{DoxyParamCaption}\item[{int}]{index\+Student,  }\item[{const std\+::string \&}]{new\+UIR }\end{DoxyParamCaption})}
+
+Сохранить тему УИР 
+\begin{DoxyParams}{Parameters}
+{\em index\+Student} & номер студента \\
+\hline
+{\em new\+UIR} & новая тема УИР \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылка на измененный класс 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_table_student_8h}{Table\+Student.\+h}}\item 
+Table\+Student.\+cpp\end{DoxyCompactItemize}

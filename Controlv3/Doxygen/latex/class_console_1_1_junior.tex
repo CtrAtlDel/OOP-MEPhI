@@ -1,0 +1,381 @@
+\hypertarget{class_console_1_1_junior}{}\doxysection{Console\+::Junior Class Reference}
+\label{class_console_1_1_junior}\index{Console::Junior@{Console::Junior}}
+
+
+дочерний класс  
+
+
+
+
+{\ttfamily \#include $<$Junior.\+h$>$}
+
+Inheritance diagram for Console\+::Junior\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_console_1_1_junior}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_1_1_junior_a3a857e905df6fb7b8f065d4880cdce77}{Junior}} ()
+\item 
+\mbox{\hyperlink{class_console_1_1_junior_a46c1c2dde8121a5c1e62ee0491361449}{Junior}} (const std\+::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}, const std\+::string \&\mbox{\hyperlink{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}{initial}})
+\item 
+\mbox{\hyperlink{class_console_1_1_junior_a7919454bb8e0cb5787469a5530e14700}{Junior}} (const std\+::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}, const std\+::string \&\mbox{\hyperlink{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}{initial}}, int sum)
+\item 
+std\+::string \mbox{\hyperlink{class_console_1_1_junior_a792688130c68cf33aa45658cafef3874}{get\+Surname}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_console_1_1_junior_aaf17046f8c70d9c9d8ab313a5ef511e4}{get\+Initials}} () const override
+\item 
+int \mbox{\hyperlink{class_console_1_1_junior_a8c295704c15cf63fdd9bd4817a154ee7}{get\+Sum\+Of\+Rating}} () const override
+\item 
+char \mbox{\hyperlink{class_console_1_1_junior_a4b31c801fcbf8e680984652f6f91433f}{get\+Category}} () const override
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_console_1_1_junior_abd9f671f21382d7907cfa0f69a4f107b}{get\+Rating}} () const override
+\item 
+\mbox{\hyperlink{class_console_1_1_student}{Student}} \& \mbox{\hyperlink{class_console_1_1_junior_a61236a5f1a1c355e51b42228fab1a465}{set\+Surname}} (const std\+::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}) override
+\item 
+\mbox{\hyperlink{class_console_1_1_student}{Student}} \& \mbox{\hyperlink{class_console_1_1_junior_acdc84ee84c6bef2aa38d009ffc35ad90}{set\+Initials}} (const std\+::string \&initials) override
+\item 
+\mbox{\hyperlink{class_console_1_1_student}{Student}} \& \mbox{\hyperlink{class_console_1_1_junior_a1661cb9df848a94863067bee95a88fce}{set\+Rating}} (double \mbox{\hyperlink{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}{rating}}, int index) override
+\item 
+\mbox{\hyperlink{class_console_1_1_student}{Student}} \& \mbox{\hyperlink{class_console_1_1_junior_a98b986a3785e07a848a7bc4f616cad4d}{set\+Rating}} (double \mbox{\hyperlink{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}{rating}}) override
+\item 
+\mbox{\hyperlink{class_console_1_1_student}{Student}} \& \mbox{\hyperlink{class_console_1_1_junior_a6d4e802fcef76ff98886c1bdc2edd988}{set\+Categories}} (char type) override
+\item 
+\mbox{\hyperlink{class_console_1_1_student}{Student}} \& \mbox{\hyperlink{class_console_1_1_junior_aaad22288cc1f341f342d7ac306d65988}{set\+Sum\+Of\+Rating}} (int ratting) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}\label{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}} 
+std\+::string {\bfseries surname}
+\begin{DoxyCompactList}\small\item\em фамилия студента \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}\label{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}} 
+std\+::string {\bfseries initial}
+\begin{DoxyCompactList}\small\item\em инициалы студента \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_console_1_1_junior_aad4f9bbf90c36efe24f952d28867cdc3}\label{class_console_1_1_junior_aad4f9bbf90c36efe24f952d28867cdc3}} 
+int {\bfseries size\+Of\+Rating}
+\begin{DoxyCompactList}\small\item\em количество оценок (фактическое) студента \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}\label{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}} 
+char {\bfseries category}
+\begin{DoxyCompactList}\small\item\em тип студента \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}\label{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}} 
+std\+::vector$<$ double $>$ {\bfseries rating}
+\begin{DoxyCompactList}\small\item\em список оценок студента \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+дочерний класс 
+
+\begin{DoxyAuthor}{Author}
+Ivan Kvasov 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+декабрь 2021
+\end{DoxyDate}
+Дочерний класс, унаследованный от класса \mbox{\hyperlink{class_console_1_1_student}{Student}}. Переопределяющий все виртуальыне методы класса \mbox{\hyperlink{class_console_1_1_student}{Student}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_console_1_1_junior_a3a857e905df6fb7b8f065d4880cdce77}\label{class_console_1_1_junior_a3a857e905df6fb7b8f065d4880cdce77}} 
+\index{Console::Junior@{Console::Junior}!Junior@{Junior}}
+\index{Junior@{Junior}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{Junior()}{Junior()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Console\+::\+Junior\+::\+Junior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Конструктор по умолчанию \mbox{\Hypertarget{class_console_1_1_junior_a46c1c2dde8121a5c1e62ee0491361449}\label{class_console_1_1_junior_a46c1c2dde8121a5c1e62ee0491361449}} 
+\index{Console::Junior@{Console::Junior}!Junior@{Junior}}
+\index{Junior@{Junior}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{Junior()}{Junior()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Console\+::\+Junior\+::\+Junior (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{surname,  }\item[{const std\+::string \&}]{initial }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Инициализирующий конструктор 
+\begin{DoxyParams}{Parameters}
+{\em surname} & фамилия студента \\
+\hline
+{\em initial} & инициалы студента \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_console_1_1_junior_a7919454bb8e0cb5787469a5530e14700}\label{class_console_1_1_junior_a7919454bb8e0cb5787469a5530e14700}} 
+\index{Console::Junior@{Console::Junior}!Junior@{Junior}}
+\index{Junior@{Junior}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{Junior()}{Junior()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Console\+::\+Junior\+::\+Junior (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{surname,  }\item[{const std\+::string \&}]{initial,  }\item[{int}]{sum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Инициализирующий конструктор 
+\begin{DoxyParams}{Parameters}
+{\em surname} & фамилия студента \\
+\hline
+{\em initial} & инициалы студента \\
+\hline
+{\em sum} & количество оценок студента \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & sum of rating \texorpdfstring{$<$}{<} 0 \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_console_1_1_junior_a4b31c801fcbf8e680984652f6f91433f}\label{class_console_1_1_junior_a4b31c801fcbf8e680984652f6f91433f}} 
+\index{Console::Junior@{Console::Junior}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily char Console\+::\+Junior\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Получить тип студента 
+\begin{DoxyParams}{Parameters}
+{\em не} & имеет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+категорию студента 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_a1cd91a613d0f1aa950d8f6643973f0e5}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_aaf17046f8c70d9c9d8ab313a5ef511e4}\label{class_console_1_1_junior_aaf17046f8c70d9c9d8ab313a5ef511e4}} 
+\index{Console::Junior@{Console::Junior}!getInitials@{getInitials}}
+\index{getInitials@{getInitials}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{getInitials()}{getInitials()}}
+{\footnotesize\ttfamily std\+::string Console\+::\+Junior\+::get\+Initials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Получить иницалы стужента 
+\begin{DoxyParams}{Parameters}
+{\em не} & имеет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+строку с инициалами 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_a12b740fb2fa78dc4402277291e57c3e1}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_abd9f671f21382d7907cfa0f69a4f107b}\label{class_console_1_1_junior_abd9f671f21382d7907cfa0f69a4f107b}} 
+\index{Console::Junior@{Console::Junior}!getRating@{getRating}}
+\index{getRating@{getRating}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{getRating()}{getRating()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Console\+::\+Junior\+::get\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Получить список оценок стужента 
+\begin{DoxyParams}{Parameters}
+{\em не} & имеет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+массив оценок 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_abf7cdb3a01f8f2e42d5c3a66af49de7a}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_a8c295704c15cf63fdd9bd4817a154ee7}\label{class_console_1_1_junior_a8c295704c15cf63fdd9bd4817a154ee7}} 
+\index{Console::Junior@{Console::Junior}!getSumOfRating@{getSumOfRating}}
+\index{getSumOfRating@{getSumOfRating}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{getSumOfRating()}{getSumOfRating()}}
+{\footnotesize\ttfamily int Console\+::\+Junior\+::get\+Sum\+Of\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Получить количество оценок студента 
+\begin{DoxyParams}{Parameters}
+{\em не} & имеет параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+максимальное количество оценок 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_acc8c6d33abe0e48e99d2c5649f317304}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_a792688130c68cf33aa45658cafef3874}\label{class_console_1_1_junior_a792688130c68cf33aa45658cafef3874}} 
+\index{Console::Junior@{Console::Junior}!getSurname@{getSurname}}
+\index{getSurname@{getSurname}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{getSurname()}{getSurname()}}
+{\footnotesize\ttfamily std\+::string Console\+::\+Junior\+::get\+Surname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Получить фамилию студента 
+\begin{DoxyParams}{Parameters}
+{\em нет} & параметров \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+фамилия студента 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_ade0c485a73919410bf9ef520ec9300d9}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_a6d4e802fcef76ff98886c1bdc2edd988}\label{class_console_1_1_junior_a6d4e802fcef76ff98886c1bdc2edd988}} 
+\index{Console::Junior@{Console::Junior}!setCategories@{setCategories}}
+\index{setCategories@{setCategories}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{setCategories()}{setCategories()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_student}{Console\+::\+Student}} \& Console\+::\+Junior\+::set\+Categories (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сохранить категорию студента 
+\begin{DoxyParams}{Parameters}
+{\em type} & тип студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на измененный объект класса 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_a9720316902076ca59f5e2e43b858f278}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_acdc84ee84c6bef2aa38d009ffc35ad90}\label{class_console_1_1_junior_acdc84ee84c6bef2aa38d009ffc35ad90}} 
+\index{Console::Junior@{Console::Junior}!setInitials@{setInitials}}
+\index{setInitials@{setInitials}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{setInitials()}{setInitials()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_student}{Console\+::\+Student}} \& Console\+::\+Junior\+::set\+Initials (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{initials }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сохранить инициалы стужента 
+\begin{DoxyParams}{Parameters}
+{\em initials} & инициалы студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на измененный объект класса 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_aa1cba3210f05b8d29e8b1c3785a497aa}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_a98b986a3785e07a848a7bc4f616cad4d}\label{class_console_1_1_junior_a98b986a3785e07a848a7bc4f616cad4d}} 
+\index{Console::Junior@{Console::Junior}!setRating@{setRating}}
+\index{setRating@{setRating}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{setRating()}{setRating()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_student}{Console\+::\+Student}} \& Console\+::\+Junior\+::set\+Rating (\begin{DoxyParamCaption}\item[{double}]{rating }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сохранить оценку студента(добавить в конец) 
+\begin{DoxyParams}{Parameters}
+{\em rating} & оценка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на измененный объект класса 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & Bad ratting ( \texorpdfstring{$<$}{<}0 ) \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_a378e377e720383abb12c28ee6ca5b4e6}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_a1661cb9df848a94863067bee95a88fce}\label{class_console_1_1_junior_a1661cb9df848a94863067bee95a88fce}} 
+\index{Console::Junior@{Console::Junior}!setRating@{setRating}}
+\index{setRating@{setRating}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{setRating()}{setRating()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_student}{Console\+::\+Student}} \& Console\+::\+Junior\+::set\+Rating (\begin{DoxyParamCaption}\item[{double}]{rating,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сохранить оценку студента по номеру студента 
+\begin{DoxyParams}{Parameters}
+{\em rating} & оценка \\
+\hline
+{\em index} & номер оценки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на измененный объект класса 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & Index out of range \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_a9f1304e37d666c815a6cef04a0c7ddd7}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_aaad22288cc1f341f342d7ac306d65988}\label{class_console_1_1_junior_aaad22288cc1f341f342d7ac306d65988}} 
+\index{Console::Junior@{Console::Junior}!setSumOfRating@{setSumOfRating}}
+\index{setSumOfRating@{setSumOfRating}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{setSumOfRating()}{setSumOfRating()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_student}{Console\+::\+Student}} \& Console\+::\+Junior\+::set\+Sum\+Of\+Rating (\begin{DoxyParamCaption}\item[{int}]{ratting }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сохранить текущее количество оценок 
+\begin{DoxyParams}{Parameters}
+{\em ratting} & максимальное количество оценок \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на измененный объект класса 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_a1c651b88721c7f4970070228f4b077b7}{Console\+::\+Student}}.
+
+\mbox{\Hypertarget{class_console_1_1_junior_a61236a5f1a1c355e51b42228fab1a465}\label{class_console_1_1_junior_a61236a5f1a1c355e51b42228fab1a465}} 
+\index{Console::Junior@{Console::Junior}!setSurname@{setSurname}}
+\index{setSurname@{setSurname}!Console::Junior@{Console::Junior}}
+\doxysubsubsection{\texorpdfstring{setSurname()}{setSurname()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_1_1_student}{Console\+::\+Student}} \& Console\+::\+Junior\+::set\+Surname (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{surname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сохранить фамилию студента 
+\begin{DoxyParams}{Parameters}
+{\em surname} & фамилия студента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ссылку на измененный объект класса 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{class_console_1_1_student_a87a3e53c707deb5c0a5a757eb3f06546}{Console\+::\+Student}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_junior_8h}{Junior.\+h}}\item 
+Junior.\+cpp\end{DoxyCompactItemize}

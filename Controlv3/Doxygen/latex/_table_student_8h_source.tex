@@ -1,0 +1,66 @@
+\hypertarget{_table_student_8h_source}{}\doxysection{Table\+Student.\+h}
+\mbox{\hyperlink{_table_student_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef CONTROLV3\_TABLESTUDENT\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define CONTROLV3\_TABLESTUDENT\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_student_8h}{Student.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }Console \{}
+\DoxyCodeLine{29     \textcolor{keyword}{class }\mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \{}
+\DoxyCodeLine{30     \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         std::vector<Student *> \mbox{\hyperlink{class_console_1_1_table_student_a50aebe727b2fdd7200dc97f30bedad3a}{table}};}
+\DoxyCodeLine{32         \textcolor{keywordtype}{char} \mbox{\hyperlink{class_console_1_1_table_student_a20ce5afdd237568d05fff3e7005f05d6}{category}}; }
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_console_1_1_table_student_a3bd2f83995c0814fc0a89f54e52c996e}{sizeRatings}};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{public}:}
+\DoxyCodeLine{41         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_console_1_1_table_student_ab50bcb805ea24420cfbcc4a072da688c}{TableStudent}}(\textcolor{keywordtype}{char} \mbox{\hyperlink{class_console_1_1_table_student_a20ce5afdd237568d05fff3e7005f05d6}{category}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_console_1_1_table_student_a3bd2f83995c0814fc0a89f54e52c996e}{sizeRatings}});}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47         [[nodiscard]]}
+\DoxyCodeLine{48         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} \mbox{\hyperlink{class_console_1_1_table_student_a10afb27891e71d9ec011be3716a41787}{getSize}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_1_1_table_student_a50aebe727b2fdd7200dc97f30bedad3a}{table}}.size(); \}; \textcolor{comment}{//получить количество студентов в группе}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54         [[nodiscard]]}
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_console_1_1_table_student_aecf80e1621d92faa5e7bc91c033226b0}{getMaxRating}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_console_1_1_table_student_a3bd2f83995c0814fc0a89f54e52c996e}{sizeRatings}}; \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{61         [[nodiscard]]}
+\DoxyCodeLine{62         \textcolor{keywordtype}{char} \mbox{\hyperlink{class_console_1_1_table_student_a4cbee3f17c3cca472ec9b69e14c012ab}{getCategory}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_console_1_1_table_student_a20ce5afdd237568d05fff3e7005f05d6}{category}}; \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{70         [[nodiscard]]}
+\DoxyCodeLine{71         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_console_1_1_table_student_a8239aa613a9b15437bbf27d424680df6}{indexOfStudent}}(\textcolor{keyword}{const} std::string \&surname,}
+\DoxyCodeLine{72                            \textcolor{keyword}{const} std::string \&initials) \textcolor{keyword}{const}; \textcolor{comment}{//получить номер студента в таблице по имени и фамиилии}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{80         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_acdbac10c944ef86115d51b1b64dfb1f2}{setUIR}}(\textcolor{keywordtype}{int} indexStudent, \textcolor{keyword}{const} std::string \&newUIR);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{88         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_ae82d475759d780166c9a979fbd10a1e7}{setPlace}}(\textcolor{keywordtype}{int} indexStudent, \textcolor{keyword}{const} std::string \&place);}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{96         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_ae837bdf84f7572337749792b3b07bee6}{setNumberTeacher}}(\textcolor{keywordtype}{int} indexStudent, \textcolor{keywordtype}{double} number);}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{103         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_ad144dca5aa0ec428c1e08c56657d1eb2}{setNewStudent}}(\mbox{\hyperlink{class_console_1_1_student}{Student}} *student);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{111         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_a3c5355131efd05429ff862432cde7625}{setRating}}(\textcolor{keywordtype}{int} indexStudent, \textcolor{keywordtype}{double} rating);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{120         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_a3c5355131efd05429ff862432cde7625}{setRating}}(\textcolor{keywordtype}{int} indexStudent, \textcolor{keywordtype}{double} rating, \textcolor{keywordtype}{int} indexOfRating);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{127         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_a6a786a6df2cf0f2ad21885d7a9554fb3}{deleteStudent}}(\textcolor{keywordtype}{int} indexStudent);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{134         \mbox{\hyperlink{class_console_1_1_table_student}{TableStudent}} \&\mbox{\hyperlink{class_console_1_1_table_student_affba9cbb47e5d75e57750d8d9bad4ce0}{lvlup}}(\textcolor{keywordtype}{int} indexStudent);}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{141         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_console_1_1_table_student_a9a55def5341769cfd13bedc2f77ff33f}{getMedian}}(\textcolor{keywordtype}{int} indexStudent);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \textcolor{keyword}{private}:}
+\DoxyCodeLine{151         [[nodiscard]]}
+\DoxyCodeLine{152         \mbox{\hyperlink{class_console_1_1_student}{Student}} *search(\textcolor{keyword}{const} std::string \&surname, \textcolor{keyword}{const} std::string \&initials) \textcolor{keyword}{const};}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154     \textcolor{keyword}{public}:}
+\DoxyCodeLine{161         std::ostream \&\mbox{\hyperlink{class_console_1_1_table_student_a3d4de5b1fb876a32e7d6236060369534}{getStudent}}(std::ostream \&s, \textcolor{keywordtype}{int} indexStudent) \textcolor{keyword}{const};}
+\DoxyCodeLine{165         \mbox{\hyperlink{class_console_1_1_table_student_ab50f71d1677c7966f36614acfe0c04af}{\string~TableStudent}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{166     \};}
+\DoxyCodeLine{167 \}}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

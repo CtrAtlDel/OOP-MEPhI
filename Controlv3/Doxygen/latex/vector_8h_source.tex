@@ -1,0 +1,238 @@
+\hypertarget{vector_8h_source}{}\doxysection{vector.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CONTROLV3\_VECTOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CONTROLV3\_VECTOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{comment}{//todo написать гугл тесты}}
+\DoxyCodeLine{7 \textcolor{comment}{//todo написать результирующий класс}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }templates \{}
+\DoxyCodeLine{10     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{11     \textcolor{keyword}{class }\mbox{\hyperlink{classtemplates_1_1iterator}{iterator}} \{}
+\DoxyCodeLine{12     \textcolor{keyword}{private}:}
+\DoxyCodeLine{13         T *iteratorVector;}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \mbox{\hyperlink{classtemplates_1_1iterator}{iterator}}() : iteratorVector(\textcolor{keyword}{nullptr}) \{\};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         \mbox{\hyperlink{classtemplates_1_1iterator}{iterator}}(T *tmp) : iteratorVector(tmp) \{\};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         \textcolor{keywordtype}{bool} operator==(\textcolor{keyword}{const} \mbox{\hyperlink{classtemplates_1_1iterator}{iterator}} \&tmp) \textcolor{keyword}{const};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \textcolor{keywordtype}{bool} operator!=(\textcolor{keyword}{const} \mbox{\hyperlink{classtemplates_1_1iterator}{iterator}} \&tmp) \textcolor{keyword}{const};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23         T *operator-\/>();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         T \&operator*();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \mbox{\hyperlink{classtemplates_1_1iterator}{iterator<T>}} \&operator++();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{32     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtemplates_1_1iterator}{iterator<T>::operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{classtemplates_1_1iterator}{iterator}} \&tmp)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{if} (iteratorVector != tmp.iteratorVector)}
+\DoxyCodeLine{34             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{35         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{39     \textcolor{keywordtype}{bool} iterator<T>::operator!=(\textcolor{keyword}{const} iterator \&tmp)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{40         \textcolor{keywordflow}{if} (iteratorVector == tmp.iteratorVector)}
+\DoxyCodeLine{41             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{42         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{43     \}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{46     iterator<T> \&iterator<T>::operator++() \{}
+\DoxyCodeLine{47         iteratorVector++;}
+\DoxyCodeLine{48         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{52     T *iterator<T>::operator-\/>() \{}
+\DoxyCodeLine{53         \textcolor{keywordflow}{return} iteratorVector;}
+\DoxyCodeLine{54     \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{57     T \&iterator<T>::operator*() \{}
+\DoxyCodeLine{58         \textcolor{keywordflow}{return} *iteratorVector;}
+\DoxyCodeLine{59     \}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{62     \textcolor{keyword}{class }\mbox{\hyperlink{classtemplates_1_1vector}{vector}} \{}
+\DoxyCodeLine{63     \textcolor{keyword}{private}:}
+\DoxyCodeLine{64         \textcolor{keywordtype}{int} size;}
+\DoxyCodeLine{65         T *array;}
+\DoxyCodeLine{66     \textcolor{keyword}{public}:}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68         \textcolor{keyword}{friend} \textcolor{keyword}{class }iterator<T>;}
+\DoxyCodeLine{69         \textcolor{keyword}{typedef} iterator<T> iterator;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71         \textcolor{keyword}{explicit} \mbox{\hyperlink{classtemplates_1_1vector}{vector}}();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73         \textcolor{keyword}{explicit} \mbox{\hyperlink{classtemplates_1_1vector}{vector}}(\textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         \textcolor{keyword}{explicit} \mbox{\hyperlink{classtemplates_1_1vector}{vector}}(\textcolor{keywordtype}{int} size, T value);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         iterator begin() \textcolor{keyword}{const};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         iterator end() \textcolor{keyword}{const};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81         [[nodiscard]]}
+\DoxyCodeLine{82         \textcolor{keywordtype}{int} getSize()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} size; \}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         [[nodiscard]]}
+\DoxyCodeLine{85         \textcolor{keywordtype}{bool} isEmpty()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} size <= 0; \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87         T \&front();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89         T \&back();}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         \textcolor{keywordtype}{void} set(\textcolor{keywordtype}{int} index, T value) \textcolor{keyword}{const};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         T get(\textcolor{keywordtype}{int} index) \textcolor{keyword}{const};}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95         \textcolor{keywordtype}{void} push\_back(T value);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         \textcolor{keywordtype}{void} erase(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99         \textcolor{keywordtype}{void} pop\_back(T value);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101         T \&operator[](\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104         \mbox{\hyperlink{classtemplates_1_1vector}{\string~vector}}() \{}
+\DoxyCodeLine{105             \textcolor{keyword}{delete}[] array;}
+\DoxyCodeLine{106         \};}
+\DoxyCodeLine{107     \};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{110     \mbox{\hyperlink{classtemplates_1_1vector}{vector<T>::vector}}(\textcolor{keywordtype}{int} size) \{}
+\DoxyCodeLine{111         \textcolor{keywordflow}{if} (size < 0)}
+\DoxyCodeLine{112             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}Index out of range"{}});}
+\DoxyCodeLine{113         this-\/>size = size;}
+\DoxyCodeLine{114         array = \textcolor{keyword}{new} T[size];}
+\DoxyCodeLine{115     \}}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{118     vector<T>::vector(\textcolor{keywordtype}{int} size, T value) \{}
+\DoxyCodeLine{119         \textcolor{keywordflow}{if} (size < 0)}
+\DoxyCodeLine{120             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}Index out of range"{}});}
+\DoxyCodeLine{121         this-\/>size = size;}
+\DoxyCodeLine{122         array = \textcolor{keyword}{new} T[size];}
+\DoxyCodeLine{123         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; ++i) \{}
+\DoxyCodeLine{124             array[i] = value;}
+\DoxyCodeLine{125         \}}
+\DoxyCodeLine{126     \}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{129     T \&vector<T>::operator[](\textcolor{keywordtype}{int} index) \{}
+\DoxyCodeLine{130         \textcolor{keywordflow}{if} (index < 0 || index > size -\/ 1)}
+\DoxyCodeLine{131             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}Index out of range"{}});}
+\DoxyCodeLine{132         iterator iterator(this-\/>array);}
+\DoxyCodeLine{133         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; ++i) \{}
+\DoxyCodeLine{134             \textcolor{keywordflow}{if} (i == index) \{ \textcolor{keywordflow}{return} *iterator; \}\textcolor{comment}{//todo сделать if}}
+\DoxyCodeLine{135             ++iterator;}
+\DoxyCodeLine{136         \}}
+\DoxyCodeLine{137     \}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{140     \textcolor{keywordtype}{void} vector<T>::push\_back(T value) \{}
+\DoxyCodeLine{141         T *tmp = \textcolor{keyword}{new} T[size + 1];}
+\DoxyCodeLine{142         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; ++i) \{}
+\DoxyCodeLine{143             tmp[i] = this-\/>array[i];}
+\DoxyCodeLine{144         \}}
+\DoxyCodeLine{145         tmp[size] = value;}
+\DoxyCodeLine{146         T *cnt = this-\/>array;}
+\DoxyCodeLine{147         this-\/>array = tmp;}
+\DoxyCodeLine{148         \textcolor{keyword}{delete} cnt;}
+\DoxyCodeLine{149     \}}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{152     \textcolor{keywordtype}{void} vector<T>::erase(\textcolor{keywordtype}{int} index) \{ \textcolor{comment}{//delete element}}
+\DoxyCodeLine{153         \textcolor{keywordflow}{if} (index < 0 || (index > size -\/ 1))}
+\DoxyCodeLine{154             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}Index out of range"{}});}
+\DoxyCodeLine{155         \textcolor{keywordflow}{if} (this-\/>size == 1) \{}
+\DoxyCodeLine{156             T *tmp = this-\/>array;}
+\DoxyCodeLine{157             this-\/>array = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{158             \textcolor{keyword}{delete} tmp;}
+\DoxyCodeLine{159             size-\/-\/;}
+\DoxyCodeLine{160         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{161             T *tmp = \textcolor{keyword}{new} T[size -\/ 1];}
+\DoxyCodeLine{162             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{163             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; ++i) \{}
+\DoxyCodeLine{164                 \textcolor{keywordflow}{if} (i == index)}
+\DoxyCodeLine{165                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{166                 tmp[j] = this-\/>array[i];}
+\DoxyCodeLine{167                 j++;}
+\DoxyCodeLine{168             \}}
+\DoxyCodeLine{169         \}}
+\DoxyCodeLine{170     \}}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{173     T \&vector<T>::front() \{}
+\DoxyCodeLine{174         \textcolor{keywordflow}{return} array;}
+\DoxyCodeLine{175     \}}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{178     T \&vector<T>::back() \{}
+\DoxyCodeLine{179         \textcolor{keywordflow}{return} array + size;}
+\DoxyCodeLine{180     \}}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{183     \textcolor{keywordtype}{void} vector<T>::pop\_back(T value) \{}
+\DoxyCodeLine{184         erase(this-\/>size -\/ 1);}
+\DoxyCodeLine{185     \}}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{188     vector<T>::vector() \{}
+\DoxyCodeLine{189         size = 0;}
+\DoxyCodeLine{190         this-\/>array = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{191     \}}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{194     T vector<T>::get(\textcolor{keywordtype}{int} index)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{195         \textcolor{keywordflow}{if} (index < 0 || (index > size -\/ 1)) \{}
+\DoxyCodeLine{196             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}Index out of range"{}});}
+\DoxyCodeLine{197         \}}
+\DoxyCodeLine{198         iterator it;}
+\DoxyCodeLine{199         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{200         \textcolor{keywordflow}{for} ( it = begin();it != end();++it) \{}
+\DoxyCodeLine{201             \textcolor{keywordflow}{if} ( i == index)\{}
+\DoxyCodeLine{202                 \textcolor{keywordflow}{return} *it.operator-\/>();}
+\DoxyCodeLine{203             \}}
+\DoxyCodeLine{204             i++;}
+\DoxyCodeLine{205         \}}
+\DoxyCodeLine{206     \}}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{209     \textcolor{keywordtype}{void} vector<T>::set(\textcolor{keywordtype}{int} index, T value)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{210         \textcolor{keywordflow}{if} (index < 0 || (index > size -\/ 1)) \{}
+\DoxyCodeLine{211             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}Index out of range"{}});}
+\DoxyCodeLine{212         \}}
+\DoxyCodeLine{213         this-\/>array[index] = value;}
+\DoxyCodeLine{214     \}}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{217     iterator<T> vector<T>::begin()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{218         \textcolor{keywordflow}{if} (this-\/>size == 0)\{}
+\DoxyCodeLine{219             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}Size == 0"{}});}
+\DoxyCodeLine{220         \}}
+\DoxyCodeLine{221         iterator it = this-\/>array;}
+\DoxyCodeLine{222         \textcolor{keywordflow}{return} it;}
+\DoxyCodeLine{223     \}}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{226     iterator<T> vector<T>::end()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{227         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{228     \}}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231 \}}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//CONTROLV3\_VECTOR\_H}}
+
+\end{DoxyCode}

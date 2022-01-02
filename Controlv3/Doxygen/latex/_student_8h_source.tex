@@ -1,0 +1,56 @@
+\hypertarget{_student_8h_source}{}\doxysection{Student.\+h}
+\mbox{\hyperlink{_student_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef CONTROLV3\_STUDENT\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define CONTROLV3\_STUDENT\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }Console \{}
+\DoxyCodeLine{29     \textcolor{keyword}{enum} \mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151}{Category}} \{}
+\DoxyCodeLine{30         \mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151a89b2c5aa81533ffc9fe7cc2c84de9c5a}{Jun}} = \textcolor{charliteral}{'J'}, }
+\DoxyCodeLine{31         \mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151a69a05094cb97d1f7285d2023ff4e0d12}{Sen}} = \textcolor{charliteral}{'S'}, }
+\DoxyCodeLine{32         \mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151a2223fd340b811c1ae250d977112d75d3}{No}} = \textcolor{charliteral}{'-\/'} }
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{class }\mbox{\hyperlink{class_console_1_1_student}{Student}} \{}
+\DoxyCodeLine{36     \textcolor{keyword}{public}:}
+\DoxyCodeLine{37         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Getters-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{44 \textcolor{comment}{}        \textcolor{keyword}{virtual} std::string \mbox{\hyperlink{class_console_1_1_student_ade0c485a73919410bf9ef520ec9300d9}{getSurname}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{52         \textcolor{keyword}{virtual} std::string \mbox{\hyperlink{class_console_1_1_student_a12b740fb2fa78dc4402277291e57c3e1}{getInitials}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{60         \textcolor{keyword}{virtual} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_console_1_1_student_a1cd91a613d0f1aa950d8f6643973f0e5}{getCategory}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{68         \textcolor{keyword}{virtual} std::vector<double> \mbox{\hyperlink{class_console_1_1_student_abf7cdb3a01f8f2e42d5c3a66af49de7a}{getRating}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{76         \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_console_1_1_student_acc8c6d33abe0e48e99d2c5649f317304}{getSumOfRating}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Setters-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{87 \textcolor{comment}{}        \textcolor{keyword}{virtual} \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_student_a87a3e53c707deb5c0a5a757eb3f06546}{setSurname}}(\textcolor{keyword}{const} std::string \&surname) = 0;}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{95         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_student_aa1cba3210f05b8d29e8b1c3785a497aa}{setInitials}}(\textcolor{keyword}{const} std::string \&initials) = 0;}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{104         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_student_a9f1304e37d666c815a6cef04a0c7ddd7}{setRating}}(\textcolor{keywordtype}{double} rating, \textcolor{keywordtype}{int} index) = 0;}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{112         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_student_a378e377e720383abb12c28ee6ca5b4e6}{setRating}}(\textcolor{keywordtype}{double} rating) = 0;}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{120         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_student_a9720316902076ca59f5e2e43b858f278}{setCategories}}(\textcolor{keywordtype}{char} type) = 0;}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{128         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_student_a1c651b88721c7f4970070228f4b077b7}{setSumOfRating}}(\textcolor{keywordtype}{int} ratting) = 0;}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{131         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_console_1_1_student}{\string~Student}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{132     \};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134 \}}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//CONTROLV3\_STUDENT\_H}}
+
+\end{DoxyCode}

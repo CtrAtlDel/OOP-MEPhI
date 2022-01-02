@@ -1,0 +1,1 @@
+add_library(DiagramStatic src/Diagram.h src/Diagram.cpp src/func.cpp)

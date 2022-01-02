@@ -1,0 +1,57 @@
+\hypertarget{_junior_8h_source}{}\doxysection{Junior.\+h}
+\mbox{\hyperlink{_junior_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef CONTROLV3\_JUNIOR\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define CONTROLV3\_JUNIOR\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_student_8h}{Student.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }Console \{}
+\DoxyCodeLine{28     \textcolor{keyword}{class }\mbox{\hyperlink{class_console_1_1_junior}{Junior}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_console_1_1_student}{Student}} \{}
+\DoxyCodeLine{29     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{30         std::string \mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}; }
+\DoxyCodeLine{31         std::string \mbox{\hyperlink{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}{initial}}; }
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_console_1_1_junior_aad4f9bbf90c36efe24f952d28867cdc3}{sizeOfRating}}; }
+\DoxyCodeLine{33         \textcolor{keywordtype}{char} \mbox{\hyperlink{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}{category}}; }
+\DoxyCodeLine{34         std::vector<double> \mbox{\hyperlink{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}{rating}}; }
+\DoxyCodeLine{35     \textcolor{keyword}{public}:}
+\DoxyCodeLine{39         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_console_1_1_junior_a3a857e905df6fb7b8f065d4880cdce77}{Junior}}() : \mbox{\hyperlink{class_console_1_1_junior_aad4f9bbf90c36efe24f952d28867cdc3}{sizeOfRating}}(0), \mbox{\hyperlink{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}{category}}(\mbox{\hyperlink{_student_8h_aadf0dffd8cbc9649ebd4d11d57545151a89b2c5aa81533ffc9fe7cc2c84de9c5a}{Jun}}) \{\}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_console_1_1_junior_a3a857e905df6fb7b8f065d4880cdce77}{Junior}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}{initial}});}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{55         \textcolor{keyword}{explicit} \mbox{\hyperlink{class_console_1_1_junior_a3a857e905df6fb7b8f065d4880cdce77}{Junior}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}{initial}}, \textcolor{keywordtype}{int} sum);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keyword}{public}:}
+\DoxyCodeLine{58         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Getters-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{64 \textcolor{comment}{}        std::string \mbox{\hyperlink{class_console_1_1_junior_a792688130c68cf33aa45658cafef3874}{getSurname}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}; \} \textcolor{comment}{//получить фамилию}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{72         std::string \mbox{\hyperlink{class_console_1_1_junior_aaf17046f8c70d9c9d8ab313a5ef511e4}{getInitials}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_1_1_junior_a963e384414648e03723bc5aeee76502f}{initial}}; \} \textcolor{comment}{//получить инициалы}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{80         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_console_1_1_junior_a8c295704c15cf63fdd9bd4817a154ee7}{getSumOfRating}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_1_1_junior_aad4f9bbf90c36efe24f952d28867cdc3}{sizeOfRating}}; \} \textcolor{comment}{//получить количество оценок студента}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{88         \textcolor{keywordtype}{char} \mbox{\hyperlink{class_console_1_1_junior_a4b31c801fcbf8e680984652f6f91433f}{getCategory}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_1_1_junior_a0f9ee04865c30e40d47a37000e1781ce}{category}}; \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{96         std::vector<double> \mbox{\hyperlink{class_console_1_1_junior_abd9f671f21382d7907cfa0f69a4f107b}{getRating}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}{rating}}; \} \textcolor{comment}{//получить список оченок}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Setters-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{106         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_junior_a61236a5f1a1c355e51b42228fab1a465}{setSurname}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{class_console_1_1_junior_af61eaa76e0f6bfcdbf21c66f439e8b8c}{surname}}) \textcolor{keyword}{override}; \textcolor{comment}{//внести фамилию}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{114         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_junior_acdc84ee84c6bef2aa38d009ffc35ad90}{setInitials}}(\textcolor{keyword}{const} std::string \&initials) \textcolor{keyword}{override}; \textcolor{comment}{//внести инициалы}}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{123         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_junior_a1661cb9df848a94863067bee95a88fce}{setRating}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}{rating}}, \textcolor{keywordtype}{int} index) \textcolor{keyword}{override};}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{131         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_junior_a1661cb9df848a94863067bee95a88fce}{setRating}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{class_console_1_1_junior_a8cc7433780daa9e20d3e41220be542d8}{rating}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{139         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_junior_a6d4e802fcef76ff98886c1bdc2edd988}{setCategories}}(\textcolor{keywordtype}{char} type) \textcolor{keyword}{override};}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{147         \mbox{\hyperlink{class_console_1_1_student}{Student}} \&\mbox{\hyperlink{class_console_1_1_junior_aaad22288cc1f341f342d7ac306d65988}{setSumOfRating}}(\textcolor{keywordtype}{int} ratting) \textcolor{keyword}{override};}
+\DoxyCodeLine{148         \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\///}}
+\DoxyCodeLine{149     \};}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151 \}}
+\DoxyCodeLine{152 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//CONTROLV3\_JUNIOR\_H}}
+
+\end{DoxyCode}
