@@ -4,6 +4,5 @@
 int main() {
     SparceMatrix::Menu();
 
-
     return 0;
 }

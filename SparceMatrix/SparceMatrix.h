@@ -42,13 +42,17 @@ namespace SparceMatrix {
 
     void Menu();
 
+    void printMatrix(Matrix* matrix);
+
     Matrix* createMatrix();
 
-    Line *createLine(int &j, int &data);
+    Line *createLine(int &y, int &data);
 
     Line *newLine(Line *line, int &j, int &data) ;
 
     Matrix *insert(Matrix *matrix, int &i, int &j, int &data);
+
+    int getInt();
 
 }
 
