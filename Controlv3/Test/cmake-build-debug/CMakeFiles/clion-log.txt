@@ -1,4 +1,4 @@
-"/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test
+"/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test
 -- The C compiler identification is AppleClang 13.0.0.13000029
 -- The CXX compiler identification is AppleClang 13.0.0.13000029
 -- Detecting C compiler ABI info
@@ -19,4 +19,4 @@
 -- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug
+-- Build files have been written to: /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug

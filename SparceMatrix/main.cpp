@@ -2,7 +2,8 @@
 #include "SparceMatrix.h"
 
 int main() {
-    SparceMatrix::Menu();
+//    SparceMatrix::Menu();
 
+    SparceMatrix::input();
     return 0;
 }

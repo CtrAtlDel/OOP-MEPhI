@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/cmake-build-debug",
-		"source" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3"
+		"build" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/cmake-build-debug",
+		"source" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3"
 	},
 	"version" : 
 	{

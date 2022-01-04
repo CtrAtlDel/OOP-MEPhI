@@ -144,35 +144,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Test-Debug-9b207630c748799b7d9b.json",
+					"jsonFile" : "target-Test-Debug-d63021177abf8b5a3537.json",
 					"name" : "Test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "gmock::@0f7bb11d64f3678238c7",
-					"jsonFile" : "target-gmock-Debug-099d14656ab985ab9ced.json",
+					"jsonFile" : "target-gmock-Debug-fc5609142f98897d228b.json",
 					"name" : "gmock",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "gmock_main::@0f7bb11d64f3678238c7",
-					"jsonFile" : "target-gmock_main-Debug-69e7368803b34c7714b7.json",
+					"jsonFile" : "target-gmock_main-Debug-b4f767d24979ccd012cf.json",
 					"name" : "gmock_main",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
-					"jsonFile" : "target-gtest-Debug-edfa0553f826dd395987.json",
+					"jsonFile" : "target-gtest-Debug-1ce49d64494dd9b7dc0d.json",
 					"name" : "gtest",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
-					"jsonFile" : "target-gtest_main-Debug-5cee2fb924a04504c2b8.json",
+					"jsonFile" : "target-gtest_main-Debug-ba19666b1112712f70e9.json",
 					"name" : "gtest_main",
 					"projectIndex" : 3
 				}
@@ -182,8 +182,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug",
-		"source" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test"
+		"build" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug",
+		"source" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test"
 	},
 	"version" : 
 	{

@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1439,7 +1439,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps"
 		},
 		{
 			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
@@ -1547,7 +1547,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug"
 		},
 		{
 			"name" : "Test_IS_TOP_LEVEL",
@@ -1571,7 +1571,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -1631,7 +1631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest/generated"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1643,7 +1643,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1679,7 +1679,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1719,7 +1719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1743,7 +1743,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1755,7 +1755,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1779,7 +1779,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest"
+			"value" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

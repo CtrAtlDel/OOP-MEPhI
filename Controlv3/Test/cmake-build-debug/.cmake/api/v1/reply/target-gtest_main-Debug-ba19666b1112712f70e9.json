@@ -100,12 +100,12 @@
 				{
 					"backtrace" : 7,
 					"isSystem" : true,
-					"path" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include"
+					"path" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include"
 				},
 				{
 					"backtrace" : 7,
 					"isSystem" : true,
-					"path" : "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest"
+					"path" : "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest"
 				}
 			],
 			"language" : "CXX",

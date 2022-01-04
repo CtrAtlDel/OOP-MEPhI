@@ -118,7 +118,7 @@ rule CXX_STATIC_LIBRARY_LINKER__gtest_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug
+  command = "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

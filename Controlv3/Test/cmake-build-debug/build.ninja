@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/
+cmake_ninja_workdir = /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/
 
 #############################################
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -69,7 +69,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -87,7 +87,7 @@ build list_install_components: phony
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -99,7 +99,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -114,66 +114,66 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Test: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build CMakeFiles/Test.dir/test.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/test.cpp || cmake_object_order_depends_target_Test
+build CMakeFiles/Test.dir/test.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/test.cpp || cmake_object_order_depends_target_Test
   DEP_FILE = CMakeFiles/Test.dir/test.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/Test.dir
   OBJECT_FILE_DIR = CMakeFiles/Test.dir
   TARGET_COMPILE_PDB = CMakeFiles/Test.dir/
   TARGET_PDB = Test.pdb
 
-build CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Application.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Application.cpp || cmake_object_order_depends_target_Test
-  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Application.cpp.o.d
+build CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Application.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Application.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Application.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/Test.dir
-  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3
+  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3
   TARGET_COMPILE_PDB = CMakeFiles/Test.dir/
   TARGET_PDB = Test.pdb
 
-build CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Junior.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Junior.cpp || cmake_object_order_depends_target_Test
-  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Junior.cpp.o.d
+build CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Junior.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Junior.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Junior.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/Test.dir
-  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3
+  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3
   TARGET_COMPILE_PDB = CMakeFiles/Test.dir/
   TARGET_PDB = Test.pdb
 
-build CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Senior.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Senior.cpp || cmake_object_order_depends_target_Test
-  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Senior.cpp.o.d
+build CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Senior.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Senior.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Senior.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/Test.dir
-  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3
+  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3
   TARGET_COMPILE_PDB = CMakeFiles/Test.dir/
   TARGET_PDB = Test.pdb
 
-build CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/TableStudent.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/TableStudent.cpp || cmake_object_order_depends_target_Test
-  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/TableStudent.cpp.o.d
+build CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/TableStudent.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/TableStudent.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/TableStudent.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/Test.dir
-  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3
+  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3
   TARGET_COMPILE_PDB = CMakeFiles/Test.dir/
   TARGET_PDB = Test.pdb
 
-build CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Tablegroup.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Tablegroup.cpp || cmake_object_order_depends_target_Test
-  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Tablegroup.cpp.o.d
+build CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Tablegroup.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Tablegroup.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Tablegroup.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/Test.dir
-  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3
+  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3
   TARGET_COMPILE_PDB = CMakeFiles/Test.dir/
   TARGET_PDB = Test.pdb
 
-build CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/vector.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/vector.cpp || cmake_object_order_depends_target_Test
-  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/vector.cpp.o.d
+build CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/vector.cpp.o: CXX_COMPILER__Test_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/vector.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/vector.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/Test.dir
-  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3
+  OBJECT_FILE_DIR = CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3
   TARGET_COMPILE_PDB = CMakeFiles/Test.dir/
   TARGET_PDB = Test.pdb
 
@@ -185,7 +185,7 @@ build CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/vector.cpp
 #############################################
 # Link the executable Test
 
-build Test: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/test.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Application.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Junior.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Senior.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/TableStudent.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Tablegroup.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/github/OOP-MEPhI/Controlv3/vector.cpp.o | lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
+build Test: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/test.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Application.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Junior.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Senior.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/TableStudent.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Tablegroup.cpp.o CMakeFiles/Test.dir/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/vector.cpp.o | lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
   LINK_LIBRARIES = lib/libgtest_maind.a  lib/libgtestd.a
   OBJECT_DIR = CMakeFiles/Test.dir
@@ -197,7 +197,7 @@ build Test: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/test.cpp.o CMa
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/CMakeLists.txt
+# /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/CMakeLists.txt
 # =============================================================================
 
 
@@ -205,7 +205,7 @@ build Test: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/test.cpp.o CMa
 # Utility command for install/local
 
 build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -217,7 +217,7 @@ build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFi
 # Utility command for install/strip
 
 build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -229,7 +229,7 @@ build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFi
 # Utility command for install
 
 build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -247,7 +247,7 @@ build _deps/googletest-build/list_install_components: phony
 # Utility command for rebuild_cache
 
 build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -259,7 +259,7 @@ build _deps/googletest-build/rebuild_cache: phony _deps/googletest-build/CMakeFi
 # Utility command for edit_cache
 
 build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -267,7 +267,7 @@ build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
+# /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
 # =============================================================================
 
 
@@ -275,7 +275,7 @@ build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles
 # Utility command for install/local
 
 build _deps/googletest-build/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -287,7 +287,7 @@ build _deps/googletest-build/googlemock/install/local: phony _deps/googletest-bu
 # Utility command for install/strip
 
 build _deps/googletest-build/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -299,7 +299,7 @@ build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-bu
 # Utility command for install
 
 build _deps/googletest-build/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -315,10 +315,10 @@ build _deps/googletest-build/googlemock/install: phony _deps/googletest-build/go
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++2a
-  INCLUDES = -I/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/include -I/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -I/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/include -I/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
   TARGET_COMPILE_PDB = bin/libgmockd.pdb
@@ -347,7 +347,7 @@ build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-b
 # Utility command for rebuild_cache
 
 build _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -359,7 +359,7 @@ build _deps/googletest-build/googlemock/rebuild_cache: phony _deps/googletest-bu
 # Utility command for edit_cache
 
 build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -374,10 +374,10 @@ build _deps/googletest-build/googlemock/edit_cache: phony _deps/googletest-build
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
   TARGET_COMPILE_PDB = bin/libgmock_maind.pdb
@@ -409,7 +409,7 @@ build _deps/googletest-build/googlemock/list_install_components: phony
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
+# /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
 # =============================================================================
 
 
@@ -417,7 +417,7 @@ build _deps/googletest-build/googlemock/list_install_components: phony
 # Utility command for install/local
 
 build _deps/googletest-build/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -435,7 +435,7 @@ build _deps/googletest-build/googletest/list_install_components: phony
 # Utility command for rebuild_cache
 
 build _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test -B/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -447,7 +447,7 @@ build _deps/googletest-build/googletest/rebuild_cache: phony _deps/googletest-bu
 # Utility command for edit_cache
 
 build _deps/googletest-build/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -458,7 +458,7 @@ build _deps/googletest-build/googletest/edit_cache: phony _deps/googletest-build
 # Utility command for install/strip
 
 build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -470,7 +470,7 @@ build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-bu
 # Utility command for install
 
 build _deps/googletest-build/googletest/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
-  COMMAND = cd /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
+  COMMAND = cd /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest && "/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -486,10 +486,10 @@ build _deps/googletest-build/googletest/install: phony _deps/googletest-build/go
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++2a
-  INCLUDES = -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -isystem /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src
   TARGET_COMPILE_PDB = bin/libgtest_maind.pdb
@@ -522,10 +522,10 @@ build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/go
 
 build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/googletest/CMakeFiles/gtest.dir
 
-build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++2a
-  INCLUDES = -I/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -I/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -I/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest/include -I/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src
   TARGET_COMPILE_PDB = bin/libgtestd.pdb
@@ -574,28 +574,28 @@ build libgtestd.a: phony lib/libgtestd.a
 # =============================================================================
 
 #############################################
-# Folder: /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug
+# Folder: /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug
 
 build all: phony Test _deps/googletest-build/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build
+# Folder: /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build
 
 build _deps/googletest-build/all: phony _deps/googletest-build/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock
+# Folder: /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googlemock
 
 build _deps/googletest-build/googlemock/all: phony lib/libgmockd.a lib/libgmock_maind.a _deps/googletest-build/googletest/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest
+# Folder: /Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-build/googletest
 
 build _deps/googletest-build/googletest/all: phony lib/libgtest_maind.a lib/libgtestd.a
 

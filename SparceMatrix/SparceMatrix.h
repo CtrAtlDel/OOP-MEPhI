@@ -40,7 +40,10 @@ namespace SparceMatrix {
         return 1;
     }
 
-    void Menu();
+//    void Menu();
+    void input();
+
+    void print (Matrix* m) ;
 
     void printMatrix(Matrix* matrix);
 
@@ -48,7 +51,9 @@ namespace SparceMatrix {
 
     Line *createLine(int &y, int &data);
 
-    Line *newLine(Line *line, int &j, int &data) ;
+    Matrix* addElement(Matrix* m, int x, int y, int a) ;
+
+//    Line *newLine(Line *line, int &j, int &data) ;
 
     Matrix *insert(Matrix *matrix, int &i, int &j, int &data);
 

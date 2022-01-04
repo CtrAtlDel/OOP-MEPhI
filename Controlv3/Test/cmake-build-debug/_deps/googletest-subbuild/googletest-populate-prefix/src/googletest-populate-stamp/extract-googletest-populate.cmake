@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" ABSOLUTE)
-get_filename_component(directory "/Users/ivankvasov/github/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src" ABSOLUTE)
+get_filename_component(filename "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" ABSOLUTE)
+get_filename_component(directory "/Users/ivankvasov/OOP/OOP-MEPhI/Controlv3/Test/cmake-build-debug/_deps/googletest-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'
