@@ -252,7 +252,7 @@ TEST(Vector, Vector_Methods) {
     for (int i = 0; i < vector.size(); ++i) {
         ASSERT_EQ(1, vector.get(i));
     }
-    for (int & i : vector) {
+    for (int &i: vector) {
         ASSERT_EQ(1, i);
     }
     for (int i = 0; i < size; ++i) {
@@ -270,21 +270,24 @@ TEST(Vector, Vector_Methods) {
         bool flag = false;
     }
     int index = 0;
-    for (auto& it : vector) {
+    for (auto &it: vector) {
         ASSERT_EQ(index, it);
         index++;
     }
 }
 
-TEST(Vector, New_test){
+TEST(Vector, New_test) {
     templates::vector<int> vector;
     int size = 10;
     for (int i = 0; i < size; ++i) {
         vector.push_back(i);
     }
-    for (auto& it : vector) {
+    int count = 0;
+    for (auto &it: vector) {
+        count++;
         std::cout << it << std::endl;
     }
+    ASSERT_EQ(10, count);
 }
 
 

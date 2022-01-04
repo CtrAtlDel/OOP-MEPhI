@@ -108,15 +108,15 @@ namespace templates {
     };
 
     template<typename T>
-    vector<T>::vector(int size) {
+    vector<T>::vector(int size):sizes(size) {
         if (size < 0)
             throw std::invalid_argument("Index out of range");
-        this->sizes = size;
+//        this->sizes = size;
         array = new T[size];
     }
 
     template<typename T>
-    vector<T>::vector(int size, T value) {
+    vector<T>::vector(int size, T value):sizes(size) {
         if (size < 0)
             throw std::invalid_argument("Index out of range");
         this->sizes = size;
@@ -149,7 +149,6 @@ namespace templates {
         this->array = tmp;
         delete cnt;
         this->sizes++;
-
     }
 
     template<typename T>

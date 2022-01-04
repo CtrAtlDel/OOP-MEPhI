@@ -1,15 +1,15 @@
 # ninja log v5
-2	273	1640204819062594024	CMakeFiles/Controlv3.dir/Application.cpp.o	45c777e7f01da98b
-1	248	1640217457568830303	CMakeFiles/Controlv3.dir/main.cpp.o	74f881c6dd32674d
-2	350	1640204819139377382	CMakeFiles/Controlv3.dir/Tablegroup.cpp.o	fa7a4b9f5e0d8b15
-0	398	1640204765628282473	CMakeFiles/Controlv3.dir/Junior.cpp.o	b0a75485cdb0689b
-1	233	1640217457553595200	CMakeFiles/Controlv3.dir/vector.cpp.o	3aea859b6bf187d5
-1	350	1640204819137965538	CMakeFiles/Controlv3.dir/Senior.cpp.o	d8b2904aaa291632
-2	370	1640204819160300632	CMakeFiles/Controlv3.dir/TableStudent.cpp.o	b5dcb19deadd6107
-249	285	1640217457606196890	Controlv3	e488ac058eb9121d
-5	559	1641312865167274779	CMakeFiles/Controlv3.dir/vector.cpp.o	c3bba84e6d297431
-3	666	1641312865269437684	CMakeFiles/Controlv3.dir/TableStudent.cpp.o	327ed9a02cc0da5a
 4	682	1641312865273582006	CMakeFiles/Controlv3.dir/Application.cpp.o	c0012eeb34c8d7f7
-2	684	1641312865280363170	CMakeFiles/Controlv3.dir/Senior.cpp.o	5430271991b72d6a
-2	687	1641312865294792152	CMakeFiles/Controlv3.dir/Junior.cpp.o	47c2ee642442671d
+1	248	1640217457568830303	CMakeFiles/Controlv3.dir/main.cpp.o	74f881c6dd32674d
 3	729	1641312865336007418	CMakeFiles/Controlv3.dir/Tablegroup.cpp.o	f847ccc743ca4e5f
+2	687	1641312865294792152	CMakeFiles/Controlv3.dir/Junior.cpp.o	47c2ee642442671d
+5	559	1641312865167274779	CMakeFiles/Controlv3.dir/vector.cpp.o	c3bba84e6d297431
+2	684	1641312865280363170	CMakeFiles/Controlv3.dir/Senior.cpp.o	5430271991b72d6a
+3	666	1641312865269437684	CMakeFiles/Controlv3.dir/TableStudent.cpp.o	327ed9a02cc0da5a
+249	285	1640217457606196890	Controlv3	e488ac058eb9121d
+4	331	1641317343639637175	CMakeFiles/Controlv3.dir/vector.cpp.o	c3bba84e6d297431
+4	345	1641317343653710421	CMakeFiles/Controlv3.dir/Application.cpp.o	c0012eeb34c8d7f7
+4	354	1641317343663073530	CMakeFiles/Controlv3.dir/Tablegroup.cpp.o	f847ccc743ca4e5f
+3	434	1641317343742706788	CMakeFiles/Controlv3.dir/TableStudent.cpp.o	327ed9a02cc0da5a
+2	235	1641317374331567896	CMakeFiles/Controlv3.dir/main.cpp.o	757dbb0b6a434680
+235	268	1641317374365876561	Controlv3	e488ac058eb9121d

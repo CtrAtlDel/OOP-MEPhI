@@ -3,9 +3,7 @@
 
 //todo написать результирующий класс
 //todo сделать ввод студента на первый курс
-//todo сделать vector как шаблон +
 //todo сделать переход на следующий курс(добавить в новую таблицу)
-//todo сделать гугл тесты +
 //todo
 
 #include "Tablegroup.h"
@@ -33,8 +31,6 @@ namespace Console {
         void printStudent();
 
         void getMediana();
-
-    private:
 
     };
 }
