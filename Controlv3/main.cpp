@@ -1,16 +1,16 @@
 #include <iostream>
 #include "vector.h"
+#include "Junior.h"
 
 int main() {
+    Console::Junior jun;
     int size = 10;
-    templates::vector<int> vector1;
-    templates::vector<int> vector2;
     for (int i = 0; i < size; ++i) {
-        vector1.push_back(i);
+        jun.setRating(i);
     }
-    vector2 = fun(10);
-    for (int i = 0; i < vector2.size(); ++i) {
-        std::cout << vector2[i];
+    templates::vector<double> tmp = jun.getRating();
+    for (auto &it: tmp) {
+        std::cout << it << std::endl;
     }
     return 0;
 }

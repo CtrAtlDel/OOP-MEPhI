@@ -256,7 +256,6 @@ namespace templates {
         this->sizes = oldVector.sizes;
         T *oldArray = this->array;
         T *newArray = new T[this->sizes];
-        delete[] oldArray;
         for (int i = 0; i < sizes; ++i) {
             newArray[i] = oldVector.array[i];
         }
