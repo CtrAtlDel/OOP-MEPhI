@@ -33,7 +33,8 @@ TEST(Junior, Junior_setters_Test) {
     jun.setRating(0);
     jun.setRating(1);
     jun.setRating(2);
-    std::vector<double> tmp = jun.getRating();
+    templates::vector<double> tmp;
+    tmp = jun.getRating();
     for (int i = 0; i < tmp.size(); ++i) {
         ASSERT_EQ(i, tmp[i]);
     }
@@ -132,7 +133,7 @@ TEST(TableStudent, TableStudentMethods) {
     tableJuniors.setRating(0, 2);
     tableJuniors.setRating(0, 3);
 
-    std::vector<double> tmp = tableJuniors.table[0]->getRating();
+    templates::vector<double> tmp = tableJuniors.table[0]->getRating();
 
     ASSERT_EQ(1, tmp[0]);
     ASSERT_EQ(2, tmp[1]);

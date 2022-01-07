@@ -75,7 +75,7 @@ namespace templates {
 
         vector(const vector &);
 
-        vector(vector && oldVector) noexcept ;
+        vector(vector &&oldVector) noexcept;
 
         iterator begin() const;
 
@@ -105,8 +105,13 @@ namespace templates {
 
         T operator[](int index) const;
 
+        vector<T> &operator=(const vector<T> &vector);
+
+        vector<T> &operator=(vector <T> &&vector);
+
+
         ~vector() {
-           delete[] array;
+            delete[] array;
         };
     };
 
@@ -249,11 +254,13 @@ namespace templates {
     template<typename T>
     vector<T>::vector(const vector &oldVector) {
         this->sizes = oldVector.sizes;
-        this->array = new T[this->sizes];
+        T *oldArray = this->array;
+        T *newArray = new T[this->sizes];
+        delete[] oldArray;
         for (int i = 0; i < sizes; ++i) {
-            array[i] = oldVector.array[i];
+            newArray[i] = oldVector.array[i];
         }
-        delete[] oldVector.array;
+        this->array = newArray;
     }
 
     template<typename T>
@@ -263,6 +270,27 @@ namespace templates {
         oldVector.array = nullptr;
     }
 
+    template<typename T>
+    vector<T> &vector<T>::operator=(const vector <T> &vector) {
+        delete[] array;
+        this->sizes = vector.sizes;
+        array = new T[this->sizes];
+        for (int i = 0; i < sizes; ++i) {
+            array[i] = vector.array[i];
+        }
+        return *this;
+    }
+
+    template<typename T>
+    vector<T> &vector<T>::operator=(vector<T> &&vector) {
+        int num = this->sizes;
+        this->sizes = vector.sizes;
+        vector.sizes = num;
+        T *item = this->array;
+        this->array = vector.array;
+        vector.array = item;
+        return *this;
+    }
 
 }
 
