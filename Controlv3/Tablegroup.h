@@ -24,7 +24,7 @@ namespace Console {
      */
     class TableGroup {
     private:
-        TableStudent *table;///< таблица студентов
+        TableStudent* table;///< таблица студентов
         int indexGroup; ///< номер группы
         int course; ///< курс по умолчанию равен 1
         int maxRatings; ///< максимальное количество оценок
@@ -43,7 +43,7 @@ namespace Console {
         /**
          * Деструктор по умолчанию
          */
-        ~TableGroup() { delete table; };
+        ~TableGroup() { };
     public:
 
         /**
