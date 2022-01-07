@@ -66,8 +66,7 @@ Console::TableGroup &Console::TableGroup::newStudent(std::string &surname, std::
     Student *st = nullptr;
     Junior *jun = new Junior(surname, initials);
     st = jun;
-    this->table->addStudent(st);
-//    this->table->table.push_back(st); // todo what is it
+    this->table->setNewStudent(st);
     return *this;
 }
 
@@ -85,4 +84,11 @@ bool Console::TableGroup::inGroup(const std::string &surname, const std::string 
         return true;
     }
     return false;
+}
+
+std::ostream &Console::TableGroup::printAll(std::ostream &s) const {
+    for (int i = 0; i < table->getSize(); ++i) {
+
+    }
+    return s;
 }

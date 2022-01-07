@@ -11,10 +11,11 @@
 #ifndef CONTROLV3_TABLESTUDENT_H
 #define CONTROLV3_TABLESTUDENT_H
 
-
 #include <vector>
+#include "getSome.h"
 #include "Student.h"
 #include "vector.h"
+
 namespace Console {
     /**
      * \brief Таблица учащихся содержит студентов.

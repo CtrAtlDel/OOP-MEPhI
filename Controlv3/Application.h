@@ -33,7 +33,9 @@ namespace Console {
 
         int createIndex();
 
-        void printTable();
+        void printTable(int index);
+
+        std::ostream &printAllTable(std::ostream &) const;
 
         void printStudent();
 
@@ -45,7 +47,7 @@ namespace Console {
 
         TableGroup *findGroup(int index);
 
-        TableGroup* findStudent(const std::string &surname, const std::string &initials);
+        TableGroup *findStudent(const std::string &surname, const std::string &initials);
     };
 }
 

@@ -80,13 +80,14 @@ namespace Console {
         [[nodiscard]]
         int getCourse() const { return course; }
 
-        bool isFull() {
+        bool isFull() const {
             if (this->table->getSize() >= 30)
                 return true;
             else
                 return false;
         };
 
+        std::ostream& printAll(std::ostream& s) const ;
 
         //поступление на следующий курс
         TableGroup &lvlUp();

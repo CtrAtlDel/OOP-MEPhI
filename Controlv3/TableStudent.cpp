@@ -3,7 +3,6 @@
 #include "Senior.h"
 
 Console::TableStudent::TableStudent(char category, int maxSize) {
-
     this->category = category;
     this->sizeRatings = maxSize;
 }
@@ -37,7 +36,7 @@ Console::TableStudent &Console::TableStudent::setUIR(int indexStudent, const std
         throw std::invalid_argument("Junior has'nt a UIR");
     Student *st = this->table[indexStudent];
     if (this->category == Sen) {
-        Senior *tmp = dynamic_cast<Senior *>(st);
+        auto *tmp = dynamic_cast<Senior *>(st);
         //todo nullptr
         tmp->setThemeUIR(newUIR);
     }
@@ -50,7 +49,7 @@ Console::TableStudent &Console::TableStudent::setPlace(int indexStudent, const s
     if (this->category == Jun)
         throw std::invalid_argument("Junior has'nt a UIR");
     Student *student = this->table[indexStudent];
-    Senior *sen = dynamic_cast<Senior *>(student);
+    auto *sen = dynamic_cast<Senior *>(student);
     if (sen == nullptr)
         throw std::invalid_argument("Dynamic_cast error");
     //todo nullptr
@@ -77,6 +76,7 @@ Console::TableStudent &Console::TableStudent::setNewStudent(Console::Student *st
     if (student->getCategory() != this->category)
         throw std::invalid_argument("No equal category");
     this->table.push_back(student); //todo отсортировать
+//    std::sort(table.begin(), table.end(), compareFun);
     return *this;
 }
 

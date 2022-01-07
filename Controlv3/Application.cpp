@@ -109,3 +109,13 @@ void Console::Application::printStudentSurname() {
 
 }
 
+void Console::Application::printTable(const int index) {
+    if(index <0 || index > allgroup.size())
+        throw std::invalid_argument("Index out of range");
+    for (int i = 0; i < allgroup.size(); ++i) {
+        if (index == i){
+
+        }
+    }
+}
+

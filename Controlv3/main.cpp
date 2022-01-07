@@ -1,7 +1,6 @@
 #include <iostream>
 #include "vector.h"
 #include "Junior.h"
-#include "getSome.h"
 #include "Application.h"
 
 int main() {
