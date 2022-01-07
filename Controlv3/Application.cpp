@@ -41,7 +41,7 @@ int Console::Application::createIndex() {
     return allgroup.size() + 1;
 }
 
-void Console::Application::getMediana() {
+void Console::Application::getMedian() {
     std::cout << "Input index of group: -> " << std::endl;
     int index;
     getNum(index);
@@ -73,5 +73,39 @@ std::istream &Console::Application::lvlUp(std::istream &s) {
         }
     }
     return s;
+}
+
+std::ostream &
+Console::Application::printStudent(std::ostream &s, const std::string &surname, const std::string &initials) {
+    TableGroup *group = findStudent(surname, initials);
+    group->printStudent(s, surname, initials);
+    return s;
+}
+
+Console::TableGroup *Console::Application::findStudent(const std::string &surname, const std::string &initials) {
+    TableGroup *group = nullptr;
+    for (auto &i: allgroup) {
+        if (i.inGroup(surname, initials)) {
+            return &i;
+        }
+    }
+    return nullptr;
+}
+
+void Console::Application::printStudent() {
+    std::cout << "Input surname: -> " << std::endl;
+    std::string surname;
+    std::string initials;
+    getNum(surname);
+    std::cout << "Input initials" << std::endl;
+    getNum(initials);
+    this->printStudent(std::cout, surname, initials);
+}
+
+void Console::Application::printStudentSurname() {
+    std::cout << "Input surname: -> " << std::endl;
+    std::string surname;
+    getNum(surname);
+
 }
 

@@ -22,6 +22,7 @@ double Console::TableGroup::getMedian() {
     mediana /= this->table->getSize();
     return mediana;
 }
+
 //todo 215A
 std::ostream &Console::TableGroup::printTable(std::ostream &s) const {
     if (this->table->getSize() == 0) {
@@ -36,7 +37,6 @@ std::ostream &Console::TableGroup::printTable(std::ostream &s) const {
 
 std::ostream &
 Console::TableGroup::printStudent(std::ostream &s, const std::string &surname, const std::string &initials) {
-//    Student* st = search(surname, initials);
     int indexStudent = this->table->indexOfStudent(surname, initials);
     this->table->getStudent(s, indexStudent);
     return s;
@@ -63,8 +63,8 @@ Console::TableGroup::TableGroup() {
 }
 
 Console::TableGroup &Console::TableGroup::newStudent(std::string &surname, std::string &initials) {
-    Student* st = nullptr;
-    Junior* jun = new Junior(surname, initials);
+    Student *st = nullptr;
+    Junior *jun = new Junior(surname, initials);
     st = jun;
     this->table->addStudent(st);
 //    this->table->table.push_back(st); // todo what is it
@@ -77,4 +77,12 @@ Console::TableGroup &Console::TableGroup::lvlUp() {
 
 Console::TableGroup &Console::TableGroup::lvlUpStudent(const std::string &surname, const std::string &initials) {
     return *this;
+}
+
+bool Console::TableGroup::inGroup(const std::string &surname, const std::string &initials) {
+    Student *st = nullptr;
+    if (search(surname, initials)) {
+        return true;
+    }
+    return false;
 }

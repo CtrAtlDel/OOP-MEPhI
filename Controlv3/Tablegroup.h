@@ -121,9 +121,11 @@ namespace Console {
          * @param initials инициалы
          * @return
          */
-        std::ostream &printStudent(std::ostream &s, const std::string &surname, const std::string &initials);
+        std::ostream &printStudent(std::ostream &s, const std::string &surname, const std::string &initials );
 
+//        std::ostream &printStudent(std::ostream &s, const std::string &surname);
 
+        bool inGroup(const std::string &surname, const std::string &initials);
     private:
         /**
          * Поиск студента

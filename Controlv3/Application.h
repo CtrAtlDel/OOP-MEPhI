@@ -11,34 +11,41 @@
 
 namespace Console {
     class Application {
-        private:
+    private:
         templates::vector<TableGroup> allgroup;
     public:
         Application();
+
         ~Application() = default;
+
     public:
         void newGroup(char category, int maxSize, int indexGroup);
 
         //todo обрабатывать здесь сначала считывание, затем передачу как парметр
         //todo набора аргументов
 
-        std::istream& newStudent(std::istream& s);
+        std::istream &newStudent(std::istream &s);
 
-        std::istream& lvlUp(std::istream& s);
+        std::istream &lvlUp(std::istream &s);
 
 
-        void addStudentInGroup(std::string& surname, std::string& initials);
+        void addStudentInGroup(std::string &surname, std::string &initials);
 
         int createIndex();
 
         void printTable();
 
-        std::ostream& printStudent(std::ostream& s, int index, int indexGroup);
+        void printStudent();
 
-        void getMediana();
+        void printStudentSurname();
 
-        TableGroup* findGroup(int index);
+        std::ostream &printStudent(std::ostream &, const std::string &surname, const std::string &initials);
 
+        void getMedian();
+
+        TableGroup *findGroup(int index);
+
+        TableGroup* findStudent(const std::string &surname, const std::string &initials);
     };
 }
 
