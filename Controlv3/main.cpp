@@ -7,5 +7,6 @@
 int main() {
     Console::Application app;
     app.newStudent(std::cin);
+
     return 0;
 }

@@ -31,9 +31,11 @@ namespace Console {
 
         void printTable();
 
-        void printStudent();
+        std::ostream& printStudent(std::ostream& s, int index, int indexGroup);
 
         void getMediana();
+
+        TableGroup* findGroup(int index);
 
     };
 }
