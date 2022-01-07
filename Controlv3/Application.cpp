@@ -6,7 +6,7 @@ Console::Application::Application() {
 
 }
 
-std::istream& Console::Application::newStudent(std::istream&) {
+std::istream &Console::Application::newStudent(std::istream &s) {
     std::cout << "Create new Student " << std::endl;
     std::cout << "Input surname: -> " << std::endl;
     std::string surname;
@@ -16,6 +16,7 @@ std::istream& Console::Application::newStudent(std::istream&) {
     getNum(initials);
     addStudentInGroup(surname, initials);
     // todo trim surname intiials
+    return s;
 }
 
 void Console::Application::addStudentInGroup(std::string &surname, std::string &initials) {
@@ -28,9 +29,8 @@ void Console::Application::addStudentInGroup(std::string &surname, std::string &
         }
     }
     //если все группы переполнены или вообще нет групп
-    TableGroup newGroup(Jun, createIndex(), 30);
-    newGroup.newStudent(surname,initials); //todo сделать 30 константой
-    allgroup.push_back(newGroup);
+    TableGroup newGroup(Jun, createIndex(), 30);//todo сделать 30 константой
+    this->allgroup.push_back(newGroup.newStudent(surname, initials));
 }
 
 void Console::Application::newGroup(char category, int maxSize, int indexGroup) {
@@ -45,22 +45,33 @@ void Console::Application::getMediana() {
     std::cout << "Input index of group: -> " << std::endl;
     int index;
     getNum(index);
-    TableGroup* group = findGroup(index);
-    if (group == nullptr){
+    TableGroup *group = findGroup(index);
+    if (group == nullptr) {
         std::cout << "No group whith this index" << std::endl;
-    }else{
-        double mediana = group->getMediana();
+    } else {
+        double mediana = group->getMedian();
         std::cout << "This is median " << mediana << std::endl;
     }
 }
 
 Console::TableGroup *Console::Application::findGroup(int index) {
     for (int i = 0; i < this->allgroup.size(); ++i) {
-        if (i == index){
+        if (i == index) {
             return &allgroup[i];
         }
     }
     return nullptr;
 }
 
+std::istream &Console::Application::lvlUp(std::istream &s) {
+    std::cout << "Input index of group: -> " << std::endl;
+    int indexGroup;
+    getNum(indexGroup);
+    for (int i = 0; i < allgroup.size(); ++i) {
+        if (i == indexGroup) {
+
+        }
+    }
+    return s;
+}
 

@@ -12,7 +12,7 @@ Console::TableGroup::TableGroup(char category, int indexGroup, int maxRatings) :
     this->table = new TableStudent(category, maxRatings);
 }
 
-double Console::TableGroup::getMediana() {
+double Console::TableGroup::getMedian() {
     if (this->table->getSize() == 0)
         throw std::invalid_argument("Empty table(no student)");
     double mediana = 0;
@@ -66,5 +66,15 @@ Console::TableGroup &Console::TableGroup::newStudent(std::string &surname, std::
     Student* st = nullptr;
     Junior* jun = new Junior(surname, initials);
     st = jun;
-    this->table->table.push_back(st);
+    this->table->addStudent(st);
+//    this->table->table.push_back(st); // todo what is it
+    return *this;
+}
+
+Console::TableGroup &Console::TableGroup::lvlUp() {
+    return *this;
+}
+
+Console::TableGroup &Console::TableGroup::lvlUpStudent(const std::string &surname, const std::string &initials) {
+    return *this;
 }

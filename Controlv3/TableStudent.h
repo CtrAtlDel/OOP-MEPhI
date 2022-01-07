@@ -141,6 +141,8 @@ namespace Console {
          */
         double getMedian(int indexStudent);
 
+        TableStudent& addStudent(Student* st);
+
 
     private:
         /**

@@ -89,18 +89,22 @@ namespace Console {
 
 
         //поступление на следующий курс
-        TableGroup &lvlup();
+        TableGroup &lvlUp();
 
-        TableGroup &lvlup(const std::string &surname, const std::string &initials);
+        TableGroup &lvlUpStudent(const std::string &surname, const std::string &initials);
 
         /**
          * Медиана по группе
          * @return
          */
-        double getMediana();
+        double getMedian();
 
-//        //создать студента
-//        std::istream &createStudentByConsole(std::istream &s); //todo добавить студента в таблицу
+        /**
+         * Добавить нового студента
+         * @param surname
+         * @param initials
+         * @return
+         */
         TableGroup &newStudent(std::string &surname, std::string &initials);
 
         /**

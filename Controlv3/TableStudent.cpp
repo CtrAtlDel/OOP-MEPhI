@@ -171,3 +171,8 @@ Console::TableStudent &Console::TableStudent::lvlup(int indexStudent) {
     return *this;
 }
 
+Console::TableStudent &Console::TableStudent::addStudent(Console::Student *st) {
+    this->table.push_back(st);
+    return *this;
+}
+
