@@ -37,8 +37,9 @@ namespace Console {
          * @param indexGroup индекс группы
          * @param maxRatings максимальное количество оценок
          */
-        explicit TableGroup(char category, int indexGroup, int maxRatings);
+        TableGroup(char category, int indexGroup, int maxRatings);
 
+        TableGroup();
         /**
          * Деструктор по умолчанию
          */
@@ -79,6 +80,14 @@ namespace Console {
         [[nodiscard]]
         int getCourse() const { return course; }
 
+        bool isFull() {
+            if (this->table->getSize() >= 30)
+                return true;
+            else
+                return false;
+        };
+
+
         //поступление на следующий курс
         TableGroup &lvlup();
 
@@ -91,7 +100,8 @@ namespace Console {
         double getMediana();
 
 //        //создать студента
-        std::istream &createStudentByConsole(std::istream &s); //todo добавить студента в таблицу
+//        std::istream &createStudentByConsole(std::istream &s); //todo добавить студента в таблицу
+        TableGroup &newStudent(std::string &surname, std::string &initials);
 
         /**
          * Получить информацию о группе
@@ -108,6 +118,7 @@ namespace Console {
          * @return
          */
         std::ostream &printStudent(std::ostream &s, const std::string &surname, const std::string &initials);
+
 
     private:
         /**

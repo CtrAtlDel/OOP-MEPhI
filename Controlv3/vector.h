@@ -119,7 +119,6 @@ namespace templates {
     vector<T>::vector(int size):sizes(size) {
         if (size < 0)
             throw std::invalid_argument("Index out of range");
-//        this->sizes = size;
         array = new T[size];
     }
 
@@ -248,7 +247,7 @@ namespace templates {
             if (i == index) { return *iterator; }
             ++iterator;
         }
-
+        return nullptr;
     }
 
     template<typename T>

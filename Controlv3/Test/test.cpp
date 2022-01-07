@@ -286,9 +286,29 @@ TEST(Vector, New_test) {
     int count = 0;
     for (auto &it: vector) {
         count++;
-        std::cout << it << std::endl;
+//        std::cout << it << std::endl;
     }
     ASSERT_EQ(10, count);
+}
+
+TEST(TablGroup, Constructors){
+
+}
+
+TEST(TablGroup, Getters){
+
+};
+
+TEST(TablGroup, Setters){
+
+};
+
+TEST(TableGroup, lvlup){
+
+}
+
+TEST(TableGroup, MainMethods){
+
 }
 
 

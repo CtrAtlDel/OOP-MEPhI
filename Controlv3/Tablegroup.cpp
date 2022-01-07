@@ -1,4 +1,5 @@
 #include "Tablegroup.h"
+#include "Junior.h"
 #include <iostream>
 
 Console::TableGroup::TableGroup(char category, int indexGroup, int maxRatings) : course(1) {
@@ -7,6 +8,7 @@ Console::TableGroup::TableGroup(char category, int indexGroup, int maxRatings) :
     this->indexGroup = indexGroup;
     this->category = category;
     this->maxRatings = maxRatings;
+    this->course = 1; // todo first course
     this->table = new TableStudent(category, maxRatings);
 }
 
@@ -50,8 +52,19 @@ Console::Student *Console::TableGroup::search(const std::string &surname, const 
     }
     return nullptr;
 }
-//
-//Console::TableGroup &Console::TableGroup::lvlup() {
-//
-//    return *this;
-//}
+
+Console::TableGroup::TableGroup() {
+    this->category = Jun;
+    this->course = 1;
+    this->maxRatings = 10; //todo 10 max rating
+    this->indexGroup = 0;
+    this->table = new TableStudent(Jun, maxRatings);
+
+}
+
+Console::TableGroup &Console::TableGroup::newStudent(std::string &surname, std::string &initials) {
+    Student* st = nullptr;
+    Junior* jun = new Junior(surname, initials);
+    st = jun;
+    this->table->table.push_back(st);
+}

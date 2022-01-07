@@ -4,7 +4,7 @@
 //todo написать результирующий класс
 //todo сделать ввод студента на первый курс
 //todo сделать переход на следующий курс(добавить в новую таблицу)
-//todo
+//todo Добавить трим
 
 #include "Tablegroup.h"
 #include "vector.h"
@@ -13,7 +13,6 @@ namespace Console {
     class Application {
         private:
         templates::vector<TableGroup> allgroup;
-//        std::vector<TableGroup> allgroup;
     public:
         Application();
         ~Application() = default;
@@ -22,7 +21,11 @@ namespace Console {
         //todo обрабатывать здесь сначала считывание, затем передачу как парметр
         //todo набора аргументов
 
-        void newStudent();
+        std::istream& newStudent(std::istream&);
+
+        void addStudentInGroup(std::string& surname, std::string& initials);
+
+        int createIndex();
 
         void lvlup();
 
