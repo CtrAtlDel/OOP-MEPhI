@@ -104,7 +104,7 @@ std::ostream &Console::TableStudent::getStudent(std::ostream &s, int indexStuden
             s << "Initials: " << st->getInitials() << std::endl;
             s << "Number of student grades: " << st->getSumOfRating() << std::endl;
             s << "Rating: " << std::endl;
-            std::vector tmp = st->getRating();
+            templates::vector<double> tmp = st->getRating();
             for (double i: tmp) {
                 s << i << " ";
             }
@@ -117,7 +117,7 @@ std::ostream &Console::TableStudent::getStudent(std::ostream &s, int indexStuden
                 s << "Initials: " << st->getInitials() << std::endl;
                 s << "Number of student grades: " << st->getSumOfRating() << std::endl;
                 s << "Rating: ";
-                std::vector tmp = st->getRating();
+                templates::vector<double> tmp = st->getRating();
                 for (double i: tmp) {
                     s << i << " ";
                 }
@@ -150,11 +150,11 @@ double Console::TableStudent::getMedian(int indexStudent) { //средний б�
         throw std::invalid_argument("Index out of range");
     Student *student = this->table[indexStudent];
     double mediana = 0;
-    std::vector<double> tmp = student->getRating();
+    templates::vector<double> tmp = student->getRating();
     for (int i = 0; i < student->getSumOfRating(); ++i) {
         mediana += tmp[i];
     }
-    mediana /= tmp.size();
+    mediana = (double) mediana / tmp.size();
     return mediana;
 }
 

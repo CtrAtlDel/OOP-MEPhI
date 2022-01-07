@@ -13,6 +13,7 @@
 
 #include <iostream>
 #include "Student.h"
+#include "vector.h"
 
 namespace Console {
     /**
@@ -31,7 +32,7 @@ namespace Console {
         std::string initial; ///< инициалы студента
         int sizeOfRating; ///< количество оценок (фактическое) студента
         char category; ///< тип студента
-        std::vector<double> rating; ///< список оценок студента
+        templates::vector<double> rating; ///< список оценок студента
     public:
         /**
          * Конструктор по умолчанию
@@ -93,7 +94,7 @@ namespace Console {
          * \return массив оценок
          * \throw
          */
-        std::vector<double> getRating() const override { return rating; } //получить список оченок
+        templates::vector<double> getRating() const override { return rating; } //получить список оченок
 
         //------------------Setters-------------------//
 

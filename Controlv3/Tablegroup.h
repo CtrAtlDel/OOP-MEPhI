@@ -80,9 +80,9 @@ namespace Console {
         int getCourse() const { return course; }
 
         //поступление на следующий курс
-//        TableGroup &lvlup();
-//
-//        TableGroup &lvlup(const std::string &surname, const std::string &initials);
+        TableGroup &lvlup();
+
+        TableGroup &lvlup(const std::string &surname, const std::string &initials);
 
         /**
          * Медиана по группе
@@ -91,7 +91,7 @@ namespace Console {
         double getMediana();
 
 //        //создать студента
-//        std::istream &createStudentByConsole(std::istream &s); //todo добавить студента в таблицу
+        std::istream &createStudentByConsole(std::istream &s); //todo добавить студента в таблицу
 
         /**
          * Получить информацию о группе

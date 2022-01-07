@@ -13,6 +13,7 @@
 
 #include <string>
 #include <vector>
+#include "vector.h"
 
 
 namespace Console {
@@ -65,7 +66,7 @@ namespace Console {
          * \return массив оценок
          * \throw
          */
-        virtual std::vector<double> getRating() const = 0;
+        virtual templates::vector<double> getRating() const = 0;
 
         /**
          * Получить количество оценок студента

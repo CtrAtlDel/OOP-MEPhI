@@ -4,7 +4,6 @@
 #include <stdexcept>
 #include <iostream>
 
-
 namespace templates {
     template<typename T>
     class iterator {
@@ -74,6 +73,10 @@ namespace templates {
 
         vector(int size, T value);
 
+        vector(const vector &);
+
+        vector(vector && oldVector) noexcept ;
+
         iterator begin() const;
 
         iterator end() const;
@@ -103,7 +106,7 @@ namespace templates {
         T operator[](int index) const;
 
         ~vector() {
-            delete[] array;
+           delete[] array;
         };
     };
 
@@ -242,6 +245,25 @@ namespace templates {
         }
 
     }
+
+    template<typename T>
+    vector<T>::vector(const vector &oldVector) {
+        this->sizes = oldVector.sizes;
+        this->array = new T[this->sizes];
+        for (int i = 0; i < sizes; ++i) {
+            array[i] = oldVector.array[i];
+        }
+        delete[] oldVector.array;
+    }
+
+    template<typename T>
+    vector<T>::vector(vector &&oldVector) noexcept {
+        this->array = oldVector.array;
+        this->sizes = oldVector.sizes;
+        oldVector.array = nullptr;
+    }
+
+
 }
 
 #endif

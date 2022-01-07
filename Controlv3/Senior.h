@@ -76,18 +76,21 @@ namespace Console {
          * Получить тему УИР
          * \return строку с темой УИР
          */
+        [[nodiscard]]
         std::string getThemeUIR() const; //получить тему УИР
 
         /**
          * Получить место УИР
          * \return строка с местом УИР
          */
+        [[nodiscard]]
         std::string getPlaceUIR() const; //получить место выполнения УИР
 
         /**
          * Получить оценку научрука
          * \return оценка начрука
          */
+        [[nodiscard]]
         double getNumber() const; //получить оценку научрука
 
         //------------------Setters-------------------//
