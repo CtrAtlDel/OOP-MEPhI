@@ -201,23 +201,28 @@ Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
                 throw std::invalid_argument("Bad dynamic_cast jun == nullptr");
             //Чистим оценки
             jun->deleteRating();
+            //новый размер оценок(их кол-во)
             jun->setSumOfRating(sizeRating);
-
-
+            //todo вроде все
         }else{
             //Senior
             auto* sen = dynamic_cast<Senior*>(st);
             if (sen == nullptr)
                 throw std::invalid_argument("Bad dynamic_cast jun == nullptr");
             //Чистим оценки
+            sen->deleteRating();
+            sen->setSumOfRating(sizeRating);
+            //todo в чем отличие тогда
         }
     }
     return *this;
 }
+
 /*
  * Change Junior->Senior
  */
-Console::TableStudent &Console::TableStudent::lvlUpJS() {
+Console::TableStudent &Console::TableStudent::lvlUpJS(int sizeRating) {
     return *this;
 }
+
 

@@ -113,7 +113,7 @@ namespace Console {
         std::ostream &printAll(std::ostream &s) const;
 
         //поступление на следующий курс
-        TableGroup &lvlUp();
+        TableGroup &lvlUp(int sizeOfRating);
 
         TableGroup &lvlUpStudent(const std::string &surname, const std::string &initials);
 

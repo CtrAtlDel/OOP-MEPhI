@@ -71,21 +71,6 @@ Console::TableGroup &Console::TableGroup::newStudent(std::string &surname, std::
     return *this;
 }
 
-Console::TableGroup &Console::TableGroup::lvlUp() {
-    //todo посмотреть что за курс
-    // если больше четвертого, то удалить группу
-    // если больше второго, то переименовать джуниора в сеньера
-    if (this->course == 2) {
-        //увеличиваем курс на единицу и пересобираем студентов
-        ++course; // 3
-
-    }else{
-        ++course;
-
-    }
-    return *this;
-}
-
 Console::TableGroup &Console::TableGroup::lvlUpStudent(const std::string &surname, const std::string &initials) {
     return *this;
 }
@@ -174,6 +159,24 @@ Console::TableGroup &Console::TableGroup::setRating(Console::Student *st, double
 Console::TableGroup &Console::TableGroup::setUIR(Console::Student *student, const std::string &theme) {
     if (student == nullptr)
         throw std::invalid_argument("Student == nullptr");
+    return *this;
+}
+
+Console::TableGroup &Console::TableGroup::lvlUp(int sizeOfRating) {
+    //todo посмотреть что за курс
+    // если больше четвертого, то удалить группу
+    // если больше второго, то переименовать джуниора в сеньера
+    if (course == 4){
+        //todo delete all
+        return *this;
+    }
+    if (this->course == 2) {
+        //увеличиваем курс на единицу и пересобираем студентов
+        ++course; // 3
+
+        return *this;
+    }
+    table->lvlUp(sizeOfRating);
     return *this;
 }
 

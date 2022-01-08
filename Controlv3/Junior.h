@@ -28,6 +28,7 @@ namespace Console {
 
     class Junior : public Student {
     protected:
+        int maxMark;
         std::string surname; ///< фамилия студента
         std::string initial; ///< инициалы студента
         int sizeOfRating; ///< максимально возможное количество оценок студента
@@ -37,8 +38,9 @@ namespace Console {
         /**
          * Конструктор по умолчанию
          */
-        explicit Junior() : sizeOfRating(0), category(Jun) {}
+        explicit Junior() : maxMark(0), sizeOfRating(0), category(Jun) {}
 
+        explicit Junior(int maxMark) : maxMark(maxMark), sizeOfRating(0), category(Jun) {}
         /**
          * Инициализирующий конструктор
          * \param surname фамилия студента
@@ -88,7 +90,7 @@ namespace Console {
          */
         char getCategory() const override { return category; }
 
-        Student& deleteRating() override;
+        Student &deleteRating() override;
 
         /**
          * Получить список оценок стужента

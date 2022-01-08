@@ -43,7 +43,7 @@ namespace Console {
 
         TableStudent& lvlUp(int sizeRating);
 
-        TableStudent& lvlUpJS();
+        TableStudent& lvlUpJS(int sizeRating);
         /**
          * Получить максимальное количество оценок
          * \return максимальное количество оценок студентов

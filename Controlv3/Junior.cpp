@@ -28,8 +28,6 @@ Console::Student &Console::Junior::setInitials(const std::string &initials) {
 }
 
 Console::Student &Console::Junior::setRating(double rating, int index) {
-    if (rating > sizeOfRating)
-        throw std::invalid_argument("Max size");
     if (index < 0 || index > this->sizeOfRating)
         throw std::invalid_argument("Index out of range");
     this->sizeOfRating++;
@@ -38,8 +36,6 @@ Console::Student &Console::Junior::setRating(double rating, int index) {
 }
 
 Console::Student &Console::Junior::setRating(double rating) {
-    if (rating > sizeOfRating)
-        throw std::invalid_argument("Max size");
     if (rating < 0)
         throw std::invalid_argument("Bad ratting");
     this->sizeOfRating++;
@@ -58,7 +54,8 @@ Console::Student &Console::Junior::setSumOfRating(int ratting) {
 }
 
 Console::Student &Console::Junior::deleteRating() {
-    if (!rating.empty())
+    if (!rating.empty()){
         rating.clear();
+    }
     return *this;
 }
