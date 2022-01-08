@@ -1,5 +1,6 @@
 #include "Tablegroup.h"
 #include "Junior.h"
+#include "Application.h"
 #include <iostream>
 
 Console::TableGroup::TableGroup(char category, int indexGroup, int maxRatings) : course(1) {
@@ -56,7 +57,7 @@ Console::Student *Console::TableGroup::search(const std::string &surname, const 
 Console::TableGroup::TableGroup() {
     this->category = Jun;
     this->course = 1;
-    this->maxRatings = 10; //todo 10 max rating
+    this->maxRatings = Console::course_1; //todo 10 max rating
     this->indexGroup = 0;
     this->table = new TableStudent(Jun, maxRatings);
 
@@ -71,6 +72,17 @@ Console::TableGroup &Console::TableGroup::newStudent(std::string &surname, std::
 }
 
 Console::TableGroup &Console::TableGroup::lvlUp() {
+    //todo посмотреть что за курс
+    // если больше четвертого, то удалить группу
+    // если больше второго, то переименовать джуниора в сеньера
+    if (this->course == 2) {
+        //увеличиваем курс на единицу и пересобираем студентов
+        ++course; // 3
+
+    }else{
+        ++course;
+
+    }
     return *this;
 }
 
@@ -100,7 +112,7 @@ std::ostream &Console::TableGroup::printStudent(std::ostream &s, const std::stri
 }
 
 Console::Student *Console::TableGroup::search(const std::string &surname) {
-    Student* st = nullptr;
+    Student *st = nullptr;
     return st;
 }
 
@@ -119,7 +131,7 @@ Console::TableGroup::setRating(const std::string &surname, const std::string &in
 Console::TableGroup &
 Console::TableGroup::setRating(const std::string &surname, const std::string &initials, double mark,
                                int indexOfRating) {
-    int indexStudent = table->indexOfStudent(surname,initials);
+    int indexStudent = table->indexOfStudent(surname, initials);
     table->setRating(indexStudent, mark, indexOfRating);
     return *this;
 }
@@ -134,7 +146,7 @@ Console::TableGroup::setUIR(const std::string &surname, const std::string &initi
 Console::TableGroup &
 Console::TableGroup::setPlace(const std::string &surname, const std::string &initials, const std::string &place) {
     int indexStudent = table->indexOfStudent(surname, initials);
-    this->table->setPlace(indexStudent,place);
+    this->table->setPlace(indexStudent, place);
     return *this;
 }
 
@@ -145,7 +157,7 @@ Console::TableGroup::setNumberTeacher(const std::string &surname, const std::str
     return *this;
 }
 
-Console::TableGroup &Console::TableGroup::setRating(Student* st, double mark) {
+Console::TableGroup &Console::TableGroup::setRating(Student *st, double mark) {
     if (st == nullptr)
         throw std::invalid_argument("Student == nullptr");
     table->setMark(st, mark);
@@ -158,3 +170,10 @@ Console::TableGroup &Console::TableGroup::setRating(Console::Student *st, double
     table->setMark(st, mark, index);
     return *this;
 }
+
+Console::TableGroup &Console::TableGroup::setUIR(Console::Student *student, const std::string &theme) {
+    if (student == nullptr)
+        throw std::invalid_argument("Student == nullptr");
+    return *this;
+}
+

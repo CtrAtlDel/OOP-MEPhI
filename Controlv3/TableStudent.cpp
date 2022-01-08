@@ -37,7 +37,9 @@ Console::TableStudent &Console::TableStudent::setUIR(int indexStudent, const std
     Student *st = this->table[indexStudent];
     if (this->category == Sen) {
         auto *tmp = dynamic_cast<Senior *>(st);
-        //todo nullptr
+        if (tmp == nullptr){
+            throw std::invalid_argument("Bad dynamic_cast");
+        }
         tmp->setThemeUIR(newUIR);
     }
     return *this;
@@ -52,7 +54,6 @@ Console::TableStudent &Console::TableStudent::setPlace(int indexStudent, const s
     auto *sen = dynamic_cast<Senior *>(student);
     if (sen == nullptr)
         throw std::invalid_argument("Dynamic_cast error");
-    //todo nullptr
     sen->setPlaceUIR(place);
     return *this;
 }
@@ -161,7 +162,6 @@ double Console::TableStudent::getMedian(int indexStudent) { //средний б�
 Console::TableStudent &Console::TableStudent::deleteStudent(int indexStudent) {
     if (indexStudent < 0 || (indexStudent > this->table.size() - 1))
         throw std::invalid_argument("Index out of range");
-//    this->table.erase(table.begin() + indexStudent);
     this->table.erase(indexStudent);
     return *this;
 }
@@ -188,5 +188,20 @@ void Console::TableStudent::setMark(Console::Student *pStudent, double d, int in
     if (st == nullptr)
         throw std::invalid_argument("Student is nullptr");
     st->setRating(d, indexRating);
+}
+//Change max rating and clear rating vector
+Console::TableStudent &Console::TableStudent::lvlUp() {
+    if(this->table.empty())
+        throw std::invalid_argument("Size == 0");
+
+
+
+    return *this;
+}
+/*
+ * Change Junior->Senior
+ */
+Console::TableStudent &Console::TableStudent::lvlUpJS() {
+    return *this;
 }
 

@@ -95,6 +95,8 @@ namespace Console {
 
         TableGroup& setUIR(const std::string& surname, const std::string& initials, const std::string& theme);
 
+        TableGroup& setUIR(Student* student, const std::string& theme);
+
         TableGroup& setPlace(const std::string& surname, const std::string& initials, const std::string& place);
 
         TableGroup& setNumberTeacher(const std::string& surname, const std::string& initials, double number);

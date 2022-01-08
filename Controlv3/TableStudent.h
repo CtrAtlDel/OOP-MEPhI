@@ -41,6 +41,9 @@ namespace Console {
          */
         explicit TableStudent(char category, int sizeRatings);
 
+        TableStudent& lvlUp();
+
+        TableStudent& lvlUpJS();
         /**
          * Получить максимальное количество оценок
          * \return максимальное количество оценок студентов

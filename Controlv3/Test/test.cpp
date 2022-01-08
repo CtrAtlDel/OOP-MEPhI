@@ -146,16 +146,16 @@ TEST(TableStudent, TableStudentMethods) {
 
 TEST(TableGroup, Mediana){
     Console::TableGroup table1(Console::Jun, 1, 30);
-    Console::TableGroup table2(Console::Jun, 2, 30);
+    Console::TableGroup table2(Console::Sen, 2, 30);
     Console::TableGroup table3(Console::Jun, 2, 30);
 
     auto *jun1 = new Console::Junior("Small1", "AA");
     auto *jun2 = new Console::Junior("Small2", "BB");
     auto *jun3 = new Console::Junior("Small3", "CC");
 
-    auto *sen1 = new Console::Junior("Big1", "AA");
-    auto *sen2 = new Console::Junior("Big2", "BB");
-    auto *sen3 = new Console::Junior("Big3", "CC");
+    auto *sen1 = new Console::Senior("Big1", "AA");
+    auto *sen2 = new Console::Senior("Big2", "BB");
+    auto *sen3 = new Console::Senior("Big3", "CC");
 
     Console::Student *st1 = jun1;
     Console::Student *st2 = jun2;
@@ -163,12 +163,19 @@ TEST(TableGroup, Mediana){
 
     Console::Student *stS1 = sen1;
     Console::Student *stS2 = sen2;
-    Console::Student *st3 = sen3;
+    Console::Student *stS3 = sen3;
 
+    table2.newStudent(stS1);
+    table2.newStudent(stS2);
+    table2.newStudent(stS3);
+    table2.setUIR("Big1", "AA", "rosatom");
+    table2.setUIR("Big2", "BB", "gigabyte");
+
+    table2.printTable(std::cout);
 
     table1.newStudent(st1);
     table1.newStudent(st2);
-    table3.newStudent(st3);
+
     table1.setRating(st1, 1);
     table1.setRating(st1, 1);
     table1.setRating(st1, 2);

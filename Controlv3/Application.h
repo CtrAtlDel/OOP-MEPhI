@@ -10,9 +10,17 @@
 #include "vector.h"
 
 namespace Console {
+    enum {
+        course_1 = 5,
+        course_2 = 10,
+        course_3 = 15,
+        course_4 = 15
+    };
+
     class Application {
     private:
-        templates::vector<TableGroup> allgroup;
+        templates::vector<TableGroup> allGroup;
+
     public:
         Application();
 
@@ -26,8 +34,11 @@ namespace Console {
 
         std::istream &newStudent(std::istream &s);
 
-        std::istream &lvlUp(std::istream &s); //todo добавить еще УИР для старшекурсников
+        void lvlUp();
 
+        Application& lvlUp(int index);
+
+        std::istream &lvlUp(std::istream &s); //todo добавить еще УИР для старшекурсников
 
         void addStudentInGroup(std::string &surname, std::string &initials);
 
@@ -39,9 +50,9 @@ namespace Console {
 
         void printStudent();
 
-        void printStudent(const std::string& surname);
+        void printStudent(const std::string &surname);
 
-        void printStudentSurname(); /// пока нет
+        void printStudentSurname(); /// напечатать по фамилии
 
         std::ostream &printStudent(std::ostream &, const std::string &surname, const std::string &initials);
 
