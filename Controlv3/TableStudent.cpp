@@ -200,10 +200,9 @@ Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
             if (jun == nullptr)
                 throw std::invalid_argument("Bad dynamic_cast jun == nullptr");
             //Чистим оценки
-            templates::vector<double> list = jun->getRating();
-            for (int i = 0; i < list.size(); ++i) {
+            jun->deleteRating();
+            jun->setSumOfRating(sizeRating);
 
-            }
 
         }else{
             //Senior

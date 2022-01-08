@@ -30,7 +30,7 @@ namespace Console {
     protected:
         std::string surname; ///< фамилия студента
         std::string initial; ///< инициалы студента
-        int sizeOfRating; ///< количество оценок (фактическое) студента
+        int sizeOfRating; ///< максимально возможное количество оценок студента
         char category; ///< тип студента
         templates::vector<double> rating; ///< список оценок студента
     public:

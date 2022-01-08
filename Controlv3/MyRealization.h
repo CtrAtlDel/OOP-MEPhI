@@ -10,7 +10,6 @@ namespace MyFun {
             src.erase(std::find_if_not(src.rbegin(), src.rend(), ::isspace).base(), src.end());
             src.erase(src.begin(), std::find_if_not(src.begin(), src.end(), ::isspace));
         }
-
     };
 }
 
