@@ -1,6 +1,7 @@
 #include "Application.h"
 #include <iostream>
 #include "getSome.h"
+#include "MyRealization.h"
 
 Console::Application::Application() {
 
@@ -12,8 +13,10 @@ std::istream &Console::Application::newStudent(std::istream &s) {
     std::string surname;
     std::string initials;
     getNum(surname);
+    MyFun::MyRealization::trim(surname);
     std::cout << "Input initials: -> " << std::endl;
     getNum(initials);
+    MyFun::MyRealization::trim(initials);
     addStudentInGroup(surname, initials);
     // todo trim surname intiials
     return s;
@@ -49,8 +52,8 @@ void Console::Application::getMedian() {
     if (group == nullptr) {
         std::cout << "No group whith this index" << std::endl;
     } else {
-        double mediana = group->getMedian();
-        std::cout << "This is median " << mediana << std::endl;
+        double median = group->getMedian();
+        std::cout << "This is median " << median << std::endl;
     }
 }
 
@@ -102,20 +105,36 @@ void Console::Application::printStudent() {
     this->printStudent(std::cout, surname, initials);
 }
 
+/**
+ * печать студента по фамилии
+ */
 void Console::Application::printStudentSurname() {
     std::cout << "Input surname: -> " << std::endl;
     std::string surname;
     getNum(surname);
-
+    MyFun::MyRealization::trim(surname);
 }
 
+/**
+ * Индекс студента, которого нужно напечаать
+ * @param index
+ */
 void Console::Application::printTable(const int index) {
-    if(index <0 || index > allgroup.size())
+    if (index < 0 || index > allgroup.size())
         throw std::invalid_argument("Index out of range");
     for (int i = 0; i < allgroup.size(); ++i) {
-        if (index == i){
-
+        if (index == i) {
+            //todo печатать
         }
     }
+}
+
+std::ostream &Console::Application::printAllTable(std::ostream &s) const {
+
+    return s;
+}
+
+void Console::Application::printStudent(const std::string &surname) {
+
 }
 

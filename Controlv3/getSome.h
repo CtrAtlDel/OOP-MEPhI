@@ -18,4 +18,5 @@ int getNum(T &a) {
     return 1;
 }
 
+
 #endif //TEST_GETSOME_H

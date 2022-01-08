@@ -26,7 +26,7 @@ namespace Console {
 
         std::istream &newStudent(std::istream &s);
 
-        std::istream &lvlUp(std::istream &s);
+        std::istream &lvlUp(std::istream &s); //todo добавить еще УИР для старшекурсников
 
 
         void addStudentInGroup(std::string &surname, std::string &initials);
@@ -38,6 +38,8 @@ namespace Console {
         std::ostream &printAllTable(std::ostream &) const;
 
         void printStudent();
+
+        void printStudent(const std::string& surname);
 
         void printStudentSurname();
 
