@@ -63,7 +63,7 @@ namespace Console {
         char getCategory() const { return this->category; }
 
         /**
-         * Номер студента в таблице
+         * Получить номер студента в таблице по имени и фамиилии
          * \param surname фамилия студента
          * \param initials инициалы студента
          * \return номер студента
@@ -168,6 +168,10 @@ namespace Console {
          * Деструктор по умолчанию
          */
         ~TableStudent() = default;
+
+        void setMark(Student *pStudent, double d);
+
+        void setMark(Student *pStudent, double d, int indexRating);
     };
 }
 

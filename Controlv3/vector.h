@@ -227,7 +227,7 @@ namespace templates {
     template<typename T>
     iterator<T> vector<T>::begin() const {
         if (this->sizes == 0) {
-            throw std::invalid_argument("Size == 0");
+            return nullptr;
         }
         iterator it = this->array;
         return it;
@@ -235,6 +235,9 @@ namespace templates {
 
     template<typename T>
     iterator<T> vector<T>::end() const {
+        if (this->sizes == 0) {
+            return nullptr;
+        }
         return this->array + sizes;
     }
 

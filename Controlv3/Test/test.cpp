@@ -153,19 +153,30 @@ TEST(TableGroup, Mediana){
     auto *jun2 = new Console::Junior("Small2", "BB");
     auto *jun3 = new Console::Junior("Small3", "CC");
 
+    auto *sen1 = new Console::Junior("Big1", "AA");
+    auto *sen2 = new Console::Junior("Big2", "BB");
+    auto *sen3 = new Console::Junior("Big3", "CC");
+
     Console::Student *st1 = jun1;
     Console::Student *st2 = jun2;
     Console::Student *st3 = jun3;
 
-    table1.newStudent(st1);
-    table2.newStudent(st2);
-    table3.newStudent(st3);
+    Console::Student *stS1 = sen1;
+    Console::Student *stS2 = sen2;
+    Console::Student *st3 = sen3;
 
-//    tableJuniors.setRating(0, 1);
-//    tableJuniors.setRating(0, 1);
-//    tableJuniors.setRating(0, 2, 1);
-//    tableJuniors.setRating(0, 2);
-//    tableJuniors.setRating(0, 3);
+
+    table1.newStudent(st1);
+    table1.newStudent(st2);
+    table3.newStudent(st3);
+    table1.setRating(st1, 1);
+    table1.setRating(st1, 1);
+    table1.setRating(st1, 2);
+    table1.setRating(st1, 3);
+
+    table1.printTable(std::cout);
+    table1.setRating(st1, 5, 1);
+    table1.printTable(std::cout);
 
 }
 
@@ -232,7 +243,6 @@ TEST(Vector, Vector_Constructors) {
 
 TEST(Vector, Vector_throw) {
     templates::vector<int> vector;
-    ASSERT_ANY_THROW(vector.begin());
     ASSERT_ANY_THROW(vector.get(-1));
     ASSERT_ANY_THROW(vector.get(5));
     ASSERT_ANY_THROW(vector.erase(3));

@@ -88,7 +88,19 @@ namespace Console {
         TableGroup& setRating(const std::string& surname, const std::string& initials, double mark);
 
         TableGroup& setRating(const std::string& surname, const std::string& initials, double mark, int indexOfRating);
+
+        TableGroup& setRating(Student* st, double mark);
+
+        TableGroup& setRating(Student* st, double mark, int index);
+
+        TableGroup& setUIR(const std::string& surname, const std::string& initials, const std::string& theme);
+
+        TableGroup& setPlace(const std::string& surname, const std::string& initials, const std::string& place);
+
+        TableGroup& setNumberTeacher(const std::string& surname, const std::string& initials, double number);
+
         ///-------------------------------------------///
+        [[nodiscard]]
         bool isFull() const {
             if (this->table->getSize() >= 30)
                 return true;

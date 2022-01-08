@@ -176,3 +176,17 @@ Console::TableStudent &Console::TableStudent::addStudent(Console::Student *st) {
     return *this;
 }
 
+void Console::TableStudent::setMark(Console::Student *pStudent, double d) {
+    Student* st = pStudent;
+    if (st == nullptr)
+        throw std::invalid_argument("Student is nullptr");
+    st->setRating(d);
+}
+
+void Console::TableStudent::setMark(Console::Student *pStudent, double d, int indexRating) {
+    Student* st = pStudent;
+    if (st == nullptr)
+        throw std::invalid_argument("Student is nullptr");
+    st->setRating(d, indexRating);
+}
+
