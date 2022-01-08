@@ -135,6 +135,8 @@ namespace Console {
          */
         virtual Student& deleteRating() = 0;
 
+        virtual Student& setMaxMark(int maxMark) = 0;
+
         virtual ~Student() = default;
     };
 

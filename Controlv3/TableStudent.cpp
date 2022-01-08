@@ -37,7 +37,7 @@ Console::TableStudent &Console::TableStudent::setUIR(int indexStudent, const std
     Student *st = this->table[indexStudent];
     if (this->category == Sen) {
         auto *tmp = dynamic_cast<Senior *>(st);
-        if (tmp == nullptr){
+        if (tmp == nullptr) {
             throw std::invalid_argument("Bad dynamic_cast");
         }
         tmp->setThemeUIR(newUIR);
@@ -177,41 +177,44 @@ Console::TableStudent &Console::TableStudent::addStudent(Console::Student *st) {
 }
 
 void Console::TableStudent::setMark(Console::Student *pStudent, double d) {
-    Student* st = pStudent;
+    Student *st = pStudent;
     if (st == nullptr)
         throw std::invalid_argument("Student is nullptr");
     st->setRating(d);
 }
 
 void Console::TableStudent::setMark(Console::Student *pStudent, double d, int indexRating) {
-    Student* st = pStudent;
+    Student *st = pStudent;
     if (st == nullptr)
         throw std::invalid_argument("Student is nullptr");
     st->setRating(d, indexRating);
 }
+
 //Change max rating and clear rating vector
 Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
-    if(this->table.empty())
+    if (this->table.empty())
         throw std::invalid_argument("Size == 0");
-    for (auto st : table) {
-        if (category == Jun){
+    for (auto st: table) {
+        if (category == Jun) {
             //Junior
-            auto* jun = dynamic_cast<Junior*>(st);
+            auto *jun = dynamic_cast<Junior *>(st);
             if (jun == nullptr)
                 throw std::invalid_argument("Bad dynamic_cast jun == nullptr");
             //Чистим оценки
             jun->deleteRating();
             //новый размер оценок(их кол-во)
-            jun->setSumOfRating(sizeRating);
+            jun->setMaxMark(sizeRating);
+//            jun->setSumOfRating(sizeRating);
             //todo вроде все
-        }else{
+        } else {
             //Senior
-            auto* sen = dynamic_cast<Senior*>(st);
+            auto *sen = dynamic_cast<Senior *>(st);
             if (sen == nullptr)
                 throw std::invalid_argument("Bad dynamic_cast jun == nullptr");
             //Чистим оценки
             sen->deleteRating();
-            sen->setSumOfRating(sizeRating);
+//            sen->setSumOfRating(sizeRating);
+            sen->setMaxMark(sizeRating);
             //todo в чем отличие тогда
         }
     }
@@ -222,6 +225,18 @@ Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
  * Change Junior->Senior
  */
 Console::TableStudent &Console::TableStudent::lvlUpJS(int sizeRating) {
+    this->category = Sen;
+    for (int i = 0; i < this->table.size(); ++i) {
+        Student *st = nullptr;
+        Senior *sen = nullptr;
+        Junior *jun = nullptr;
+        st = table[i];
+        sen = new Senior(st->getSurname(), st->getInitials());
+        sen->setMaxMark(sizeRating);
+        st = sen;
+        table[i] = sen;
+        //todo сделать запись УИР отжельно
+    }
     return *this;
 }
 

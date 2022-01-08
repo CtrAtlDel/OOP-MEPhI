@@ -59,3 +59,8 @@ Console::Student &Console::Junior::deleteRating() {
     }
     return *this;
 }
+
+Console::Student &Console::Junior::setMaxMark(int maxMark) {
+    this->maxMark = maxMark;
+    return *this;
+}

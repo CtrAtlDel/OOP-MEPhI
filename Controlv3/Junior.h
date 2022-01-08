@@ -108,6 +108,8 @@ namespace Console {
          * \return ссылку на измененный объект класса
          * \throw
          */
+        Student& setMaxMark(int maxMark) override;
+
         Student &setSurname(const std::string &surname) override; //внести фамилию
 
         /**
