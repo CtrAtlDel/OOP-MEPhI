@@ -15,12 +15,12 @@ Console::TableGroup::TableGroup(char category, int indexGroup, int maxRatings) :
 double Console::TableGroup::getMedian() {
     if (this->table->getSize() == 0)
         throw std::invalid_argument("Empty table(no student)");
-    double mediana = 0;
+    double median = 0;
     for (int i = 0; i < this->table->getSize(); ++i) {
-        mediana += this->table->getMedian(i);
+        median += this->table->getMedian(i);
     }
-    mediana = (double) mediana / this->table->getSize();
-    return mediana;
+    median = (double) median / this->table->getSize();
+    return median;
 }
 
 //todo 215A
@@ -106,5 +106,20 @@ Console::Student *Console::TableGroup::search(const std::string &surname) {
 
 Console::TableGroup &Console::TableGroup::newStudent(Console::Student *st) {
     this->table->setNewStudent(st);
+    return *this;
+}
+
+Console::TableGroup &
+Console::TableGroup::setRating(const std::string &surname, const std::string &initials, double mark) {
+    int indexStudent = table->indexOfStudent(surname, initials);
+    table->setRating(indexStudent, mark);
+    return *this;
+}
+
+Console::TableGroup &
+Console::TableGroup::setRating(const std::string &surname, const std::string &initials, double mark,
+                               int indexOfRating) {
+    int indexStudent = table->indexOfStudent(surname,initials);
+    table->setRating(indexStudent, mark, indexOfRating);
     return *this;
 }

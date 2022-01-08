@@ -85,7 +85,9 @@ namespace Console {
         [[nodiscard]]
         int getCourse() const { return course; }
         ///------------------Setters------------------///
+        TableGroup& setRating(const std::string& surname, const std::string& initials, double mark);
 
+        TableGroup& setRating(const std::string& surname, const std::string& initials, double mark, int indexOfRating);
         ///-------------------------------------------///
         bool isFull() const {
             if (this->table->getSize() >= 30)
