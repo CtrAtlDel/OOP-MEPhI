@@ -19,7 +19,7 @@ double Console::TableGroup::getMedian() {
     for (int i = 0; i < this->table->getSize(); ++i) {
         mediana += this->table->getMedian(i);
     }
-    mediana /= this->table->getSize();
+    mediana = (double) mediana / this->table->getSize();
     return mediana;
 }
 
@@ -91,4 +91,20 @@ std::ostream &Console::TableGroup::printAll(std::ostream &s) const {
 
     }
     return s;
+}
+
+std::ostream &Console::TableGroup::printStudent(std::ostream &s, const std::string &surname) {
+//    int indexStudent = this->table->indexOfStudent(surname, initials);
+//    this->table->getStudent(s, indexStudent);
+    return s;
+}
+
+Console::Student *Console::TableGroup::search(const std::string &surname) {
+    Student* st = nullptr;
+    return st;
+}
+
+Console::TableGroup &Console::TableGroup::newStudent(Console::Student *st) {
+    this->table->setNewStudent(st);
+    return *this;
 }

@@ -5,7 +5,7 @@
 
 int main() {
     Console::Application app;
-    app.newStudent(std::cin);
 
+//    app.getMedian();
     return 0;
 }

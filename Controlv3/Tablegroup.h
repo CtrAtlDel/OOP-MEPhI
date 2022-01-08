@@ -15,6 +15,10 @@
 #include "TableStudent.h"
 #include <string>
 
+
+//todo set rating by surname and initials
+
+
 namespace Console {
     /**
      * \brief Таблица группы содержит таблицу учащихся и параметры учащихся
@@ -24,7 +28,7 @@ namespace Console {
      */
     class TableGroup {
     private:
-        TableStudent* table;///< таблица студентов
+        TableStudent *table;///< таблица студентов
         int indexGroup; ///< номер группы
         int course; ///< курс по умолчанию равен 1
         int maxRatings; ///< максимальное количество оценок
@@ -40,10 +44,11 @@ namespace Console {
         TableGroup(char category, int indexGroup, int maxRatings);
 
         TableGroup();
+
         /**
          * Деструктор по умолчанию
          */
-        ~TableGroup() { };
+        ~TableGroup() = default;;
     public:
 
         /**
@@ -79,7 +84,9 @@ namespace Console {
          */
         [[nodiscard]]
         int getCourse() const { return course; }
+        ///------------------Setters------------------///
 
+        ///-------------------------------------------///
         bool isFull() const {
             if (this->table->getSize() >= 30)
                 return true;
@@ -87,7 +94,7 @@ namespace Console {
                 return false;
         };
 
-        std::ostream& printAll(std::ostream& s) const ;
+        std::ostream &printAll(std::ostream &s) const;
 
         //поступление на следующий курс
         TableGroup &lvlUp();
@@ -108,6 +115,7 @@ namespace Console {
          */
         TableGroup &newStudent(std::string &surname, std::string &initials);
 
+        TableGroup &newStudent(Student* st);
         /**
          * Получить информацию о группе
          * @param s входной поток
@@ -122,11 +130,12 @@ namespace Console {
          * @param initials инициалы
          * @return
          */
-        std::ostream &printStudent(std::ostream &s, const std::string &surname, const std::string &initials );
+        std::ostream &printStudent(std::ostream &s, const std::string &surname, const std::string &initials);
 
-//        std::ostream &printStudent(std::ostream &s, const std::string &surname);
+        std::ostream &printStudent(std::ostream &s, const std::string &surname);
 
         bool inGroup(const std::string &surname, const std::string &initials);
+
     private:
         /**
          * Поиск студента
@@ -135,6 +144,8 @@ namespace Console {
          * @return
          */
         Student *search(const std::string &surname, const std::string &initials);
+
+        Student *search(const std::string &surname);
     };
 }
 

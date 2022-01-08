@@ -149,13 +149,13 @@ double Console::TableStudent::getMedian(int indexStudent) { //средний б�
     if (indexStudent < 0 || (indexStudent > this->table.size() - 1))
         throw std::invalid_argument("Index out of range");
     Student *student = this->table[indexStudent];
-    double mediana = 0;
+    double median = 0;
     templates::vector<double> tmp = student->getRating();
-    for (int i = 0; i < student->getSumOfRating(); ++i) {
-        mediana += tmp[i];
+    for (int i = 0; i < tmp.size(); ++i) {
+        median += tmp[i];
     }
-    mediana = (double) mediana / tmp.size();
-    return mediana;
+    median = (double) median / tmp.size();
+    return median;
 }
 
 Console::TableStudent &Console::TableStudent::deleteStudent(int indexStudent) {

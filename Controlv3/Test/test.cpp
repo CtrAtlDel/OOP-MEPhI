@@ -137,10 +137,35 @@ TEST(TableStudent, TableStudentMethods) {
 
     ASSERT_EQ(1, tmp[0]);
     ASSERT_EQ(2, tmp[1]);
-//    ASSERT_EQ(2, tableJuniors.getMedian(0));
+    ASSERT_EQ(2, tableJuniors.getMedian(0));
     tableSeniors.setUIR(0, "ATOM");
     tableSeniors.setPlace(0, "ROSATOM");
     Console::Student *st = nullptr;
+
+}
+
+TEST(TableGroup, Mediana){
+    Console::TableGroup table1(Console::Jun, 1, 30);
+    Console::TableGroup table2(Console::Jun, 2, 30);
+    Console::TableGroup table3(Console::Jun, 2, 30);
+
+    auto *jun1 = new Console::Junior("Small1", "AA");
+    auto *jun2 = new Console::Junior("Small2", "BB");
+    auto *jun3 = new Console::Junior("Small3", "CC");
+
+    Console::Student *st1 = jun1;
+    Console::Student *st2 = jun2;
+    Console::Student *st3 = jun3;
+
+    table1.newStudent(st1);
+    table2.newStudent(st2);
+    table3.newStudent(st3);
+
+//    tableJuniors.setRating(0, 1);
+//    tableJuniors.setRating(0, 1);
+//    tableJuniors.setRating(0, 2, 1);
+//    tableJuniors.setRating(0, 2);
+//    tableJuniors.setRating(0, 3);
 
 }
 
@@ -289,26 +314,6 @@ TEST(Vector, New_test) {
 //        std::cout << it << std::endl;
     }
     ASSERT_EQ(10, count);
-}
-
-TEST(TablGroup, Constructors){
-
-}
-
-TEST(TablGroup, Getters){
-
-};
-
-TEST(TablGroup, Setters){
-
-};
-
-TEST(TableGroup, lvlup){
-
-}
-
-TEST(TableGroup, MainMethods){
-
 }
 
 

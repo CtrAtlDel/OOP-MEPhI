@@ -1,10 +1,10 @@
 #ifndef CONTROLV3_APPLICATION_H
 #define CONTROLV3_APPLICATION_H
 
-//todo написать результирующий класс
-//todo сделать ввод студента на первый курс
+//todo написать результирующий класс +-
+//todo сделать ввод студента на первый курс +
 //todo сделать переход на следующий курс(добавить в новую таблицу)
-//todo Добавить трим
+//todo Добавить трим +
 
 #include "Tablegroup.h"
 #include "vector.h"
@@ -41,7 +41,7 @@ namespace Console {
 
         void printStudent(const std::string& surname);
 
-        void printStudentSurname();
+        void printStudentSurname(); /// пока нет
 
         std::ostream &printStudent(std::ostream &, const std::string &surname, const std::string &initials);
 

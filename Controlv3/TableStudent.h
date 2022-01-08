@@ -30,7 +30,6 @@ namespace Console {
     class TableStudent {
     public:
         templates::vector<Student*> table;
-//        std::vector<Student *> table;///< таблица студентов
         char category; ///< категория студентов
         int sizeRatings;///< максимальное количество оценок
 
@@ -156,6 +155,7 @@ namespace Console {
         Student *search(const std::string &surname, const std::string &initials) const;
 
     public:
+
         /**
          * Получить студента
          * @param s входной поток
@@ -163,6 +163,7 @@ namespace Console {
          * @return сслыка на измененный поток
          */
         std::ostream &getStudent(std::ostream &s, int indexStudent) const;
+
         /**
          * Деструктор по умолчанию
          */
