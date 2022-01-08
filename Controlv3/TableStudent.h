@@ -41,7 +41,7 @@ namespace Console {
          */
         explicit TableStudent(char category, int sizeRatings);
 
-        TableStudent& lvlUp();
+        TableStudent& lvlUp(int sizeRating);
 
         TableStudent& lvlUpJS();
         /**

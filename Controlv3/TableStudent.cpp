@@ -190,12 +190,29 @@ void Console::TableStudent::setMark(Console::Student *pStudent, double d, int in
     st->setRating(d, indexRating);
 }
 //Change max rating and clear rating vector
-Console::TableStudent &Console::TableStudent::lvlUp() {
+Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
     if(this->table.empty())
         throw std::invalid_argument("Size == 0");
+    for (auto st : table) {
+        if (category == Jun){
+            //Junior
+            auto* jun = dynamic_cast<Junior*>(st);
+            if (jun == nullptr)
+                throw std::invalid_argument("Bad dynamic_cast jun == nullptr");
+            //Чистим оценки
+            templates::vector<double> list = jun->getRating();
+            for (int i = 0; i < list.size(); ++i) {
 
+            }
 
-
+        }else{
+            //Senior
+            auto* sen = dynamic_cast<Senior*>(st);
+            if (sen == nullptr)
+                throw std::invalid_argument("Bad dynamic_cast jun == nullptr");
+            //Чистим оценки
+        }
+    }
     return *this;
 }
 /*
