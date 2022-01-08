@@ -105,6 +105,8 @@ namespace templates {
 
         T operator[](int index) const;
 
+        void clear();
+
         vector<T> &operator=(const vector<T> &vector);
 
         vector<T> &operator=(vector <T> &&vector);
@@ -291,6 +293,15 @@ namespace templates {
         this->array = vector.array;
         vector.array = item;
         return *this;
+    }
+
+    template<typename T>
+    void vector<T>::clear() {
+        if (this->sizes == 0)
+            throw std::invalid_argument("Size == 0");
+        delete[] this->array;
+        this->array = nullptr;
+        this->sizes = 0;
     }
 
 }

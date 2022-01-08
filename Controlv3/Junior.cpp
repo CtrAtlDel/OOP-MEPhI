@@ -52,3 +52,9 @@ Console::Student &Console::Junior::setSumOfRating(int ratting) {
     this->sizeOfRating = ratting;
     return *this;
 }
+
+Console::Student &Console::Junior::deleteRating() {
+    if (!rating.empty())
+        rating.clear();
+    return *this;
+}

@@ -129,6 +129,12 @@ namespace Console {
         virtual Student &setSumOfRating(int ratting) = 0;
 
         //---------------------------------------------//
+        /**
+         * Очищает буфер оценок
+         * @return
+         */
+        virtual Student& deleteRating() = 0;
+
         virtual ~Student() = default;
     };
 

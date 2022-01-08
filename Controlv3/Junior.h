@@ -88,6 +88,8 @@ namespace Console {
          */
         char getCategory() const override { return category; }
 
+        Student& deleteRating() override;
+
         /**
          * Получить список оценок стужента
          * \param не имеет параметров

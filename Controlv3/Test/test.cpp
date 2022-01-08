@@ -144,7 +144,7 @@ TEST(TableStudent, TableStudentMethods) {
 
 }
 
-TEST(TableGroup, Mediana){
+TEST(TableGroup, Mediana) {
     Console::TableGroup table1(Console::Jun, 1, 30);
     Console::TableGroup table2(Console::Sen, 2, 30);
     Console::TableGroup table3(Console::Jun, 2, 30);
@@ -328,9 +328,19 @@ TEST(Vector, New_test) {
     int count = 0;
     for (auto &it: vector) {
         count++;
-//        std::cout << it << std::endl;
     }
     ASSERT_EQ(10, count);
+    templates::vector<double> vector11;
+    int size11 = 10;
+    for (int i = 0; i < size11; ++i)
+        vector11.push_back(i);
+    vector11.clear();
+    ASSERT_EQ(0, vector11.size());
+    ASSERT_EQ(true, vector11.empty());
+    for (int i = 0; i < size11; ++i) {
+        vector11.push_back(i);
+    }
+    ASSERT_EQ(10, vector11.size());
 }
 
 
