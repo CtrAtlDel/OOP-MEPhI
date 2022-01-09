@@ -204,7 +204,6 @@ Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
             jun->deleteRating();
             //новый размер оценок(их кол-во)
             jun->setMaxMark(sizeRating);
-//            jun->setSumOfRating(sizeRating);
             //todo вроде все
         } else {
             //Senior

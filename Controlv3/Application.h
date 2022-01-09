@@ -38,16 +38,39 @@ namespace Console {
 
         void lvlUp();
 
-        Application& lvlUp(int index);
+        Application& lvlUp(int index, int maxMark);
 
         std::istream &lvlUp(std::istream &s); //todo добавить еще УИР для старшекурсников
 
+
+        /**
+         * Ввести тему УИР
+         */
+        void inputThemeUIR();
+
+        void inputPlaceUIR();
+
+        void inputNumberTeacher();
+
+        Application& setUIR(const std::string& surname, const std::string& initials, const std::string& theme);
+
+        Application& setPlace(const std::string& surname, const std::string& initials, const std::string& place);
+
+        Application& setNumberTeacher(const std::string& surname, const std::string& initials, double number);
+
         void addStudentInGroup(std::string &surname, std::string &initials);
+
+
 
         int createIndex();
 
         void printTable(int index);
 
+
+        /**
+         * Print all group
+         * @return
+         */
         std::ostream &printAllTable(std::ostream &) const;
 
         void printStudent();

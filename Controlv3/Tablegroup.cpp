@@ -24,11 +24,11 @@ double Console::TableGroup::getMedian() {
     return median;
 }
 
-//todo 215A
 std::ostream &Console::TableGroup::printTable(std::ostream &s) const {
     if (this->table->getSize() == 0) {
         s << "Empty group";
     } else {
+        s << "Index group: " << this->getIndexGroup() << std::endl;
         for (int i = 0; i < this->table->getSize(); ++i) {
             this->table->getStudent(s, i);
         }
@@ -81,13 +81,6 @@ bool Console::TableGroup::inGroup(const std::string &surname, const std::string 
         return true;
     }
     return false;
-}
-
-std::ostream &Console::TableGroup::printAll(std::ostream &s) const {
-    for (int i = 0; i < table->getSize(); ++i) {
-
-    }
-    return s;
 }
 
 std::ostream &Console::TableGroup::printStudent(std::ostream &s, const std::string &surname) {
@@ -163,17 +156,12 @@ Console::TableGroup &Console::TableGroup::setUIR(Console::Student *student, cons
 }
 
 Console::TableGroup &Console::TableGroup::lvlUp(int sizeOfRating) {
-    //todo посмотреть что за курс
-    // если больше четвертого, то удалить группу
-    // если больше второго, то переименовать джуниора в сеньера
-    if (course == 4){
-        //todo delete all
-        return *this;
-    }
+    if (course == 4)
+        throw std::invalid_argument("Delete this in Application");
     if (this->course == 2) {
         //увеличиваем курс на единицу и пересобираем студентов
         ++course; // 3
-
+        this->table->lvlUpJS(sizeOfRating);
         return *this;
     }
     table->lvlUp(sizeOfRating);

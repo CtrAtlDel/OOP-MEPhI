@@ -129,7 +129,9 @@ void Console::Application::printTable(const int index) {
 }
 
 std::ostream &Console::Application::printAllTable(std::ostream &s) const {
-
+    for (auto && i : allGroup) {
+        i.printTable(s);
+    }
     return s;
 }
 
@@ -141,17 +143,96 @@ void Console::Application::lvlUp() {
     std::cout << "Input index of group: -> " << std::endl;
     int index;
     getNum(index);
-    this->lvlUp(index);
+    std::cout << "New size =of mark" << std::endl;
+    int maxMark;
+    getNum(maxMark);
+    this->lvlUp(index, maxMark);
 }
-Console::Application &Console::Application::lvlUp(const int index) {
-    if (index < 0 || index> allGroup.size())
+
+Console::Application &Console::Application::lvlUp(const int index, int maxMark) {
+    //todo посмотреть что за курс
+    // если больше четвертого, то удалить группу
+    // если больше второго, то переименовать джуниора в сеньера
+
+    if (index < 0 || index > allGroup.size())
         throw std::invalid_argument("Index of range");
-    if (allGroup[index].getCourse() == 4){
+    if (allGroup[index].getCourse() == 4) { //todo 4 курс
         allGroup.erase(index);
         return *this;
-    }else{
-        allGroup[index].lvlUp(); //todo 4 курс
+    } else {
+        allGroup[index].lvlUp(maxMark);
     };
     return *this;
+}
+
+void Console::Application::inputThemeUIR() {
+    std::string theme, surname, initials;
+    std::cout << "Input surname: -> " << std::endl;
+    getNum(surname);
+    MyFun::MyRealization::trim(surname);
+
+    std::cout << "Input initials: -> " << std::endl;
+    getNum(initials);
+    MyFun::MyRealization::trim(initials);
+
+    std::cout << "Input theme UIR: -> " << std::endl;
+    getNum(theme);
+    MyFun::MyRealization::trim(theme);
+    this->setUIR(surname, initials, theme);
+}
+
+Console::Application &
+Console::Application::setUIR(const std::string &surname, const std::string &initials, const std::string &theme) {
+    for (auto &it: allGroup) {
+        if (it.getCategory() == Sen)
+            if (it.inGroup(surname, initials)) {
+                it.setUIR(surname, initials, theme);
+                return *this;
+            }
+        return *this;
+    }
+    return *this;
+}
+
+Console::Application &
+Console::Application::setPlace(const std::string &surname, const std::string &initials, const std::string &place) {
+    for (auto &it: allGroup) {
+        if (it.getCategory() == Sen)
+            if (it.inGroup(surname, initials)) {
+                it.setPlace(surname, initials, place);
+                return *this;
+            }
+        return *this;
+    }
+    return *this;
+}
+
+Console::Application &
+Console::Application::setNumberTeacher(const std::string &surname, const std::string &initials, double number) {
+    for (auto &it: allGroup) {
+        if (it.getCategory() == Sen)
+            if (it.inGroup(surname, initials)) {
+                it.setNumberTeacher(surname, initials, number);
+                return *this;
+            }
+        return *this;
+    }
+    return *this;
+}
+
+void Console::Application::inputPlaceUIR() {
+    std::string place, surname, initials;
+    std::cout << "Input surname: -> " << std::endl;
+    getNum(surname);
+    MyFun::MyRealization::trim(surname);
+
+    std::cout << "Input initials: -> " << std::endl;
+    getNum(initials);
+    MyFun::MyRealization::trim(initials);
+
+    std::cout << "Input place UIR: -> " << std::endl;
+    getNum(place);
+    MyFun::MyRealization::trim(place);
+    this->setPlace(surname, initials, place);
 }
 
