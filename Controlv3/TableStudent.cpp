@@ -203,8 +203,7 @@ Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
             //Чистим оценки
             jun->deleteRating();
             //новый размер оценок(их кол-во)
-            jun->setMaxMark(sizeRating);
-            //todo вроде все
+            jun->setMaxMark(sizeRating); //todo сохранение итогового размера
         } else {
             //Senior
             auto *sen = dynamic_cast<Senior *>(st);
@@ -234,7 +233,7 @@ Console::TableStudent &Console::TableStudent::lvlUpJS(int sizeRating) {
         sen->setMaxMark(sizeRating);
         st = sen;
         table[i] = sen;
-        //todo сделать запись УИР отжельно
+        //todo сделать запись УИР отдельно
     }
     return *this;
 }

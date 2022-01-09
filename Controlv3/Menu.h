@@ -1,9 +1,8 @@
 #ifndef TEST_MENU_H
 #define TEST_MENU_H
+#include "Application.h"
 
-
-class Menu {
-
+class Menu: public Console::Application {
 
 };
 

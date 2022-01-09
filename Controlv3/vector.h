@@ -75,7 +75,7 @@ namespace templates {
 
         vector(const vector &);
 
-        vector(vector &&oldVector) noexcept;
+        vector(vector && oldVector) noexcept;
 
         iterator begin() const;
 
@@ -110,7 +110,6 @@ namespace templates {
         vector<T> &operator=(const vector<T> &vector);
 
         vector<T> &operator=(vector <T> &&vector);
-
 
         ~vector() {
             delete[] array;
@@ -193,7 +192,7 @@ namespace templates {
 
     template<typename T>
     void vector<T>::pop_back(T value) {
-        erase(this->size - 1);
+        erase(sizes - 1);
     }
 
     template<typename T>

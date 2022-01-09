@@ -1,12 +1,11 @@
 #ifndef CONTROLV3_APPLICATION_H
 #define CONTROLV3_APPLICATION_H
 
-//todo написать результирующий класс +-
-//todo сделать ввод студента на первый курс +
-//todo сделать переход на следующий курс(добавить в новую таблицу)
-//todo Добавить трим +
+//todo аписать результирующий класс +-
+//todo Сделать переход на следующий курс(добавить в новую таблицу)
+//todo Добавить добавление оценок в считывание
+//todo Вынести меню отдельно
 
-//todo добавить добавление оценок в считывание
 
 #include "Tablegroup.h"
 #include "vector.h"
@@ -73,7 +72,6 @@ namespace Console {
         int getSizeOfGroupsWithStudent() { return this->allGroup.size(); };
 
         void printTable(int index);
-
 
         /**
          * Print all group

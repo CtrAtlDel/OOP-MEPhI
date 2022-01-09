@@ -365,6 +365,7 @@ TEST(Application, NewStudent){
     app->addStudentInGroup("Sen3", "Sen3Initials");
 
     app->printAllTable(std::cout);
+
 }
 
 TEST(Application, Mediana){
@@ -386,7 +387,7 @@ TEST(Application, Mediana){
     app->addStudentInGroup("Sen2", "Sen2Initials");
     app->addStudentInGroup("Sen3", "Sen3Initials");
     for (int i = 0; i < app->getSizeOfGroupsWithStudent(); ++i) {
-        app.
+
     }
 }
 
