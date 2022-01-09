@@ -2,7 +2,7 @@
 #define TEST_MENU_H
 #include "Application.h"
 
-class Menu: public Console::Application {
+class Menu: {
 
 };
 
