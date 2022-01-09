@@ -17,5 +17,5 @@ add_executable(Test test.cpp ../Application.h ../Application.cpp
         ../Junior.h ../Junior.cpp ../Senior.h ../Senior.cpp ../Student.h
         ../TableStudent.h ../TableStudent.cpp ../Application.h ../Application.cpp
         ../Tablegroup.h ../Tablegroup.cpp
-        ../vector.h ../vector.cpp ../getSome.h)
+        ../vector.h ../vector.cpp ../getSome.h ../Menu.cpp ../Menu.h)
 target_link_libraries(Test gtest_main)

@@ -6,7 +6,7 @@
 #include "../TableStudent.h"
 #include "../Tablegroup.h"
 #include "../vector.h"
-
+#include "../Application.h"
 TEST(Junior, Junior_Default_Constructor) {
     Console::Junior jun;
     ASSERT_EQ(0, jun.getSumOfRating());
@@ -171,7 +171,7 @@ TEST(TableGroup, Mediana) {
     table2.setUIR("Big1", "AA", "rosatom");
     table2.setUIR("Big2", "BB", "gigabyte");
 
-    table2.printTable(std::cout);
+//    table2.printTable(std::cout);
 
     table1.newStudent(st1);
     table1.newStudent(st2);
@@ -181,9 +181,9 @@ TEST(TableGroup, Mediana) {
     table1.setRating(st1, 2);
     table1.setRating(st1, 3);
 
-    table1.printTable(std::cout);
+//    table1.printTable(std::cout);
     table1.setRating(st1, 5, 1);
-    table1.printTable(std::cout);
+//    table1.printTable(std::cout);
 
 }
 
@@ -343,6 +343,74 @@ TEST(Vector, New_test) {
     ASSERT_EQ(10, vector11.size());
 }
 
+TEST(Application, NewStudent){
+    auto *app = new Console::Application();
+
+    std::string firS1 = "Jun1";
+    std::string initS1 = "Jun1Initials";
+
+    std::string firS2 = "Jun2";
+    std::string initS2 = "Jun2Initials";
+
+    std::string firS3 = "Jun3";
+    std::string initS3 = "Jun3Initials";
+    /// add only Junior
+    app->addStudentInGroup(firS1, initS1);
+    app->addStudentInGroup(firS2, initS2);
+    app->addStudentInGroup(firS3, initS3);
+    app->printAllTable(std::cout);
+
+    app->addStudentInGroup("Sen1", "Sen1Initials");
+    app->addStudentInGroup("Sen2", "Sen2Initials");
+    app->addStudentInGroup("Sen3", "Sen3Initials");
+
+    app->printAllTable(std::cout);
+}
+
+TEST(Application, Mediana){
+    auto *app = new Console::Application();
+
+    std::string firS1 = "Jun1";
+    std::string initS1 = "Jun1Initials";
+    std::string firS2 = "Jun2";
+    std::string initS2 = "Jun2Initials";
+    std::string firS3 = "Jun3";
+    std::string initS3 = "Jun3Initials";
+
+    /// add only Junior
+    app->addStudentInGroup(firS1, initS1);
+    app->addStudentInGroup(firS2, initS2);
+    app->addStudentInGroup(firS3, initS3);
+    app->printAllTable(std::cout);
+    app->addStudentInGroup("Sen1", "Sen1Initials");
+    app->addStudentInGroup("Sen2", "Sen2Initials");
+    app->addStudentInGroup("Sen3", "Sen3Initials");
+    for (int i = 0; i < app->getSizeOfGroupsWithStudent(); ++i) {
+        app.
+    }
+}
+
+TEST(Application, ExceptionTest){
+    auto *app = new Console::Application();
+
+    std::string firS1 = "Jun1";
+    std::string initS1 = "Jun1Initials";
+
+    std::string firS2 = "Jun2";
+    std::string initS2 = "Jun2Initials";
+
+    std::string firS3 = "Jun3";
+    std::string initS3 = "Jun3Initials";
+    /// add only Junior
+    app->addStudentInGroup(firS1, initS1);
+    app->addStudentInGroup(firS2, initS2);
+    app->addStudentInGroup(firS3, initS3);
+    app->printAllTable(std::cout);
+    app->addStudentInGroup("Sen1", "Sen1Initials");
+    app->addStudentInGroup("Sen2", "Sen2Initials");
+    app->addStudentInGroup("Sen3", "Sen3Initials");
+    ASSERT_ANY_THROW(app->lvlUp(1, 3));
+}
 
 int _tmain(int argc, char *argv[]) {
     ::testing::InitGoogleTest(&argc, argv);

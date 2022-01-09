@@ -64,6 +64,7 @@ namespace Console {
         [[nodiscard]]
         int getIndexGroup() const { return indexGroup; }
 
+        int getSize() {return table->getSize();};
         /**
          * Получить категориб студентов
          * @return
@@ -84,22 +85,23 @@ namespace Console {
          */
         [[nodiscard]]
         int getCourse() const { return course; }
+
         ///------------------Setters------------------///
-        TableGroup& setRating(const std::string& surname, const std::string& initials, double mark);
+        TableGroup &setRating(const std::string &surname, const std::string &initials, double mark);
 
-        TableGroup& setRating(const std::string& surname, const std::string& initials, double mark, int indexOfRating);
+        TableGroup &setRating(const std::string &surname, const std::string &initials, double mark, int indexOfRating);
 
-        TableGroup& setRating(Student* st, double mark);
+        TableGroup &setRating(Student *st, double mark);
 
-        TableGroup& setRating(Student* st, double mark, int index);
+        TableGroup &setRating(Student *st, double mark, int index);
 
-        TableGroup& setUIR(const std::string& surname, const std::string& initials, const std::string& theme);
+        TableGroup &setUIR(const std::string &surname, const std::string &initials, const std::string &theme);
 
-        TableGroup& setUIR(Student* student, const std::string& theme);
+        TableGroup &setUIR(Student *student, const std::string &theme);
 
-        TableGroup& setPlace(const std::string& surname, const std::string& initials, const std::string& place);
+        TableGroup &setPlace(const std::string &surname, const std::string &initials, const std::string &place);
 
-        TableGroup& setNumberTeacher(const std::string& surname, const std::string& initials, double number);
+        TableGroup &setNumberTeacher(const std::string &surname, const std::string &initials, double number);
 
         ///-------------------------------------------///
         [[nodiscard]]
@@ -110,7 +112,6 @@ namespace Console {
                 return false;
         };
 
-        std::ostream &printAll(std::ostream &s) const;
 
         //поступление на следующий курс
         TableGroup &lvlUp(int sizeOfRating);
@@ -129,9 +130,10 @@ namespace Console {
          * @param initials
          * @return
          */
-        TableGroup &newStudent(std::string &surname, std::string &initials);
+        TableGroup &newStudent(const std::string &surname, const std::string &initials);
 
-        TableGroup &newStudent(Student* st);
+        TableGroup &newStudent(Student *st);
+
         /**
          * Получить информацию о группе
          * @param s входной поток
@@ -147,8 +149,6 @@ namespace Console {
          * @return
          */
         std::ostream &printStudent(std::ostream &s, const std::string &surname, const std::string &initials);
-
-        std::ostream &printStudent(std::ostream &s, const std::string &surname);
 
         bool inGroup(const std::string &surname, const std::string &initials);
 

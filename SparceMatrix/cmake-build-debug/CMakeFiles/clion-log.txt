@@ -1,4 +1,4 @@
-"/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.46/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja /Users/ivankvasov/OOP/OOP-MEPhI/SparceMatrix
+"/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/ivankvasov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja /Users/ivankvasov/OOP/OOP-MEPhI/SparceMatrix
 -- The C compiler identification is AppleClang 13.0.0.13000029
 -- The CXX compiler identification is AppleClang 13.0.0.13000029
 -- Detecting C compiler ABI info

@@ -63,9 +63,9 @@ Console::TableGroup::TableGroup() {
 
 }
 
-Console::TableGroup &Console::TableGroup::newStudent(std::string &surname, std::string &initials) {
+Console::TableGroup &Console::TableGroup::newStudent(const std::string &surname, const std::string &initials) {
     Student *st = nullptr;
-    Junior *jun = new Junior(surname, initials);
+    auto *jun = new Junior(surname, initials);
     st = jun;
     this->table->setNewStudent(st);
     return *this;
@@ -81,12 +81,6 @@ bool Console::TableGroup::inGroup(const std::string &surname, const std::string 
         return true;
     }
     return false;
-}
-
-std::ostream &Console::TableGroup::printStudent(std::ostream &s, const std::string &surname) {
-//    int indexStudent = this->table->indexOfStudent(surname, initials);
-//    this->table->getStudent(s, indexStudent);
-    return s;
 }
 
 Console::Student *Console::TableGroup::search(const std::string &surname) {

@@ -21,12 +21,13 @@ std::istream &Console::Application::newStudent(std::istream &s) {
     return s;
 }
 
-void Console::Application::addStudentInGroup(std::string &surname, std::string &initials) {
+void Console::Application::addStudentInGroup(const std::string &surname, const std::string &initials) {
     //если  есть свободное место в группах
     for (int i = 0; i < this->allGroup.size(); ++i) {
         if (allGroup[i].getCategory() == Jun && allGroup[i].getCourse() == 1) {
             if (!allGroup[i].isFull()) {
                 allGroup[i].newStudent(surname, initials);
+                return;
             }
         }
     }
@@ -129,7 +130,7 @@ void Console::Application::printTable(const int index) {
 }
 
 std::ostream &Console::Application::printAllTable(std::ostream &s) const {
-    for (auto && i : allGroup) {
+    for (auto &&i: allGroup) {
         i.printTable(s);
     }
     return s;
@@ -234,5 +235,27 @@ void Console::Application::inputPlaceUIR() {
     getNum(place);
     MyFun::MyRealization::trim(place);
     this->setPlace(surname, initials, place);
+}
+
+void Console::Application::inputNumberTeacher() {
+    std::string surname, initials;
+    double numberTeacher;
+    std::cout << "Input surname: -> " << std::endl;
+    getNum(surname);
+    MyFun::MyRealization::trim(surname);
+
+    std::cout << "Input initials: -> " << std::endl;
+    getNum(initials);
+    MyFun::MyRealization::trim(initials);
+
+    std::cout << "Input numberTeacher UIR: -> " << std::endl;
+    getNum(numberTeacher);
+    this->setNumberTeacher(surname, initials, numberTeacher);
+}
+
+int Console::Application::getSizeOfGroup(int index) {
+    if (index < 0 || index > allGroup.size())
+        throw std::invalid_argument("Bad index >> this->sizeOfGroup");
+    return allGroup[index].getSize();
 }
 
