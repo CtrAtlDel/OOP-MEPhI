@@ -7,6 +7,7 @@
 #include "../Tablegroup.h"
 #include "../vector.h"
 #include "../Application.h"
+
 TEST(Junior, Junior_Default_Constructor) {
     Console::Junior jun;
     ASSERT_EQ(0, jun.getSumOfRating());
@@ -343,7 +344,7 @@ TEST(Vector, New_test) {
     ASSERT_EQ(10, vector11.size());
 }
 
-TEST(Application, NewStudent){
+TEST(Application, NewStudent) {
     auto *app = new Console::Application();
 
     std::string firS1 = "Jun1";
@@ -368,7 +369,7 @@ TEST(Application, NewStudent){
 
 }
 
-TEST(Application, Mediana){
+TEST(Application, Mediana) {
     auto *app = new Console::Application();
 
     std::string firS1 = "Jun1";
@@ -391,7 +392,7 @@ TEST(Application, Mediana){
     }
 }
 
-TEST(Application, ExceptionTest){
+TEST(Application, ExceptionTest) {
     auto *app = new Console::Application();
 
     std::string firS1 = "Jun1";

@@ -41,6 +41,7 @@ namespace Console {
         explicit Junior() : maxMark(0), sizeOfRating(0), category(Jun) {}
 
         explicit Junior(int maxMark) : maxMark(maxMark), sizeOfRating(0), category(Jun) {}
+
         /**
          * Инициализирующий конструктор
          * \param surname фамилия студента
@@ -108,7 +109,7 @@ namespace Console {
          * \return ссылку на измененный объект класса
          * \throw
          */
-        Student& setMaxMark(int maxMark) override;
+        Student &setMaxMark(int maxMark) override;
 
         Student &setSurname(const std::string &surname) override; //внести фамилию
 

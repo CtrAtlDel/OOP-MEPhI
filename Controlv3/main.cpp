@@ -1,11 +1,6 @@
 #include <iostream>
-#include "vector.h"
-#include "Junior.h"
-#include "Application.h"
-
+#include "Menu.h"
 int main() {
-    Console::Application app;
-
-//    app.getMedian();
+    Console::Menu();
     return 0;
 }
