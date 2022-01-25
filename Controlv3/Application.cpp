@@ -362,5 +362,16 @@ void Console::Application::addMarkForAllGroup() {
     }
 }
 
+void Console::Application::changeMarkDef() {
+    int markDef;
+    std::cout << "Now default mark is " << defaultMarkFirst << std::endl;
+    std::cout << "Input new default mark: " << std::endl;
+    getNum(markDef);
+    if (markDef <= 0) {
+        std::cout << "Bad input..." << std::endl;
+        return;
+    }
+}
+
 Console::Application::Application() = default;
 

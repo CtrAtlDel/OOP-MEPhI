@@ -21,6 +21,7 @@ namespace Console {
     class Application {
     private:
         templates::vector<TableGroup> allGroup;
+        int defaultMarkFirst = 5;
 
     public:
         Application();
@@ -109,6 +110,8 @@ namespace Console {
         bool addMarkForGroup(int index);
 
         void addMarkForAllGroup();
+
+        void changeMarkDef();
 
     };
 }

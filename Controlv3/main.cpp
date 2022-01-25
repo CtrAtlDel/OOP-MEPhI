@@ -22,10 +22,10 @@ int main() {
         std::cout << "10. Add mark for Student" << std::endl;
         std::cout << "11. Add mark for all student in group" << std::endl;
         std::cout << "12. Add mark for all student in all group" << std::endl;
+        std::cout << "13. Change mark for 1st course" << std::endl;
 
-        //TODO добавить возможность поменять оценку
-        //TODO добавить возможность добавлять оценки(протестировать это)
-        //TODO добавить возможно внесения количества оценок при поступлении на первый курс
+        //TODO добавить возможность добавлять оценки (протестировать это)
+        //TODO добавить возможность внесения количества оценок при поступлении на первый курс
 
         if (!getNum(n)) {
             std::cout << "Bad input try again" << std::endl;
@@ -70,6 +70,9 @@ int main() {
         }
         if (n == 12){
             app.addMarkForAllGroup();
+        }
+        if (n == 13){
+
         }
 
     }

@@ -45,6 +45,7 @@ namespace Console {
 
         TableGroup();
 
+
         /**
          * Деструктор по умолчанию
          */
