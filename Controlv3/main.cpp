@@ -18,6 +18,7 @@ int main() {
         std::cout << "6. Print student " << std::endl;
         std::cout << "7. Get median from group " << std::endl;
         std::cout << "8. Go to another class (lvlIp) " << std::endl;
+        std::cout << "9. How much group? " << std::endl;
 
         if (!getNum(n)) {
             std::cout << "Bad input try again" << std::endl;
@@ -51,6 +52,10 @@ int main() {
         }
         if (n == 8) {
             //lvlUp
+        }
+        if (n == 9){
+            // how much group
+            app.sizeOfGroup();
         }
 
     }

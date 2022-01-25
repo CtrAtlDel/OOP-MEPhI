@@ -270,5 +270,9 @@ void Console::Application::addStudent() {
     addStudentInGroup(surname, initials);
 }
 
+void Console::Application::sizeOfGroup() {
+    std::cout << "There is " << allGroup.size() << " in course" << std::endl;
+}
+
 Console::Application::Application() = default;
 

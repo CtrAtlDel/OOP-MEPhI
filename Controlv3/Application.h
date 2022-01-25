@@ -93,6 +93,8 @@ namespace Console {
         TableGroup *findGroup(int index);
 
         TableGroup *findStudent(const std::string &surname, const std::string &initials);
+
+        void sizeOfGroup();
     };
 }
 
