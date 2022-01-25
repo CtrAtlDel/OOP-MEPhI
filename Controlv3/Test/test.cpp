@@ -411,7 +411,17 @@ TEST(Application, ExceptionTest) {
     app->addStudentInGroup("Sen1", "Sen1Initials");
     app->addStudentInGroup("Sen2", "Sen2Initials");
     app->addStudentInGroup("Sen3", "Sen3Initials");
-    ASSERT_ANY_THROW(app->lvlUp(1, 3));
+}
+
+TEST(Application, lvlUp){
+    auto *app = new Console::Application();
+
+    std::string surname = "Jun1";
+    std::string initials = "Jun1Initials";
+
+    app->addStudentInGroup(surname, initials);
+    app->lvlUp(1,5);
+
 }
 
 int _tmain(int argc, char *argv[]) {

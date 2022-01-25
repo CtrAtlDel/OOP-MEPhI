@@ -97,6 +97,8 @@ namespace Console {
         void sizeOfGroup();
 
         bool checkIndex(int index) const;
+
+        int indexByIndexGroup(int indexGroup) const;
     };
 }
 

@@ -151,18 +151,19 @@ void Console::Application::lvlUp() {
     this->lvlUp(index, maxMark);
 }
 
-Console::Application &Console::Application::lvlUp(const int index, int maxMark) {
+Console::Application &Console::Application::lvlUp(const int indexGroup, int maxMark) {
     //todo посмотреть что за курс
     // если больше четвертого, то удалить группу
     // если больше второго, то переименовать джуниора в сеньера
 
     //TODO индекс группы нужно отдельно проверять
+    int index = indexByIndexGroup(indexGroup);
     if (allGroup[index].getCourse() == 4) { //todo 4 курс
         allGroup.erase(index);
         return *this;
-    } else {
-        allGroup[index].lvlUp(maxMark);
-    };
+    }
+
+    allGroup[index].lvlUp(maxMark);
     return *this;
 }
 
@@ -284,6 +285,14 @@ bool Console::Application::checkIndex(int index) const {
         }
     }
     return false;
+}
+
+int Console::Application::indexByIndexGroup(int indexGroup) const {
+    for (int i = 0; i < allGroup.size(); ++i) {
+        if(allGroup[i].getIndexGroup() == indexGroup)
+            return i;
+    }
+    return -1;
 }
 
 

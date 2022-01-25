@@ -160,6 +160,7 @@ Console::TableGroup &Console::TableGroup::lvlUp(int sizeOfRating) {
         return *this;
     }
     table->lvlUp(sizeOfRating);
+    ++course;
     return *this;
 }
 

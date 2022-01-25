@@ -251,7 +251,7 @@ namespace templates {
             if (i == index) { return *iterator; }
             ++iterator;
         }
-        return nullptr;
+//        return nullptr;
     }
 
     template<typename T>

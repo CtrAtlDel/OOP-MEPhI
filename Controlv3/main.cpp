@@ -25,7 +25,7 @@ int main() {
             continue;
         }
         if (n == 0) {
-            std::cout << "Good bye" << std::endl;
+            std::cout << "Goodbye" << std::endl;
             break;
         }
         if (n == 1) {
@@ -53,7 +53,6 @@ int main() {
             app.lvlUp();
         }
         if (n == 9){
-            // how much group
             app.sizeOfGroup();
         }
 
