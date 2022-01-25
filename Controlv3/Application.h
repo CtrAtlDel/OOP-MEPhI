@@ -99,6 +99,15 @@ namespace Console {
         bool checkIndex(int index) const;
 
         int indexByIndexGroup(int indexGroup) const;
+
+        void addMarkForStudent();
+
+        bool addMarkForStudent(const std::string &surname, const std::string &initials, double mark);
+
+        void addMarkForGroup();
+
+        bool addMarkForGroup(int index);
+
     };
 }
 

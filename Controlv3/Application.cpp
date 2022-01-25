@@ -141,7 +141,7 @@ void Console::Application::lvlUp() {
     std::cout << "Input index of group: -> " << std::endl;
     int index;
     getNum(index);
-    if (!checkIndex(index)){
+    if (!checkIndex(index)) {
         std::cout << "I didnt find index with this index..." << std::endl;
         return;
     }
@@ -156,7 +156,6 @@ Console::Application &Console::Application::lvlUp(const int indexGroup, int maxM
     // если больше четвертого, то удалить группу
     // если больше второго, то переименовать джуниора в сеньера
 
-    //TODO индекс группы нужно отдельно проверять
     int index = indexByIndexGroup(indexGroup);
     if (allGroup[index].getCourse() == 4) { //todo 4 курс
         allGroup.erase(index);
@@ -279,8 +278,8 @@ void Console::Application::sizeOfGroup() {
 }
 
 bool Console::Application::checkIndex(int index) const {
-    for (auto && i : allGroup) {
-        if (i.getIndexGroup() == index){
+    for (auto &&i: allGroup) {
+        if (i.getIndexGroup() == index) {
             return true;
         }
     }
@@ -289,10 +288,45 @@ bool Console::Application::checkIndex(int index) const {
 
 int Console::Application::indexByIndexGroup(int indexGroup) const {
     for (int i = 0; i < allGroup.size(); ++i) {
-        if(allGroup[i].getIndexGroup() == indexGroup)
+        if (allGroup[i].getIndexGroup() == indexGroup)
             return i;
     }
     return -1;
+}
+
+void Console::Application::addMarkForStudent() {
+    std::string surname, initials;
+    double mark;
+    std::cout << "Input surname: -> " << std::endl;
+    getNum(surname);
+    MyFun::MyRealization::trim(surname);
+
+    std::cout << "Input initials: -> " << std::endl;
+    getNum(initials);
+    MyFun::MyRealization::trim(initials);
+    std::cout << "Input mark: -> " << std::endl;
+    getNum(mark);
+    if (!addMarkForStudent(surname, initials, mark))
+        std::cout << "I didnt find this student" << std::endl;
+}
+
+
+
+bool
+Console::Application::addMarkForStudent(const std::string &surname, const std::string &initials, double mark) {
+    for (auto &i: allGroup) {
+        if (i.inGroup(surname, initials)) {
+            i.setRating(surname, initials, mark);
+            return true;
+        }
+    }
+    return false;
+}
+
+void Console::Application::addMarkForGroup() {
+    int indexGroup;
+    double mark;
+
 }
 
 

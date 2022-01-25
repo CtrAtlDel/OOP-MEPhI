@@ -19,10 +19,11 @@ int main() {
         std::cout << "7. Get median from group " << std::endl;
         std::cout << "8. Go to another class (lvlIp) " << std::endl;
         std::cout << "9. How much group? " << std::endl;
-        std::cout << "10. Add rating for Student" << std::endl;
-        std::cout << "11. Add rating for all student in group" << std::endl;
-        std::cout << "12. Add rating for all student in all group" << std::endl;
+        std::cout << "10. Add mark for Student" << std::endl;
+        std::cout << "11. Add mark for all student in group" << std::endl;
+        std::cout << "12. Add mark for all student in all group" << std::endl;
 
+        //TODO добавить возможность поменять оценку
         //TODO добавить возможность добавлять оценки добавление оценок
         //TODO добавить возможно внесения количества оценок при поступлении на первый курс
 
@@ -62,13 +63,13 @@ int main() {
             app.sizeOfGroup();
         }
         if (n == 10){
-
+            app.addMarkForStudent();
         }
         if (n == 11){
-
+            //mark->Group
         }
         if (n == 12){
-
+            //mark->AllGroup
         }
 
     }

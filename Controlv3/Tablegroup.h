@@ -87,8 +87,9 @@ namespace Console {
         int getCourse() const { return course; }
 
         ///------------------Setters------------------///
+        //Сохранить оценку
         TableGroup &setRating(const std::string &surname, const std::string &initials, double mark);
-
+        //Поменять оценку
         TableGroup &setRating(const std::string &surname, const std::string &initials, double mark, int indexOfRating);
 
         TableGroup &setRating(Student *st, double mark);
@@ -111,7 +112,6 @@ namespace Console {
             else
                 return false;
         };
-
 
         //поступление на следующий курс
         TableGroup &lvlUp(int sizeOfRating);
@@ -151,6 +151,7 @@ namespace Console {
         std::ostream &printStudent(std::ostream &s, const std::string &surname, const std::string &initials);
 
         bool inGroup(const std::string &surname, const std::string &initials);
+
 
     private:
         /**
