@@ -95,6 +95,8 @@ namespace Console {
         TableGroup *findStudent(const std::string &surname, const std::string &initials);
 
         void sizeOfGroup();
+
+        bool checkIndex(int index) const;
     };
 }
 

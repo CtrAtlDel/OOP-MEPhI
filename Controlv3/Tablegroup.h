@@ -64,7 +64,7 @@ namespace Console {
         [[nodiscard]]
         int getIndexGroup() const { return indexGroup; }
 
-        int getSize() {return table->getSize();};
+        unsigned long long getSize() {return table->getSize();};
         /**
          * Получить категориб студентов
          * @return

@@ -29,7 +29,6 @@ int main() {
             break;
         }
         if (n == 1) {
-            //Add new Student in 1st course
             app.addStudent();
         }
         if (n == 2) {
@@ -51,7 +50,7 @@ int main() {
             app.getMedian();
         }
         if (n == 8) {
-            //lvlUp
+            app.lvlUp();
         }
         if (n == 9){
             // how much group

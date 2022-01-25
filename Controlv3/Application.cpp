@@ -141,7 +141,11 @@ void Console::Application::lvlUp() {
     std::cout << "Input index of group: -> " << std::endl;
     int index;
     getNum(index);
-    std::cout << "New size =of mark" << std::endl;
+    if (!checkIndex(index)){
+        std::cout << "I didnt find index with this index..." << std::endl;
+        return;
+    }
+    std::cout << "New size of mark: " << std::endl;
     int maxMark;
     getNum(maxMark);
     this->lvlUp(index, maxMark);
@@ -152,8 +156,7 @@ Console::Application &Console::Application::lvlUp(const int index, int maxMark) 
     // если больше четвертого, то удалить группу
     // если больше второго, то переименовать джуниора в сеньера
 
-    if (index < 0 || index > allGroup.size())
-        throw std::invalid_argument("Index of range");
+    //TODO индекс группы нужно отдельно проверять
     if (allGroup[index].getCourse() == 4) { //todo 4 курс
         allGroup.erase(index);
         return *this;
@@ -273,6 +276,16 @@ void Console::Application::addStudent() {
 void Console::Application::sizeOfGroup() {
     std::cout << "There is " << allGroup.size() << " in course" << std::endl;
 }
+
+bool Console::Application::checkIndex(int index) const {
+    for (auto && i : allGroup) {
+        if (i.getIndexGroup() == index){
+            return true;
+        }
+    }
+    return false;
+}
+
 
 Console::Application::Application() = default;
 

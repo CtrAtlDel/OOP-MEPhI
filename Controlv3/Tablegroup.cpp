@@ -29,6 +29,7 @@ std::ostream &Console::TableGroup::printTable(std::ostream &s) const {
         s << "Empty group";
     } else {
         s << "Index group: " << this->getIndexGroup() << std::endl;
+        s << "Coutse: " << this->getCourse() <<std::endl;
         for (int i = 0; i < this->table->getSize(); ++i) {
             this->table->getStudent(s, i);
         }
