@@ -24,7 +24,7 @@ int main() {
         std::cout << "12. Add mark for all student in all group" << std::endl;
 
         //TODO добавить возможность поменять оценку
-        //TODO добавить возможность добавлять оценки
+        //TODO добавить возможность добавлять оценки(протестировать это)
         //TODO добавить возможно внесения количества оценок при поступлении на первый курс
 
         if (!getNum(n)) {
@@ -69,7 +69,7 @@ int main() {
             app.addMarkForGroup();
         }
         if (n == 12){
-            //
+            app.addMarkForAllGroup();
         }
 
     }
