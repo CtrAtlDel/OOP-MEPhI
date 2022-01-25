@@ -64,6 +64,8 @@ namespace Console {
 
         void addStudentInGroup(const std::string &surname, const std::string &initials);
 
+        void addStudent();
+
         int createIndex();
 
         int getSizeOfGroup(int index);

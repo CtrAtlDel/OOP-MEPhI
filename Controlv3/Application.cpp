@@ -256,5 +256,19 @@ int Console::Application::getSizeOfGroup(int index) {
     return allGroup[index].getSize();
 }
 
+void Console::Application::addStudent() {
+    std::string surname, initials;
+    double numberTeacher;
+    std::cout << "Input surname: -> " << std::endl;
+    getNum(surname);
+    MyFun::MyRealization::trim(surname);
+
+    std::cout << "Input initials: -> " << std::endl;
+    getNum(initials);
+    MyFun::MyRealization::trim(initials);
+
+    addStudentInGroup(surname, initials);
+}
+
 Console::Application::Application() = default;
 
