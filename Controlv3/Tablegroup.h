@@ -152,6 +152,7 @@ namespace Console {
 
         bool inGroup(const std::string &surname, const std::string &initials);
 
+        Student* getStudent(int indexOfStudent);
 
     private:
         /**

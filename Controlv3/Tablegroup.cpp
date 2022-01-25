@@ -164,3 +164,14 @@ Console::TableGroup &Console::TableGroup::lvlUp(int sizeOfRating) {
     return *this;
 }
 
+Console::Student *Console::TableGroup::getStudent(int indexOfStudent) {
+    Student* st = nullptr;
+    for (int i = 0; i < table->getSize(); ++i) {
+        if (indexOfStudent == i){
+            st = table->table[i];
+            return st;
+        }
+    }
+    return nullptr;
+}
+

@@ -311,7 +311,6 @@ void Console::Application::addMarkForStudent() {
 }
 
 
-
 bool
 Console::Application::addMarkForStudent(const std::string &surname, const std::string &initials, double mark) {
     for (auto &i: allGroup) {
@@ -325,10 +324,43 @@ Console::Application::addMarkForStudent(const std::string &surname, const std::s
 
 void Console::Application::addMarkForGroup() {
     int indexGroup;
-    double mark;
-
+    std::cout << "Input index of group: " << std::endl;
+    getNum(indexGroup);
+    if (!checkIndex(indexGroup)) {
+        std::cout << "I didnt find index with this index..." << std::endl;
+        return;
+    }
+    addMarkForGroup(indexGroup);
 }
 
+bool Console::Application::addMarkForGroup(int index) {
+    int indexGroup = -1;
+    double mark = 0;
+    for (auto &i: allGroup) {
+        if (i.getIndexGroup() == index)
+            indexGroup = index;
+    }
+    if (indexGroup == -1)
+        return false;
+    Student *st = nullptr;
+    for (int i = 0; i < allGroup[indexGroup].getSize(); ++i) {
+        st = allGroup[indexGroup].getStudent(i);
+        std::cout << "Course: " << allGroup[indexGroup].getCourse() << std::endl;
+        std::cout << "Surname: " << st->getSurname() << std::endl;
+        std::cout << "Initials: " << st->getInitials() << std::endl;
+        std::cout << "Input mark: " << std::endl;
+        getNum(mark);
+        st->setRating(mark);
+    }
+    return true; //TODO why true?
+}
+
+void Console::Application::addMarkForAllGroup() {
+    std::cout << "Input mark for all students in all group" << std::endl;
+    for (int i = 0; i < allGroup.size(); ++i) {
+        addMarkForGroup(i);
+    }
+}
 
 Console::Application::Application() = default;
 

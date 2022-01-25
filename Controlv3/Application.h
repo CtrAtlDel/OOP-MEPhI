@@ -108,6 +108,8 @@ namespace Console {
 
         bool addMarkForGroup(int index);
 
+        void addMarkForAllGroup();
+
     };
 }
 
