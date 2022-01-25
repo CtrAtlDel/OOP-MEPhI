@@ -41,7 +41,6 @@ namespace Console {
 
         std::istream &lvlUp(std::istream &s); //todo добавить еще УИР для старшекурсников
 
-
         /**
          * Ввести тему УИР
          */
@@ -83,7 +82,7 @@ namespace Console {
 
         void printStudent(const std::string &surname);
 
-        void printStudentSurname(); /// напечатать по фамилии
+        void printStudentSurname(); /// напечатать по фамилии (пока что не work)
 
         std::ostream &printStudent(std::ostream &, const std::string &surname, const std::string &initials);
 

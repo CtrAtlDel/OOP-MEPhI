@@ -3,9 +3,6 @@
 #include "getSome.h"
 #include "MyRealization.h"
 
-Console::Application::Application() {
-
-}
 
 std::istream &Console::Application::newStudent(std::istream &s) {
     std::cout << "Create new Student " << std::endl;
@@ -50,10 +47,10 @@ void Console::Application::getMedian() {
     getNum(index);
     TableGroup *group = findGroup(index);
     if (group == nullptr) {
-        std::cout << "No group whith this index" << std::endl;
+        std::cout << "No group with this index..." << std::endl;
     } else {
         double median = group->getMedian();
-        std::cout << "This is median " << median << std::endl;
+        std::cout << "This is median: -> " << median << std::endl;
     }
 }
 
@@ -258,4 +255,6 @@ int Console::Application::getSizeOfGroup(int index) {
         throw std::invalid_argument("Bad index >> this->sizeOfGroup");
     return allGroup[index].getSize();
 }
+
+Console::Application::Application() = default;
 
