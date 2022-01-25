@@ -33,7 +33,7 @@ namespace Console {
         int course; ///< курс по умолчанию равен 1
         int maxRatings; ///< максимальное количество оценок
         char category; ///< категория студентов
-        static const int maxPeople = 2; ///< максимальное количество человек в группе
+        static const int maxPeople = 1; ///< максимальное количество человек в группе
     public:
         /**
          * Инициирующий конструктор
@@ -106,7 +106,7 @@ namespace Console {
         ///-------------------------------------------///
         [[nodiscard]]
         bool isFull() const {
-            if (this->table->getSize() >= 30)
+            if (this->table->getSize() >= maxPeople)
                 return true;
             else
                 return false;
