@@ -38,6 +38,8 @@ Console::Student &Console::Junior::setRating(double rating, int index) {
 Console::Student &Console::Junior::setRating(double rating) {
     if (rating < 0)
         throw std::invalid_argument("Bad ratting");
+    if (this->rating.size() == this->sizeOfRating) //TODO change this
+        return *this;
     this->sizeOfRating++;
     this->rating.push_back(rating);
     return *this;
