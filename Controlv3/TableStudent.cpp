@@ -77,6 +77,7 @@ Console::TableStudent &Console::TableStudent::setNewStudent(Console::Student *st
     if (student->getCategory() != this->category)
         throw std::invalid_argument("No equal category");
     this->table.push_back(student); //todo отсортировать
+    sort();
 //    std::sort(table.begin(), table.end(), compareFun);
     return *this;
 }
@@ -236,6 +237,19 @@ Console::TableStudent &Console::TableStudent::lvlUpJS(int sizeRating) {
         //todo сделать запись УИР отдельно
     }
     return *this;
+}
+
+void Console::TableStudent::sort() {
+    Student* tmp = nullptr;
+    for (int i = 0; i < table.size(); ++i) {
+        for (int j = 0; j < table.size(); ++j) {
+            if (table[i]->getSurname() <= table[j]->getSurname()){
+                tmp = table[i];
+                table[i] = table[j];
+                table[j] = tmp;
+            }
+        }
+    }
 }
 
 

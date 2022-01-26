@@ -183,7 +183,7 @@ TEST(TableGroup, Mediana) {
     table1.setRating(st1, 3);
 
 //    table1.printTable(std::cout);
-    table1.setRating(st1, 5, 1);
+//    table1.setRating(st1, 5, 1);
 //    table1.printTable(std::cout);
 
 }
@@ -423,6 +423,7 @@ TEST(Application, lvlUp){
     app->lvlUp(1,5);
 
 }
+
 
 int _tmain(int argc, char *argv[]) {
     ::testing::InitGoogleTest(&argc, argv);

@@ -175,6 +175,8 @@ namespace Console {
         void setMark(Student *pStudent, double d);
 
         void setMark(Student *pStudent, double d, int indexRating);
+    private:
+        void sort();
     };
 }
 
