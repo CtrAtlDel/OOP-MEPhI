@@ -131,7 +131,7 @@ namespace Console {
          * @param initials
          * @return
          */
-        TableGroup &newStudent(const std::string &surname, const std::string &initials);
+        TableGroup &newStudent(const std::string &surname, const std::string &initials, int MaxFirst);
 
         TableGroup &newStudent(Student *st);
 

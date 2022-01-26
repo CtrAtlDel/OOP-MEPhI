@@ -23,14 +23,14 @@ void Console::Application::addStudentInGroup(const std::string &surname, const s
     for (int i = 0; i < this->allGroup.size(); ++i) {
         if (allGroup[i].getCategory() == Jun && allGroup[i].getCourse() == 1) {
             if (!allGroup[i].isFull()) {
-                allGroup[i].newStudent(surname, initials);
+                allGroup[i].newStudent(surname, initials, defaultMarkFirst);
                 return;
             }
         }
     }
     //если все группы переполнены или вообще нет групп
-    TableGroup newGroup(Jun, createIndex(), 30);//todo сделать 30 константой
-    this->allGroup.push_back(newGroup.newStudent(surname, initials));
+    TableGroup newGroup(Jun, createIndex(), defaultMarkFirst);//todo сделать 30 константой
+    this->allGroup.push_back(newGroup.newStudent(surname, initials, defaultMarkFirst));
 }
 
 void Console::Application::newGroup(char category, int maxSize, int indexGroup) {
@@ -371,6 +371,7 @@ void Console::Application::changeMarkDef() {
         std::cout << "Bad input..." << std::endl;
         return;
     }
+    this->defaultMarkFirst = markDef;
 }
 
 Console::Application::Application() = default;

@@ -25,7 +25,6 @@ int main() {
         std::cout << "13. Change mark for 1st course" << std::endl;
 
         //TODO добавить возможность добавлять оценки (протестировать это)
-        //TODO добавить возможность внесения количества оценок при поступлении на первый курс
 
         if (!getNum(n)) {
             std::cout << "Bad input try again" << std::endl;
@@ -72,7 +71,7 @@ int main() {
             app.addMarkForAllGroup();
         }
         if (n == 13){
-
+            app.changeMarkDef();
         }
 
     }

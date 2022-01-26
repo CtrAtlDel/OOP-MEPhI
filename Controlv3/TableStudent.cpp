@@ -103,7 +103,7 @@ std::ostream &Console::TableStudent::getStudent(std::ostream &s, int indexStuden
         if (this->category == Jun) {
             s << "Surname: " << st->getSurname() << std::endl;
             s << "Initials: " << st->getInitials() << std::endl;
-            s << "Number of student grades: " << st->getSumOfRating() << std::endl;
+            s << "Count of student grades: " << st->getSumOfRating() << std::endl;
             s << "Rating: " << std::endl;
             templates::vector<double> tmp = st->getRating();
             for (double i: tmp) {
@@ -116,7 +116,7 @@ std::ostream &Console::TableStudent::getStudent(std::ostream &s, int indexStuden
             if (this->category == Sen) {
                 s << "Surname: " << st->getSurname() << std::endl;
                 s << "Initials: " << st->getInitials() << std::endl;
-                s << "Number of student grades: " << st->getSumOfRating() << std::endl;
+                s << "Count of student grades: " << st->getSumOfRating() << std::endl;
                 s << "Rating: ";
                 templates::vector<double> tmp = st->getRating();
                 for (double i: tmp) {
@@ -204,6 +204,7 @@ Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
             jun->deleteRating();
             //новый размер оценок(их кол-во)
             jun->setMaxMark(sizeRating); //todo сохранение итогового размера
+            jun->setSumOfRating(sizeRating);
         } else {
             //Senior
             auto *sen = dynamic_cast<Senior *>(st);
@@ -213,6 +214,7 @@ Console::TableStudent &Console::TableStudent::lvlUp(int sizeRating) {
             sen->deleteRating();
 //            sen->setSumOfRating(sizeRating);
             sen->setMaxMark(sizeRating);
+            sen->setSumOfRating(sizeRating);
             //todo в чем отличие тогда
         }
     }

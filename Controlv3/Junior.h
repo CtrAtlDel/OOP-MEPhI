@@ -81,7 +81,7 @@ namespace Console {
          * \return максимальное количество оценок
          * \throw
          */
-        int getSumOfRating() const override { return sizeOfRating; } //получить количество оценок студента
+        int getSumOfRating() const override { return sizeOfRating; } //получить максимальное количество оценок студента
 
         /**
          * Получить тип студента
@@ -103,15 +103,11 @@ namespace Console {
 
         //------------------Setters-------------------//
 
-        /**
-         * Сохранить фамилию студента
-         * \param surname фамилия студента
-         * \return ссылку на измененный объект класса
-         * \throw
-         */
-        Student &setMaxMark(int maxMark) override;
+
 
         Student &setSurname(const std::string &surname) override; //внести фамилию
+
+        Student &setMaxMark(int maxMark) override;
 
         /**
          * Сохранить инициалы стужента

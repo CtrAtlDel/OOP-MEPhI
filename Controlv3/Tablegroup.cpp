@@ -64,9 +64,9 @@ Console::TableGroup::TableGroup() {
 
 }
 
-Console::TableGroup &Console::TableGroup::newStudent(const std::string &surname, const std::string &initials) {
+Console::TableGroup &Console::TableGroup::newStudent(const std::string &surname, const std::string &initials, int maxMark) {
     Student *st = nullptr;
-    auto *jun = new Junior(surname, initials);
+    auto *jun = new Junior(surname, initials, maxMark);
     st = jun;
     this->table->setNewStudent(st);
     return *this;
@@ -159,6 +159,7 @@ Console::TableGroup &Console::TableGroup::lvlUp(int sizeOfRating) {
         this->table->lvlUpJS(sizeOfRating);
         return *this;
     }
+    this->maxRatings = sizeOfRating;
     table->lvlUp(sizeOfRating);
     ++course;
     return *this;
