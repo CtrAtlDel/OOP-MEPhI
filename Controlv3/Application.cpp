@@ -335,19 +335,19 @@ void Console::Application::addMarkForGroup() {
     addMarkForGroup(indexGroup);
 }
 
-bool Console::Application::addMarkForGroup(int index) {
-    int indexGroup = -1;
+bool Console::Application::addMarkForGroup(int indexGroup) {
+    int index = indexByIndexGroup(indexGroup);
     double mark = 0;
-    for (auto &i: allGroup) {
-        if (i.getIndexGroup() == index)
-            indexGroup = index;
-    }
-    if (indexGroup == -1)
-        return false;
+//    for (auto &i: allGroup) {
+//        if (i.getIndexGroup() == index)
+//            indexGroup = index;
+//    }
+//    if (indexGroup == -1)
+//        return false;
     Student *st = nullptr;
-    for (int i = 0; i < allGroup[indexGroup].getSize(); ++i) {
-        st = allGroup[indexGroup].getStudent(i);
-        std::cout << "Course: " << allGroup[indexGroup].getCourse() << std::endl;
+    for (int i = 0; i < allGroup[index].getSize(); ++i) {
+        st = allGroup[index].getStudent(i);
+        std::cout << "Course: " << allGroup[index].getCourse() << std::endl;
         std::cout << "Surname: " << st->getSurname() << std::endl;
         std::cout << "Initials: " << st->getInitials() << std::endl;
         std::cout << "Input mark: " << std::endl;
