@@ -24,7 +24,6 @@ int main() {
         std::cout << "13. Change mark for 1st course" << std::endl;
 
         //TODO добавить возможность добавлять оценки (протестировать это)
-        //TODO Добавить сортировку
 
         if (!getNum(n)) {
             std::cout << "Bad input try again" << std::endl;

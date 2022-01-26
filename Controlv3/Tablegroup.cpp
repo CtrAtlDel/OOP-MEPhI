@@ -156,6 +156,7 @@ Console::TableGroup &Console::TableGroup::lvlUp(int sizeOfRating) {
     if (this->course == 2) {
         //увеличиваем курс на единицу и пересобираем студентов
         ++course; // 3
+        this->category = Sen;
         this->table->lvlUpJS(sizeOfRating);
         return *this;
     }

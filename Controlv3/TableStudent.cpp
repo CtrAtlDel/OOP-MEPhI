@@ -241,12 +241,12 @@ Console::TableStudent &Console::TableStudent::lvlUpJS(int sizeRating) {
 
 void Console::TableStudent::sort() {
     Student* tmp = nullptr;
-    for (int i = 0; i < table.size(); ++i) {
-        for (int j = 0; j < table.size(); ++j) {
-            if (table[i]->getSurname() <= table[j]->getSurname()){
-                tmp = table[i];
-                table[i] = table[j];
-                table[j] = tmp;
+    for (auto & i : table) {
+        for (auto & j : table) {
+            if (i->getSurname() <= j->getSurname()){
+                tmp = i;
+                i = j;
+                j = tmp;
             }
         }
     }
