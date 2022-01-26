@@ -153,10 +153,6 @@ void Console::Application::lvlUp() {
 }
 
 Console::Application &Console::Application::lvlUp(const int indexGroup, int maxMark) {
-    //todo посмотреть что за курс
-    // если больше четвертого, то удалить группу
-    // если больше второго, то переименовать джуниора в сеньера
-
     int index = indexByIndexGroup(indexGroup);
     if (allGroup[index].getCourse() == 4) { //todo 4 курс
         allGroup.erase(index);
@@ -338,12 +334,6 @@ void Console::Application::addMarkForGroup() {
 bool Console::Application::addMarkForGroup(int indexGroup) {
     int index = indexByIndexGroup(indexGroup);
     double mark = 0;
-//    for (auto &i: allGroup) {
-//        if (i.getIndexGroup() == index)
-//            indexGroup = index;
-//    }
-//    if (indexGroup == -1)
-//        return false;
     Student *st = nullptr;
     for (int i = 0; i < allGroup[index].getSize(); ++i) {
         st = allGroup[index].getStudent(i);
@@ -354,13 +344,13 @@ bool Console::Application::addMarkForGroup(int indexGroup) {
         getNum(mark);
         st->setRating(mark);
     }
-    return true; //TODO why true?
+    return true;
 }
 
 void Console::Application::addMarkForAllGroup() {
     std::cout << "Input mark for all students in all group" << std::endl;
     for (int i = 0; i < allGroup.size(); ++i) {
-        addMarkForGroup(i);
+        addMarkForAllGroup(i);
     }
 }
 
@@ -374,6 +364,21 @@ void Console::Application::changeMarkDef() {
         return;
     }
     this->defaultMarkFirst = markDef;
+}
+
+bool Console::Application::addMarkForAllGroup(int index) {
+    double mark = 0;
+    Student *st = nullptr;
+    for (int i = 0; i < allGroup[index].getSize(); ++i) {
+        st = allGroup[index].getStudent(i);
+        std::cout << "Course: " << allGroup[index].getCourse() << std::endl;
+        std::cout << "Surname: " << st->getSurname() << std::endl;
+        std::cout << "Initials: " << st->getInitials() << std::endl;
+        std::cout << "Input mark: " << std::endl;
+        getNum(mark);
+        st->setRating(mark);
+    }
+    return true;
 }
 
 Console::Application::Application() = default;

@@ -107,9 +107,11 @@ namespace Console {
 
         void addMarkForGroup();
 
-        bool addMarkForGroup(int index);
+        bool addMarkForGroup(int indexGroup);
 
         void addMarkForAllGroup();
+
+        bool addMarkForAllGroup(int index);
 
         void changeMarkDef();
 
