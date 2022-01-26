@@ -7,7 +7,6 @@ int main() {
     Console::Application app;
     int n;
     std::string initials, surname, themeUIR, placeUIR;
-    double numberTeacher = 0;
     while (true) {
         std::cout << "0. Exit " << std::endl;
         std::cout << "1. Create new student " << std::endl;
@@ -25,6 +24,7 @@ int main() {
         std::cout << "13. Change mark for 1st course" << std::endl;
 
         //TODO добавить возможность добавлять оценки (протестировать это)
+        //TODO Добавить сортировку
 
         if (!getNum(n)) {
             std::cout << "Bad input try again" << std::endl;
