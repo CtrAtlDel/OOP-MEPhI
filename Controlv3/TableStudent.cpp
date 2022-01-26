@@ -84,8 +84,6 @@ Console::TableStudent &Console::TableStudent::setNewStudent(Console::Student *st
 Console::TableStudent &Console::TableStudent::setRating(int indexStudent, double rating) {
     if (indexStudent < 0 || (indexStudent > this->table.size() - 1))
         throw std::invalid_argument("Index out of range");
-    if (this->table[indexStudent]->getSumOfRating() >= this->sizeRatings)
-        throw std::invalid_argument("Max size of rating");
     this->table[indexStudent]->setRating(rating);
     return *this;
 }

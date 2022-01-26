@@ -43,8 +43,9 @@ int Console::Application::createIndex() {
 
 void Console::Application::getMedian() {
     std::cout << "Input index of group: -> " << std::endl;
-    int index;
-    getNum(index);
+    int indexGroup;
+    getNum(indexGroup);
+    int index = indexByIndexGroup(indexGroup);
     TableGroup *group = findGroup(index);
     if (group == nullptr) {
         std::cout << "No group with this index..." << std::endl;
@@ -179,6 +180,7 @@ void Console::Application::inputThemeUIR() {
     std::cout << "Input theme UIR: -> " << std::endl;
     getNum(theme);
     MyFun::MyRealization::trim(theme);
+
     this->setUIR(surname, initials, theme);
 }
 

@@ -30,7 +30,7 @@ Console::Student &Console::Junior::setInitials(const std::string &initials) {
 Console::Student &Console::Junior::setRating(double rating, int index) {
     if (index < 0 || index > this->sizeOfRating)
         throw std::invalid_argument("Index out of range");
-    this->sizeOfRating++;
+//    this->sizeOfRating++;
     this->rating[index] = rating;
     return *this;
 }
@@ -40,7 +40,7 @@ Console::Student &Console::Junior::setRating(double rating) {
         throw std::invalid_argument("Bad ratting");
     if (this->rating.size() == this->sizeOfRating) //TODO change this
         return *this;
-    this->sizeOfRating++;
+//    this->sizeOfRating++;
     this->rating.push_back(rating);
     return *this;
 }
