@@ -173,8 +173,8 @@ namespace Lab3 {
         if (str.length() == 0) {
             throw std::invalid_argument("Empty string");
         }
-        for (int i = 0; i < str.length(); ++i) {
-            if (!Diagram::ifSig(str[i])) {
+        for (char i : str) {
+            if (!Diagram::ifSig(i)) {
                 throw std::invalid_argument("Bad char its not (0,1 or X)");
             }
         }//clear
@@ -482,14 +482,14 @@ namespace Lab3 {
 	*/
     //operators realization
 
-    int Diagram::operator()(int index) const {
+    int Diagram::operator()(int index) const { //rvalue
         if (index < 0 || index > this->size) {
             throw std::invalid_argument(" Index out of range");
         }
         return list[index].time;
     }
 
-    char Diagram::operator[](const int index) const {
+    char Diagram::operator[](const int index) const { //lvalue
         if (index < 0 || index >= this->size) {
             throw std::invalid_argument(" Index out of range");
         }

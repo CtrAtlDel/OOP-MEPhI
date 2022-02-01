@@ -16,7 +16,6 @@ namespace Lab3 {
         struct Item {
             char status;
             int time;
-
             Item() : status('X'), time(0) {}
         };
 
