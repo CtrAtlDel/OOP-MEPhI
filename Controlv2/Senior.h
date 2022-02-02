@@ -44,6 +44,10 @@ namespace Console {
 
         Student &setNumber(double count);
         //---------------------------------------------//
+
+        ~Senior() override{
+            std::cout << "Destructor Senior" << std::endl;
+        }
     };
 }
 

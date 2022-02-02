@@ -5,8 +5,16 @@
 
 using namespace Console;
 
+Senior func(){
+    Senior sen;
+    return sen;
+}
+
 int main() {
-    std::cout << "Hello world" << std::endl;
+
+    Senior st=func();
+
+    Junior jun;
 
     return 0;
 }

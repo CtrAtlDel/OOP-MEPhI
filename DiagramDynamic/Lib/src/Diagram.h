@@ -29,10 +29,9 @@ namespace Lab3 {
 
     public:
         //constructors
-        explicit Diagram() : list(nullptr), size(0), sum_time(0) {}
-
-        explicit Diagram(char ch);  //2)
-        explicit Diagram(const std::string &str);
+         Diagram() : list(nullptr), size(0), sum_time(0) {}
+         Diagram(char ch);  //2)
+         Diagram(const std::string &str);
 
     public:
         Diagram(const Diagram &) noexcept;

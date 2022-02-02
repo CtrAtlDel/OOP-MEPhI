@@ -3,6 +3,7 @@
 
 
 #include <vector>
+#include <iostream>
 #include "Student.h"
 
 namespace Console {
@@ -44,6 +45,10 @@ namespace Console {
         Student &setCategories(char type) override;
 
         Student &setSumOfRating(int ratting) override;
+
+        ~Junior() override {
+            std::cout<<"Destructor Junior" <<std::endl;
+        };
 
         //---------------------------------------------//
         //---------------------------------------------//
